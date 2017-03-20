@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614EB1E7FD11800F1AFDA /* AppDelegate.swift */; };
+		089614EE1E7FD11800F1AFDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614ED1E7FD11800F1AFDA /* ViewController.swift */; };
+		089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614EF1E7FD11800F1AFDA /* Main.storyboard */; };
+		089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */; };
+		089614F61E7FD11800F1AFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089614F51E7FD11800F1AFDA /* Assets.xcassets */; };
+		089614F91E7FD11800F1AFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */; };
+		089615041E7FD11800F1AFDA /* DomZdravljaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089615031E7FD11800F1AFDA /* DomZdravljaTests.swift */; };
+		0896150F1E7FD11800F1AFDA /* DomZdravljaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		089615001E7FD11800F1AFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089614E01E7FD11800F1AFDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 089614E71E7FD11800F1AFDA;
+			remoteInfo = DomZdravlja;
+		};
+		0896150B1E7FD11800F1AFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089614E01E7FD11800F1AFDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 089614E71E7FD11800F1AFDA;
+			remoteInfo = DomZdravlja;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089614E81E7FD11800F1AFDA /* DomZdravlja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DomZdravlja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		089614EB1E7FD11800F1AFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		089614ED1E7FD11800F1AFDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		089614F01E7FD11800F1AFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		089614F31E7FD11800F1AFDA /* DomZdravlja.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DomZdravlja.xcdatamodel; sourceTree = "<group>"; };
+		089614F51E7FD11800F1AFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		089614F81E7FD11800F1AFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		089614FA1E7FD11800F1AFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089614FF1E7FD11800F1AFDA /* DomZdravljaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomZdravljaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		089615031E7FD11800F1AFDA /* DomZdravljaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomZdravljaTests.swift; sourceTree = "<group>"; };
+		089615051E7FD11800F1AFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0896150A1E7FD11800F1AFDA /* DomZdravljaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomZdravljaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomZdravljaUITests.swift; sourceTree = "<group>"; };
+		089615101E7FD11800F1AFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		089614E51E7FD11800F1AFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089614FC1E7FD11800F1AFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089615071E7FD11800F1AFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089614DF1E7FD11800F1AFDA = {
+			isa = PBXGroup;
+			children = (
+				089614EA1E7FD11800F1AFDA /* DomZdravlja */,
+				089615021E7FD11800F1AFDA /* DomZdravljaTests */,
+				0896150D1E7FD11800F1AFDA /* DomZdravljaUITests */,
+				089614E91E7FD11800F1AFDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		089614E91E7FD11800F1AFDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				089614E81E7FD11800F1AFDA /* DomZdravlja.app */,
+				089614FF1E7FD11800F1AFDA /* DomZdravljaTests.xctest */,
+				0896150A1E7FD11800F1AFDA /* DomZdravljaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		089614EA1E7FD11800F1AFDA /* DomZdravlja */ = {
+			isa = PBXGroup;
+			children = (
+				089614EB1E7FD11800F1AFDA /* AppDelegate.swift */,
+				089614ED1E7FD11800F1AFDA /* ViewController.swift */,
+				089614EF1E7FD11800F1AFDA /* Main.storyboard */,
+				089614F51E7FD11800F1AFDA /* Assets.xcassets */,
+				089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */,
+				089614FA1E7FD11800F1AFDA /* Info.plist */,
+				089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */,
+			);
+			path = DomZdravlja;
+			sourceTree = "<group>";
+		};
+		089615021E7FD11800F1AFDA /* DomZdravljaTests */ = {
+			isa = PBXGroup;
+			children = (
+				089615031E7FD11800F1AFDA /* DomZdravljaTests.swift */,
+				089615051E7FD11800F1AFDA /* Info.plist */,
+			);
+			path = DomZdravljaTests;
+			sourceTree = "<group>";
+		};
+		0896150D1E7FD11800F1AFDA /* DomZdravljaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */,
+				089615101E7FD11800F1AFDA /* Info.plist */,
+			);
+			path = DomZdravljaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		089614E71E7FD11800F1AFDA /* DomZdravlja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089615131E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravlja" */;
+			buildPhases = (
+				089614E41E7FD11800F1AFDA /* Sources */,
+				089614E51E7FD11800F1AFDA /* Frameworks */,
+				089614E61E7FD11800F1AFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DomZdravlja;
+			productName = DomZdravlja;
+			productReference = 089614E81E7FD11800F1AFDA /* DomZdravlja.app */;
+			productType = "com.apple.product-type.application";
+		};
+		089614FE1E7FD11800F1AFDA /* DomZdravljaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089615161E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaTests" */;
+			buildPhases = (
+				089614FB1E7FD11800F1AFDA /* Sources */,
+				089614FC1E7FD11800F1AFDA /* Frameworks */,
+				089614FD1E7FD11800F1AFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				089615011E7FD11800F1AFDA /* PBXTargetDependency */,
+			);
+			name = DomZdravljaTests;
+			productName = DomZdravljaTests;
+			productReference = 089614FF1E7FD11800F1AFDA /* DomZdravljaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		089615091E7FD11800F1AFDA /* DomZdravljaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089615191E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaUITests" */;
+			buildPhases = (
+				089615061E7FD11800F1AFDA /* Sources */,
+				089615071E7FD11800F1AFDA /* Frameworks */,
+				089615081E7FD11800F1AFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0896150C1E7FD11800F1AFDA /* PBXTargetDependency */,
+			);
+			name = DomZdravljaUITests;
+			productName = DomZdravljaUITests;
+			productReference = 0896150A1E7FD11800F1AFDA /* DomZdravljaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089614E01E7FD11800F1AFDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Petar Santor";
+				TargetAttributes = {
+					089614E71E7FD11800F1AFDA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4S4TN8CRJT;
+						ProvisioningStyle = Automatic;
+					};
+					089614FE1E7FD11800F1AFDA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4S4TN8CRJT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 089614E71E7FD11800F1AFDA;
+					};
+					089615091E7FD11800F1AFDA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4S4TN8CRJT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 089614E71E7FD11800F1AFDA;
+					};
+				};
+			};
+			buildConfigurationList = 089614E31E7FD11800F1AFDA /* Build configuration list for PBXProject "DomZdravlja" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 089614DF1E7FD11800F1AFDA;
+			productRefGroup = 089614E91E7FD11800F1AFDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				089614E71E7FD11800F1AFDA /* DomZdravlja */,
+				089614FE1E7FD11800F1AFDA /* DomZdravljaTests */,
+				089615091E7FD11800F1AFDA /* DomZdravljaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		089614E61E7FD11800F1AFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089614F91E7FD11800F1AFDA /* LaunchScreen.storyboard in Resources */,
+				089614F61E7FD11800F1AFDA /* Assets.xcassets in Resources */,
+				089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089614FD1E7FD11800F1AFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089615081E7FD11800F1AFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		089614E41E7FD11800F1AFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */,
+				089614EE1E7FD11800F1AFDA /* ViewController.swift in Sources */,
+				089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089614FB1E7FD11800F1AFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089615041E7FD11800F1AFDA /* DomZdravljaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089615061E7FD11800F1AFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0896150F1E7FD11800F1AFDA /* DomZdravljaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		089615011E7FD11800F1AFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 089614E71E7FD11800F1AFDA /* DomZdravlja */;
+			targetProxy = 089615001E7FD11800F1AFDA /* PBXContainerItemProxy */;
+		};
+		0896150C1E7FD11800F1AFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 089614E71E7FD11800F1AFDA /* DomZdravlja */;
+			targetProxy = 0896150B1E7FD11800F1AFDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089614EF1E7FD11800F1AFDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089614F01E7FD11800F1AFDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089614F81E7FD11800F1AFDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		089615111E7FD11800F1AFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		089615121E7FD11800F1AFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		089615141E7FD11800F1AFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				INFOPLIST_FILE = DomZdravlja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravlja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		089615151E7FD11800F1AFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				INFOPLIST_FILE = DomZdravlja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravlja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		089615171E7FD11800F1AFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				INFOPLIST_FILE = DomZdravljaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravljaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DomZdravlja.app/DomZdravlja";
+			};
+			name = Debug;
+		};
+		089615181E7FD11800F1AFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				INFOPLIST_FILE = DomZdravljaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravljaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DomZdravlja.app/DomZdravlja";
+			};
+			name = Release;
+		};
+		0896151A1E7FD11800F1AFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				INFOPLIST_FILE = DomZdravljaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravljaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DomZdravlja;
+			};
+			name = Debug;
+		};
+		0896151B1E7FD11800F1AFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				INFOPLIST_FILE = DomZdravljaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravljaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DomZdravlja;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		089614E31E7FD11800F1AFDA /* Build configuration list for PBXProject "DomZdravlja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089615111E7FD11800F1AFDA /* Debug */,
+				089615121E7FD11800F1AFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		089615131E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravlja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089615141E7FD11800F1AFDA /* Debug */,
+				089615151E7FD11800F1AFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		089615161E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089615171E7FD11800F1AFDA /* Debug */,
+				089615181E7FD11800F1AFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		089615191E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0896151A1E7FD11800F1AFDA /* Debug */,
+				0896151B1E7FD11800F1AFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				089614F31E7FD11800F1AFDA /* DomZdravlja.xcdatamodel */,
+			);
+			currentVersion = 089614F31E7FD11800F1AFDA /* DomZdravlja.xcdatamodel */;
+			path = DomZdravlja.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 089614E01E7FD11800F1AFDA /* Project object */;
+}
