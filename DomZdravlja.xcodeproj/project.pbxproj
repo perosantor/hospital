@@ -197,7 +197,7 @@
 					089614E71E7FD11800F1AFDA = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4S4TN8CRJT;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					089614FE1E7FD11800F1AFDA = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -421,10 +421,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4S4TN8CRJT;
 				INFOPLIST_FILE = DomZdravlja/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravlja;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7de0ffc0-2899-4db4-bf27-51a3f2768bf2";
+				PROVISIONING_PROFILE_SPECIFIER = DomZdravlja;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,12 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DomZdravlja/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravlja;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
