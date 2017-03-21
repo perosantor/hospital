@@ -1,0 +1,1251 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0356F6EE52C3C0C4A5EFD471E0816A54 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CF84D1F2CCE9C61310D58FF00F553947 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BBA45F5D252E2A9FF47203B617C47 /* KYEmbedMainControllerSegue.swift */; };
+		0BEC0CFE1D4CE2F28ADF34EEAE40F168 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894844AEFD2920A0FB2F6ADEFC733E61 /* SystemConfiguration.framework */; };
+		1008072FF6553003E9539E8C90D8B39C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */; };
+		1804991D4F705FE4F52BD01E80ACF4BA /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 130DFD44F35DBF74EAC11FE48A6E53C3 /* SVRadialGradientLayer.m */; };
+		1AA156017FC87AE798C2068B6C43FE2F /* Pods-DomZdravljaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1667404BC62056D12AD4189FC64209 /* Pods-DomZdravljaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AA9D5CFD11C06D096B98B18B328B360 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD88741534FDE6555C916146C7A3048 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE1CDDEC020B83D450C9C117C1507EF /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A30883523064733EC4DAE01ABA2C1BA /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C45E2B4C48A8F31F90FAAB1A24B4542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */; };
+		32EF175AAC306E565416C297AB42861A /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C75DB2C561E3CED5F50C6A3B70431551 /* Reachability-dummy.m */; };
+		3AFD054173367EDBD5FC1D5D7D1EA655 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4DE9906A6F3A64B26187901BDF2B9C /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E26D8F49A097D5B0E1FD2AEE7734C70 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053F5A6AC5FCDE1D0B62CA2EDF7A5C25 /* SVProgressAnimatedView.m */; };
+		3F5C3DF4C02D5342F71DBDF811EF417E /* Pods-DomZdravljaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9C669F755D9B4C48099E546C1FCF72 /* Pods-DomZdravljaUITests-dummy.m */; };
+		5E10CF78BA3930DB14CE0981F03FC3EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */; };
+		5FC40F18DBFFCACF3FA032B58571B781 /* KYDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F72FB9DFD31C903E2A1B7CF142B347F9 /* KYDrawerController-dummy.m */; };
+		62B449845871F8DA880D40BE4935EC56 /* KYDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1227448837D80E6A17F5CF932D4A66D8 /* KYDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63CB6FD06DDC511DB79AA94CF0B6CEF6 /* Reachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D609C16EAA4E2082B6160F6950D79784 /* Reachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6491CC3CD8069A77601659C4D192505B /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C567332EFFE38200C663317D9D0372F /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6521CC9ADBD211F21002A7697F3EB219 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D43305D616B157521175CEAF788DC /* SVProgressHUD.m */; };
+		73743BB65F49C0791F50E711B4648B67 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD6467E053BEFB0BD592ABB8A9122BE /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD93CAAB089C6DE77966C5B8EAE20B1 /* KYDrawerController.swift */; };
+		82D5A2BB14D9FC8CFDAA4B00401A60EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */; };
+		97F3418940C3042ABDB325CE026B2DD5 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FC0FDB77A7D3EACDBE053D371A2F51 /* SVProgressHUD-dummy.m */; };
+		9E5E639C215B1EA6CE05F27BADC70A45 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B836CEA91D4FBB9B8B197A9375A8A7 /* Reachability.m */; };
+		A245F6C8EC333C3AA637D6254ACF9FE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B618E3E56699F3714EFE2B32C3212F /* QuartzCore.framework */; };
+		BCF0764BA5EBC2CA48029D09720A1D2B /* Pods-DomZdravlja-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A73E7CF842CF4EB9BAB9615C06064E /* Pods-DomZdravlja-dummy.m */; };
+		C57CB3848B28472F2160F5AEF9ACC296 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 774A03521B07257444823E428C98DD0D /* SVIndefiniteAnimatedView.m */; };
+		D776333770C7477796E24DEF12FE4D79 /* Pods-DomZdravlja-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBEC4D921262BDD31F0ACBD5DA2C355 /* Pods-DomZdravlja-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE2DD1CFE413700E83EE918C6B557C31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */; };
+		E18CF6F34429A86ECFAA88D96D7E4298 /* Pods-DomZdravljaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1589C52B2D711FFDDB2A6775147973A8 /* Pods-DomZdravljaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E99F7B840D2DD58DB2AF9E62DEC73B96 /* Pods-DomZdravljaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AA18EAF36F934D899D328B3F390CE /* Pods-DomZdravljaTests-dummy.m */; };
+		EBCEB3048CCBC9D6268E59F2ED7B12D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */; };
+		FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC566BB7F23407CC1E8D28D0B2E429D /* KYEmbedDrawerControllerSegue.swift */; };
+		FE613361C14964FFED35CE52A63BEC6A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C31FDBC2698B43A11F96ECE797FE /* SVProgressHUD.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75AD587B1AFC4F19A3C7F16EDEC9AAB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D9716B3C9CE129A5C8F440690B14008;
+			remoteInfo = Reachability;
+		};
+		AF49EDA9379E2DFCDA0491755015AA08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4EE3B860A3924E8B6A0E86EB8067818;
+			remoteInfo = SVProgressHUD;
+		};
+		B72DBB8F1AE692E33901ACB497749FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AF8670FDECF80EFCAA3D04318C4B4D1;
+			remoteInfo = KYDrawerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B618E3E56699F3714EFE2B32C3212F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		053F5A6AC5FCDE1D0B62CA2EDF7A5C25 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		083C14B579EAF43342CF6012569E94CA /* Pods-DomZdravlja-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DomZdravlja-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D4DE9906A6F3A64B26187901BDF2B9C /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0F289019B3ED008F078E7370A73F316A /* Pods-DomZdravlja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DomZdravlja.debug.xcconfig"; sourceTree = "<group>"; };
+		1227448837D80E6A17F5CF932D4A66D8 /* KYDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-umbrella.h"; sourceTree = "<group>"; };
+		130DFD44F35DBF74EAC11FE48A6E53C3 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		1589C52B2D711FFDDB2A6775147973A8 /* Pods-DomZdravljaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DomZdravljaUITests-umbrella.h"; sourceTree = "<group>"; };
+		16FE62A88AF122E79952AAB1411E25D4 /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
+		1A30883523064733EC4DAE01ABA2C1BA /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		1A6371B5DB6EEAC04EA9ECD194B0BD1B /* Pods-DomZdravlja-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DomZdravlja-frameworks.sh"; sourceTree = "<group>"; };
+		1C80392E9350D9FA8E041DEAF542BA6A /* Pods-DomZdravlja-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DomZdravlja-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D0C5C55367711C1F81A0C22C2970538 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		1E1667404BC62056D12AD4189FC64209 /* Pods-DomZdravljaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DomZdravljaTests-umbrella.h"; sourceTree = "<group>"; };
+		1E5346077534DC803311E919AFF9AC43 /* Pods-DomZdravljaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DomZdravljaTests-resources.sh"; sourceTree = "<group>"; };
+		2D3AA18EAF36F934D899D328B3F390CE /* Pods-DomZdravljaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DomZdravljaTests-dummy.m"; sourceTree = "<group>"; };
+		2F548F825A1F99A74FC697BD87DB155B /* KYDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYDrawerController.xcconfig; sourceTree = "<group>"; };
+		36D029A211F70B53930DE9A7B27D7BF9 /* Pods-DomZdravljaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DomZdravljaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C567332EFFE38200C663317D9D0372F /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		4043E0A8C2644437FC077DBBE651FA90 /* Pods-DomZdravljaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DomZdravljaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4317BBCFF61858B45DCEA70886E01D32 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BD88741534FDE6555C916146C7A3048 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		4D088ED14FBD6356DD3B624F85E4E1C5 /* Pods-DomZdravljaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DomZdravljaTests.modulemap"; sourceTree = "<group>"; };
+		5061D7DB781A86518214B9081C8A02F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F68510D7508FC1376F3C69BCE8A5F5 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62F3AF5C69611A91B18F99CE5790807E /* Pods-DomZdravljaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DomZdravljaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		652BE8320D6EB5A1541BBA9B432FCDE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66EC8466E95BE07CE8F37CE049B643EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EE218E276A929A0498B2DF5E210648 /* KYDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		68A73E7CF842CF4EB9BAB9615C06064E /* Pods-DomZdravlja-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DomZdravlja-dummy.m"; sourceTree = "<group>"; };
+		6B5D43305D616B157521175CEAF788DC /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		774A03521B07257444823E428C98DD0D /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		7BE6405E77E8429E542DFE4921A4C07A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C157FB755A0D27F3A1777EE56DA4559 /* Pods-DomZdravlja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DomZdravlja.release.xcconfig"; sourceTree = "<group>"; };
+		7EEA5E73F2F2A4D42D99C89BC90A13BC /* Pods-DomZdravlja.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DomZdravlja.modulemap"; sourceTree = "<group>"; };
+		850EAF006A6A17C947361E56388EEBDA /* Pods-DomZdravljaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DomZdravljaTests-frameworks.sh"; sourceTree = "<group>"; };
+		87FC0FDB77A7D3EACDBE053D371A2F51 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		894844AEFD2920A0FB2F6ADEFC733E61 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		89B836CEA91D4FBB9B8B197A9375A8A7 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8BCF686F75E3FBA17C861023132712C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD93CAAB089C6DE77966C5B8EAE20B1 /* KYDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYDrawerController.swift; path = KYDrawerController/Classes/KYDrawerController.swift; sourceTree = "<group>"; };
+		8DC566BB7F23407CC1E8D28D0B2E429D /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedDrawerControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		927DE1E033383B9BD5ADB609618DE2E3 /* Pods_DomZdravljaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DomZdravljaUITests.framework; path = "Pods-DomZdravljaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99A458453CD3A17E0A91B470E4920CB9 /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DomZdravlja.framework; path = "Pods-DomZdravlja.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A6C31FDBC2698B43A11F96ECE797FE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A0F5906468656CD0B8A71DE89AD7D86B /* Pods-DomZdravljaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DomZdravljaUITests.modulemap"; sourceTree = "<group>"; };
+		AA902D51CA218D05E4E59270A13ADB6A /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDA881981A32AA92CA4EAEA103520F1 /* Pods-DomZdravljaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DomZdravljaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFD6467E053BEFB0BD592ABB8A9122BE /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		B3BBED225F06E75151B27DF701AAD944 /* Pods-DomZdravljaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DomZdravljaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B4CDC34B45709542B5D5266420BD81B5 /* Pods-DomZdravljaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DomZdravljaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9FC05F846D6A42C371BE086F36C7C1B /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reachability.modulemap; sourceTree = "<group>"; };
+		BA294B3CA73DBC5FB1657335B01EEFF4 /* Pods-DomZdravljaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DomZdravljaUITests-resources.sh"; sourceTree = "<group>"; };
+		BA3342D5140F7467CC88E1495B3540CC /* Pods-DomZdravljaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DomZdravljaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE9C669F755D9B4C48099E546C1FCF72 /* Pods-DomZdravljaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DomZdravljaUITests-dummy.m"; sourceTree = "<group>"; };
+		C70CD68955F2B1DA178FD1EFD6290650 /* Pods_DomZdravljaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DomZdravljaTests.framework; path = "Pods-DomZdravljaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75DB2C561E3CED5F50C6A3B70431551 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
+		CF84D1F2CCE9C61310D58FF00F553947 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		CFBEC4D921262BDD31F0ACBD5DA2C355 /* Pods-DomZdravlja-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DomZdravlja-umbrella.h"; sourceTree = "<group>"; };
+		D0F5155820CC8433C65E430452DE0BE4 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		D609C16EAA4E2082B6160F6950D79784 /* Reachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-umbrella.h"; sourceTree = "<group>"; };
+		D621F9FF3B249D22D2FA2A12F3CDE654 /* KYDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KYDrawerController.modulemap; sourceTree = "<group>"; };
+		E577D0E93EC77E98D8EC50381998613C /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
+		E96BBA45F5D252E2A9FF47203B617C47 /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedMainControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		EA8A8C2D05921C45713203EF75DCAE79 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED7A27ABC2F0E3CD3FA175BD2A400DCF /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		EE5A85F1619A593DF91CE11FA814A09D /* Pods-DomZdravlja-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DomZdravlja-resources.sh"; sourceTree = "<group>"; };
+		F72FB9DFD31C903E2A1B7CF142B347F9 /* KYDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYDrawerController-dummy.m"; sourceTree = "<group>"; };
+		FB3B6BE5537E8BC717B68BAC536ABABA /* KYDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KYDrawerController.framework; path = KYDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE443CAF742D9ECB110A4E36103A1964 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86CE5814F1BD64C92ED60E0B63CB9008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2DD1CFE413700E83EE918C6B557C31 /* Foundation.framework in Frameworks */,
+				0BEC0CFE1D4CE2F28ADF34EEAE40F168 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DBC34A4A8273702B17A21F3D0C0FD69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E10CF78BA3930DB14CE0981F03FC3EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB1EF2F8A9886B7F0713F557C0356DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008072FF6553003E9539E8C90D8B39C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E4E49746BD651F57ED34141044651D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D5A2BB14D9FC8CFDAA4B00401A60EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABDA08A4121FE4A9861CEC5C51F7386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCEB3048CCBC9D6268E59F2ED7B12D0 /* Foundation.framework in Frameworks */,
+				A245F6C8EC333C3AA637D6254ACF9FE2 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC31D837778079E0008C96A5795BBD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C45E2B4C48A8F31F90FAAB1A24B4542 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0301683F824CA76F90BE4B80FDA484CE /* Pods-DomZdravlja */ = {
+			isa = PBXGroup;
+			children = (
+				5061D7DB781A86518214B9081C8A02F9 /* Info.plist */,
+				7EEA5E73F2F2A4D42D99C89BC90A13BC /* Pods-DomZdravlja.modulemap */,
+				083C14B579EAF43342CF6012569E94CA /* Pods-DomZdravlja-acknowledgements.markdown */,
+				1C80392E9350D9FA8E041DEAF542BA6A /* Pods-DomZdravlja-acknowledgements.plist */,
+				68A73E7CF842CF4EB9BAB9615C06064E /* Pods-DomZdravlja-dummy.m */,
+				1A6371B5DB6EEAC04EA9ECD194B0BD1B /* Pods-DomZdravlja-frameworks.sh */,
+				EE5A85F1619A593DF91CE11FA814A09D /* Pods-DomZdravlja-resources.sh */,
+				CFBEC4D921262BDD31F0ACBD5DA2C355 /* Pods-DomZdravlja-umbrella.h */,
+				0F289019B3ED008F078E7370A73F316A /* Pods-DomZdravlja.debug.xcconfig */,
+				7C157FB755A0D27F3A1777EE56DA4559 /* Pods-DomZdravlja.release.xcconfig */,
+			);
+			name = "Pods-DomZdravlja";
+			path = "Target Support Files/Pods-DomZdravlja";
+			sourceTree = "<group>";
+		};
+		0386ECEFE1E6E453C78646A4E9899E4A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				652BE8320D6EB5A1541BBA9B432FCDE2 /* Info.plist */,
+				D0F5155820CC8433C65E430452DE0BE4 /* SVProgressHUD.modulemap */,
+				ED7A27ABC2F0E3CD3FA175BD2A400DCF /* SVProgressHUD.xcconfig */,
+				87FC0FDB77A7D3EACDBE053D371A2F51 /* SVProgressHUD-dummy.m */,
+				1D0C5C55367711C1F81A0C22C2970538 /* SVProgressHUD-prefix.pch */,
+				3C567332EFFE38200C663317D9D0372F /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C180BB93FC8BFF94C99027DA1BB9FFC4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20736715E745240E5A91253C5DA70F8D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0301683F824CA76F90BE4B80FDA484CE /* Pods-DomZdravlja */,
+				9E39C446EE4CA80F42A8564DF0D59DDA /* Pods-DomZdravljaTests */,
+				80F1E8D030BB27D1272AA9263E0BA04D /* Pods-DomZdravljaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58CCE01687FC78492210E68C67652B41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99A6C31FDBC2698B43A11F96ECE797FE /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5FD0BC7F4B23DA2943C7245084EFCE52 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				0D4DE9906A6F3A64B26187901BDF2B9C /* Reachability.h */,
+				89B836CEA91D4FBB9B8B197A9375A8A7 /* Reachability.m */,
+				8BDCF19331BA3F0DDA496B3FEADE6B88 /* Support Files */,
+			);
+			name = Reachability;
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				EC9B653AC6ACFF5C4FBCFDBE25003485 /* Pods */,
+				DB079C709C9B20FA2B4C1A018EDA4A68 /* Products */,
+				20736715E745240E5A91253C5DA70F8D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80F1E8D030BB27D1272AA9263E0BA04D /* Pods-DomZdravljaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66EC8466E95BE07CE8F37CE049B643EA /* Info.plist */,
+				A0F5906468656CD0B8A71DE89AD7D86B /* Pods-DomZdravljaUITests.modulemap */,
+				4043E0A8C2644437FC077DBBE651FA90 /* Pods-DomZdravljaUITests-acknowledgements.markdown */,
+				B4CDC34B45709542B5D5266420BD81B5 /* Pods-DomZdravljaUITests-acknowledgements.plist */,
+				BE9C669F755D9B4C48099E546C1FCF72 /* Pods-DomZdravljaUITests-dummy.m */,
+				B3BBED225F06E75151B27DF701AAD944 /* Pods-DomZdravljaUITests-frameworks.sh */,
+				BA294B3CA73DBC5FB1657335B01EEFF4 /* Pods-DomZdravljaUITests-resources.sh */,
+				1589C52B2D711FFDDB2A6775147973A8 /* Pods-DomZdravljaUITests-umbrella.h */,
+				ACDA881981A32AA92CA4EAEA103520F1 /* Pods-DomZdravljaUITests.debug.xcconfig */,
+				60F68510D7508FC1376F3C69BCE8A5F5 /* Pods-DomZdravljaUITests.release.xcconfig */,
+			);
+			name = "Pods-DomZdravljaUITests";
+			path = "Target Support Files/Pods-DomZdravljaUITests";
+			sourceTree = "<group>";
+		};
+		8BDCF19331BA3F0DDA496B3FEADE6B88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BCF686F75E3FBA17C861023132712C4 /* Info.plist */,
+				B9FC05F846D6A42C371BE086F36C7C1B /* Reachability.modulemap */,
+				E577D0E93EC77E98D8EC50381998613C /* Reachability.xcconfig */,
+				C75DB2C561E3CED5F50C6A3B70431551 /* Reachability-dummy.m */,
+				16FE62A88AF122E79952AAB1411E25D4 /* Reachability-prefix.pch */,
+				D609C16EAA4E2082B6160F6950D79784 /* Reachability-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reachability";
+			sourceTree = "<group>";
+		};
+		9E39C446EE4CA80F42A8564DF0D59DDA /* Pods-DomZdravljaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE443CAF742D9ECB110A4E36103A1964 /* Info.plist */,
+				4D088ED14FBD6356DD3B624F85E4E1C5 /* Pods-DomZdravljaTests.modulemap */,
+				62F3AF5C69611A91B18F99CE5790807E /* Pods-DomZdravljaTests-acknowledgements.markdown */,
+				BA3342D5140F7467CC88E1495B3540CC /* Pods-DomZdravljaTests-acknowledgements.plist */,
+				2D3AA18EAF36F934D899D328B3F390CE /* Pods-DomZdravljaTests-dummy.m */,
+				850EAF006A6A17C947361E56388EEBDA /* Pods-DomZdravljaTests-frameworks.sh */,
+				1E5346077534DC803311E919AFF9AC43 /* Pods-DomZdravljaTests-resources.sh */,
+				1E1667404BC62056D12AD4189FC64209 /* Pods-DomZdravljaTests-umbrella.h */,
+				36D029A211F70B53930DE9A7B27D7BF9 /* Pods-DomZdravljaTests.debug.xcconfig */,
+				EA8A8C2D05921C45713203EF75DCAE79 /* Pods-DomZdravljaTests.release.xcconfig */,
+			);
+			name = "Pods-DomZdravljaTests";
+			path = "Target Support Files/Pods-DomZdravljaTests";
+			sourceTree = "<group>";
+		};
+		A158B5C42A7FD135AEED649B6B491F1E /* KYDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				8CD93CAAB089C6DE77966C5B8EAE20B1 /* KYDrawerController.swift */,
+				8DC566BB7F23407CC1E8D28D0B2E429D /* KYEmbedDrawerControllerSegue.swift */,
+				E96BBA45F5D252E2A9FF47203B617C47 /* KYEmbedMainControllerSegue.swift */,
+				E7DB442D098A37A52F7C53F025496C51 /* Support Files */,
+			);
+			name = KYDrawerController;
+			path = KYDrawerController;
+			sourceTree = "<group>";
+		};
+		C180BB93FC8BFF94C99027DA1BB9FFC4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				445269A04BFF23FF5D8ECEEAEB6A27E5 /* Foundation.framework */,
+				02B618E3E56699F3714EFE2B32C3212F /* QuartzCore.framework */,
+				894844AEFD2920A0FB2F6ADEFC733E61 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB079C709C9B20FA2B4C1A018EDA4A68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B6BE5537E8BC717B68BAC536ABABA /* KYDrawerController.framework */,
+				99A458453CD3A17E0A91B470E4920CB9 /* Pods_DomZdravlja.framework */,
+				C70CD68955F2B1DA178FD1EFD6290650 /* Pods_DomZdravljaTests.framework */,
+				927DE1E033383B9BD5ADB609618DE2E3 /* Pods_DomZdravljaUITests.framework */,
+				4317BBCFF61858B45DCEA70886E01D32 /* Reachability.framework */,
+				AA902D51CA218D05E4E59270A13ADB6A /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7DB442D098A37A52F7C53F025496C51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BE6405E77E8429E542DFE4921A4C07A /* Info.plist */,
+				D621F9FF3B249D22D2FA2A12F3CDE654 /* KYDrawerController.modulemap */,
+				2F548F825A1F99A74FC697BD87DB155B /* KYDrawerController.xcconfig */,
+				F72FB9DFD31C903E2A1B7CF142B347F9 /* KYDrawerController-dummy.m */,
+				67EE218E276A929A0498B2DF5E210648 /* KYDrawerController-prefix.pch */,
+				1227448837D80E6A17F5CF932D4A66D8 /* KYDrawerController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KYDrawerController";
+			sourceTree = "<group>";
+		};
+		EC9B653AC6ACFF5C4FBCFDBE25003485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A158B5C42A7FD135AEED649B6B491F1E /* KYDrawerController */,
+				5FD0BC7F4B23DA2943C7245084EFCE52 /* Reachability */,
+				F3EADB07AEF20C9ADDD45EE5D82EB1C6 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3EADB07AEF20C9ADDD45EE5D82EB1C6 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1A30883523064733EC4DAE01ABA2C1BA /* SVIndefiniteAnimatedView.h */,
+				774A03521B07257444823E428C98DD0D /* SVIndefiniteAnimatedView.m */,
+				AFD6467E053BEFB0BD592ABB8A9122BE /* SVProgressAnimatedView.h */,
+				053F5A6AC5FCDE1D0B62CA2EDF7A5C25 /* SVProgressAnimatedView.m */,
+				4BD88741534FDE6555C916146C7A3048 /* SVProgressHUD.h */,
+				6B5D43305D616B157521175CEAF788DC /* SVProgressHUD.m */,
+				CF84D1F2CCE9C61310D58FF00F553947 /* SVRadialGradientLayer.h */,
+				130DFD44F35DBF74EAC11FE48A6E53C3 /* SVRadialGradientLayer.m */,
+				58CCE01687FC78492210E68C67652B41 /* Resources */,
+				0386ECEFE1E6E453C78646A4E9899E4A /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4999D3CCA02AF462CBA595C9469A228B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18CF6F34429A86ECFAA88D96D7E4298 /* Pods-DomZdravljaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3406D2A1CA7ED0C7826EE46F6272A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D776333770C7477796E24DEF12FE4D79 /* Pods-DomZdravlja-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F522C0522F6102E735FC7B74623D435 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B449845871F8DA880D40BE4935EC56 /* KYDrawerController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5DC6198FA2FD52B733145D336842D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CB6FD06DDC511DB79AA94CF0B6CEF6 /* Reachability-umbrella.h in Headers */,
+				3AFD054173367EDBD5FC1D5D7D1EA655 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D3997F5AFCB65754BF511B36BE9D41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE1CDDEC020B83D450C9C117C1507EF /* SVIndefiniteAnimatedView.h in Headers */,
+				73743BB65F49C0791F50E711B4648B67 /* SVProgressAnimatedView.h in Headers */,
+				6491CC3CD8069A77601659C4D192505B /* SVProgressHUD-umbrella.h in Headers */,
+				1AA9D5CFD11C06D096B98B18B328B360 /* SVProgressHUD.h in Headers */,
+				0356F6EE52C3C0C4A5EFD471E0816A54 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB80C0CF5021568631C89DFBAF58C174 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA156017FC87AE798C2068B6C43FE2F /* Pods-DomZdravljaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D6727621E7735203F15A6299362C3C4 /* Pods-DomZdravljaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33EAD56FB223F80792071C0656BC8BB3 /* Build configuration list for PBXNativeTarget "Pods-DomZdravljaUITests" */;
+			buildPhases = (
+				96B42EC7885AEC7E3ED0C6000D1E8E1E /* Sources */,
+				C3E4E49746BD651F57ED34141044651D /* Frameworks */,
+				4999D3CCA02AF462CBA595C9469A228B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DomZdravljaUITests";
+			productName = "Pods-DomZdravljaUITests";
+			productReference = 927DE1E033383B9BD5ADB609618DE2E3 /* Pods_DomZdravljaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D9716B3C9CE129A5C8F440690B14008 /* Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37BB9A3CB31BF721CA4004320E23FCFB /* Build configuration list for PBXNativeTarget "Reachability" */;
+			buildPhases = (
+				3B5CF23DBF0FA26D414D005F66DA5A4B /* Sources */,
+				86CE5814F1BD64C92ED60E0B63CB9008 /* Frameworks */,
+				9C5DC6198FA2FD52B733145D336842D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reachability;
+			productName = Reachability;
+			productReference = 4317BBCFF61858B45DCEA70886E01D32 /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235787AAA4D655650FA93DB4FB2D308A /* Build configuration list for PBXNativeTarget "KYDrawerController" */;
+			buildPhases = (
+				1BA042EDEFD683F56F2F5063EC1B98EB /* Sources */,
+				9FB1EF2F8A9886B7F0713F557C0356DF /* Frameworks */,
+				8F522C0522F6102E735FC7B74623D435 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYDrawerController;
+			productName = KYDrawerController;
+			productReference = FB3B6BE5537E8BC717B68BAC536ABABA /* KYDrawerController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4EE3B860A3924E8B6A0E86EB8067818 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D9BF09765DE7FF87F33C3F669111CE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				590999742E665B8628AFD00AD11B918E /* Sources */,
+				EABDA08A4121FE4A9861CEC5C51F7386 /* Frameworks */,
+				D5D3997F5AFCB65754BF511B36BE9D41 /* Headers */,
+				46F243333DC122DF86F6C0D7F5ADF325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = AA902D51CA218D05E4E59270A13ADB6A /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C71253540E324A7B02FB3C1F48A879DF /* Pods-DomZdravljaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C520111076A2645350263090A7C45153 /* Build configuration list for PBXNativeTarget "Pods-DomZdravljaTests" */;
+			buildPhases = (
+				68D07EB5E5E46A277F0710433EB0BD86 /* Sources */,
+				8DBC34A4A8273702B17A21F3D0C0FD69 /* Frameworks */,
+				EB80C0CF5021568631C89DFBAF58C174 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DomZdravljaTests";
+			productName = "Pods-DomZdravljaTests";
+			productReference = C70CD68955F2B1DA178FD1EFD6290650 /* Pods_DomZdravljaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAEB0FACFFC539112404A5FA611A5C8B /* Pods-DomZdravlja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70632B64104C88BD666AEF13C3CFB96D /* Build configuration list for PBXNativeTarget "Pods-DomZdravlja" */;
+			buildPhases = (
+				9F45C7FF1F32C2CF0AE1B35FBBDA40F8 /* Sources */,
+				EDC31D837778079E0008C96A5795BBD0 /* Frameworks */,
+				4D3406D2A1CA7ED0C7826EE46F6272A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08341E2D0C0A342133D25DAEC0080E28 /* PBXTargetDependency */,
+				BB50893A2559BC91E32AB6AD2BA7B9C9 /* PBXTargetDependency */,
+				84707350BB3BBB3F61793CE5E6C5FAF5 /* PBXTargetDependency */,
+			);
+			name = "Pods-DomZdravlja";
+			productName = "Pods-DomZdravlja";
+			productReference = 99A458453CD3A17E0A91B470E4920CB9 /* Pods_DomZdravlja.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DB079C709C9B20FA2B4C1A018EDA4A68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */,
+				CAEB0FACFFC539112404A5FA611A5C8B /* Pods-DomZdravlja */,
+				C71253540E324A7B02FB3C1F48A879DF /* Pods-DomZdravljaTests */,
+				0D6727621E7735203F15A6299362C3C4 /* Pods-DomZdravljaUITests */,
+				6D9716B3C9CE129A5C8F440690B14008 /* Reachability */,
+				B4EE3B860A3924E8B6A0E86EB8067818 /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46F243333DC122DF86F6C0D7F5ADF325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE613361C14964FFED35CE52A63BEC6A /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA042EDEFD683F56F2F5063EC1B98EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC40F18DBFFCACF3FA032B58571B781 /* KYDrawerController-dummy.m in Sources */,
+				74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */,
+				FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5CF23DBF0FA26D414D005F66DA5A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EF175AAC306E565416C297AB42861A /* Reachability-dummy.m in Sources */,
+				9E5E639C215B1EA6CE05F27BADC70A45 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590999742E665B8628AFD00AD11B918E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57CB3848B28472F2160F5AEF9ACC296 /* SVIndefiniteAnimatedView.m in Sources */,
+				3E26D8F49A097D5B0E1FD2AEE7734C70 /* SVProgressAnimatedView.m in Sources */,
+				97F3418940C3042ABDB325CE026B2DD5 /* SVProgressHUD-dummy.m in Sources */,
+				6521CC9ADBD211F21002A7697F3EB219 /* SVProgressHUD.m in Sources */,
+				1804991D4F705FE4F52BD01E80ACF4BA /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D07EB5E5E46A277F0710433EB0BD86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F7B840D2DD58DB2AF9E62DEC73B96 /* Pods-DomZdravljaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B42EC7885AEC7E3ED0C6000D1E8E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5C3DF4C02D5342F71DBDF811EF417E /* Pods-DomZdravljaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F45C7FF1F32C2CF0AE1B35FBBDA40F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF0764BA5EBC2CA48029D09720A1D2B /* Pods-DomZdravlja-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08341E2D0C0A342133D25DAEC0080E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KYDrawerController;
+			target = 7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */;
+			targetProxy = B72DBB8F1AE692E33901ACB497749FDE /* PBXContainerItemProxy */;
+		};
+		84707350BB3BBB3F61793CE5E6C5FAF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = B4EE3B860A3924E8B6A0E86EB8067818 /* SVProgressHUD */;
+			targetProxy = AF49EDA9379E2DFCDA0491755015AA08 /* PBXContainerItemProxy */;
+		};
+		BB50893A2559BC91E32AB6AD2BA7B9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 6D9716B3C9CE129A5C8F440690B14008 /* Reachability */;
+			targetProxy = 75AD587B1AFC4F19A3C7F16EDEC9AAB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		031354873E275DFD18375D16AF41C55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8A8C2D05921C45713203EF75DCAE79 /* Pods-DomZdravljaTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DomZdravljaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DomZdravljaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1DE270091A33A880A181AB3E5BCB1FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D029A211F70B53930DE9A7B27D7BF9 /* Pods-DomZdravljaTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DomZdravljaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DomZdravljaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29B6D328DF6A2948C3A120BC18ED06DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7A27ABC2F0E3CD3FA175BD2A400DCF /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D7B733D318EE61378D3CFF86E260690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F289019B3ED008F078E7370A73F316A /* Pods-DomZdravlja.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DomZdravlja/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DomZdravlja/Pods-DomZdravlja.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DomZdravlja;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57B3B2DA8B4854C34198CF0586265FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F548F825A1F99A74FC697BD87DB155B /* KYDrawerController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KYDrawerController/KYDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYDrawerController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KYDrawerController/KYDrawerController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KYDrawerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAABC1425D2DA4999C62A676C6E78406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7A27ABC2F0E3CD3FA175BD2A400DCF /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB9B7F1A32F69799B4DFBFD4F7F91E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C157FB755A0D27F3A1777EE56DA4559 /* Pods-DomZdravlja.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DomZdravlja/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DomZdravlja/Pods-DomZdravlja.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DomZdravlja;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEE6AE33942EB6E5ACCA9E4C7396DF01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E577D0E93EC77E98D8EC50381998613C /* Reachability.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reachability/Reachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF4B60950248EA1D6D32C7CD65EFB00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F68510D7508FC1376F3C69BCE8A5F5 /* Pods-DomZdravljaUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DomZdravljaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DomZdravljaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D455F48ABDAF9D230B7EA5875CED0789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E577D0E93EC77E98D8EC50381998613C /* Reachability.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reachability/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reachability/Reachability.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E125AB642AFEAA8B6B2EEC07F460B3FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F548F825A1F99A74FC697BD87DB155B /* KYDrawerController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KYDrawerController/KYDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYDrawerController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KYDrawerController/KYDrawerController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KYDrawerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E499BBD2AAE0CF7CE2417CE8E6B3C9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDA881981A32AA92CA4EAEA103520F1 /* Pods-DomZdravljaUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DomZdravljaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DomZdravljaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235787AAA4D655650FA93DB4FB2D308A /* Build configuration list for PBXNativeTarget "KYDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E125AB642AFEAA8B6B2EEC07F460B3FD /* Debug */,
+				57B3B2DA8B4854C34198CF0586265FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33EAD56FB223F80792071C0656BC8BB3 /* Build configuration list for PBXNativeTarget "Pods-DomZdravljaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E499BBD2AAE0CF7CE2417CE8E6B3C9BC /* Debug */,
+				CF4B60950248EA1D6D32C7CD65EFB00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37BB9A3CB31BF721CA4004320E23FCFB /* Build configuration list for PBXNativeTarget "Reachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE6AE33942EB6E5ACCA9E4C7396DF01 /* Debug */,
+				D455F48ABDAF9D230B7EA5875CED0789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70632B64104C88BD666AEF13C3CFB96D /* Build configuration list for PBXNativeTarget "Pods-DomZdravlja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7B733D318EE61378D3CFF86E260690 /* Debug */,
+				BB9B7F1A32F69799B4DFBFD4F7F91E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C520111076A2645350263090A7C45153 /* Build configuration list for PBXNativeTarget "Pods-DomZdravljaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DE270091A33A880A181AB3E5BCB1FAF /* Debug */,
+				031354873E275DFD18375D16AF41C55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D9BF09765DE7FF87F33C3F669111CE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAABC1425D2DA4999C62A676C6E78406 /* Debug */,
+				29B6D328DF6A2948C3A120BC18ED06DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

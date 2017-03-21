@@ -15,6 +15,9 @@
 		089614F91E7FD11800F1AFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */; };
 		089615041E7FD11800F1AFDA /* DomZdravljaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089615031E7FD11800F1AFDA /* DomZdravljaTests.swift */; };
 		0896150F1E7FD11800F1AFDA /* DomZdravljaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */; };
+		43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */; };
+		588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */; };
+		E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		0896150A1E7FD11800F1AFDA /* DomZdravljaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomZdravljaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomZdravljaUITests.swift; sourceTree = "<group>"; };
 		089615101E7FD11800F1AFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
+		664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravlja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A81B20A49D6A8F24AF63C8 /* Pods-DomZdravljaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8063099DDDF2EF0552BA0541 /* Pods-DomZdravlja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravlja.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravlja/Pods-DomZdravlja.debug.xcconfig"; sourceTree = "<group>"; };
+		8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravljaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		908C5723E0C14495A86CDABA /* Pods-DomZdravlja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravlja.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravlja/Pods-DomZdravlja.release.xcconfig"; sourceTree = "<group>"; };
+		CE5A35744AC97F9C14786FB1 /* Pods-DomZdravljaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravljaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				089615021E7FD11800F1AFDA /* DomZdravljaTests */,
 				0896150D1E7FD11800F1AFDA /* DomZdravljaUITests */,
 				089614E91E7FD11800F1AFDA /* Products */,
+				E2ABDD747FC3D262DD33DB03 /* Pods */,
+				6CE8B08C383B8C63F3AFD2C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = DomZdravljaUITests;
 			sourceTree = "<group>";
 		};
+		6CE8B08C383B8C63F3AFD2C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */,
+				8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */,
+				E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2ABDD747FC3D262DD33DB03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8063099DDDF2EF0552BA0541 /* Pods-DomZdravlja.debug.xcconfig */,
+				908C5723E0C14495A86CDABA /* Pods-DomZdravlja.release.xcconfig */,
+				75A81B20A49D6A8F24AF63C8 /* Pods-DomZdravljaTests.debug.xcconfig */,
+				4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */,
+				CE5A35744AC97F9C14786FB1 /* Pods-DomZdravljaUITests.debug.xcconfig */,
+				4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 089615131E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravlja" */;
 			buildPhases = (
+				733EE820CE1A3CD6D8334DAF /* [CP] Check Pods Manifest.lock */,
 				089614E41E7FD11800F1AFDA /* Sources */,
 				089614E51E7FD11800F1AFDA /* Frameworks */,
 				089614E61E7FD11800F1AFDA /* Resources */,
+				A4A2D611C32C3B1976E05C87 /* [CP] Embed Pods Frameworks */,
+				458E7B5CA0475036DBE8ACB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 089615161E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaTests" */;
 			buildPhases = (
+				E32BBCC35299C7732336D896 /* [CP] Check Pods Manifest.lock */,
 				089614FB1E7FD11800F1AFDA /* Sources */,
 				089614FC1E7FD11800F1AFDA /* Frameworks */,
 				089614FD1E7FD11800F1AFDA /* Resources */,
+				F828A51F8FAB1A87FF3184BC /* [CP] Embed Pods Frameworks */,
+				DD74217338A9AD8D993A3836 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 089615191E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaUITests" */;
 			buildPhases = (
+				BE369A9258DB446275CC5F93 /* [CP] Check Pods Manifest.lock */,
 				089615061E7FD11800F1AFDA /* Sources */,
 				089615071E7FD11800F1AFDA /* Frameworks */,
 				089615081E7FD11800F1AFDA /* Resources */,
+				74596B3D8D48D13B2B23252A /* [CP] Embed Pods Frameworks */,
+				B3FF174CAF985ECBA86FE56C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +308,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		458E7B5CA0475036DBE8ACB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomZdravlja/Pods-DomZdravlja-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		733EE820CE1A3CD6D8334DAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74596B3D8D48D13B2B23252A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A2D611C32C3B1976E05C87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomZdravlja/Pods-DomZdravlja-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3FF174CAF985ECBA86FE56C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE369A9258DB446275CC5F93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD74217338A9AD8D993A3836 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32BBCC35299C7732336D896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F828A51F8FAB1A87FF3184BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		089614E41E7FD11800F1AFDA /* Sources */ = {
@@ -417,6 +604,7 @@
 		};
 		089615141E7FD11800F1AFDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8063099DDDF2EF0552BA0541 /* Pods-DomZdravlja.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4S4TN8CRJT;
@@ -434,6 +622,7 @@
 		};
 		089615151E7FD11800F1AFDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908C5723E0C14495A86CDABA /* Pods-DomZdravlja.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -449,6 +638,7 @@
 		};
 		089615171E7FD11800F1AFDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A81B20A49D6A8F24AF63C8 /* Pods-DomZdravljaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +654,7 @@
 		};
 		089615181E7FD11800F1AFDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +670,7 @@
 		};
 		0896151A1E7FD11800F1AFDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5A35744AC97F9C14786FB1 /* Pods-DomZdravljaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4S4TN8CRJT;
@@ -493,6 +685,7 @@
 		};
 		0896151B1E7FD11800F1AFDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 4S4TN8CRJT;
