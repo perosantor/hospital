@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614EB1E7FD11800F1AFDA /* AppDelegate.swift */; };
-		089614EE1E7FD11800F1AFDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614ED1E7FD11800F1AFDA /* ViewController.swift */; };
+		089614EE1E7FD11800F1AFDA /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614ED1E7FD11800F1AFDA /* MainScreenViewController.swift */; };
 		089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614EF1E7FD11800F1AFDA /* Main.storyboard */; };
 		089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */; };
 		089614F61E7FD11800F1AFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089614F51E7FD11800F1AFDA /* Assets.xcassets */; };
 		089614F91E7FD11800F1AFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */; };
 		089615041E7FD11800F1AFDA /* DomZdravljaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089615031E7FD11800F1AFDA /* DomZdravljaTests.swift */; };
 		0896150F1E7FD11800F1AFDA /* DomZdravljaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */; };
+		0896151D1E815D6F00F1AFDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896151C1E815D6F00F1AFDA /* Constants.swift */; };
 		43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */; };
 		588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */; };
 		E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */; };
@@ -40,7 +41,7 @@
 /* Begin PBXFileReference section */
 		089614E81E7FD11800F1AFDA /* DomZdravlja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DomZdravlja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089614EB1E7FD11800F1AFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		089614ED1E7FD11800F1AFDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		089614ED1E7FD11800F1AFDA /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		089614F01E7FD11800F1AFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		089614F31E7FD11800F1AFDA /* DomZdravlja.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DomZdravlja.xcdatamodel; sourceTree = "<group>"; };
 		089614F51E7FD11800F1AFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		0896150A1E7FD11800F1AFDA /* DomZdravljaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomZdravljaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomZdravljaUITests.swift; sourceTree = "<group>"; };
 		089615101E7FD11800F1AFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0896151C1E815D6F00F1AFDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
 		664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravlja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,12 +119,13 @@
 			isa = PBXGroup;
 			children = (
 				089614EB1E7FD11800F1AFDA /* AppDelegate.swift */,
-				089614ED1E7FD11800F1AFDA /* ViewController.swift */,
+				089614ED1E7FD11800F1AFDA /* MainScreenViewController.swift */,
 				089614EF1E7FD11800F1AFDA /* Main.storyboard */,
 				089614F51E7FD11800F1AFDA /* Assets.xcassets */,
 				089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */,
 				089614FA1E7FD11800F1AFDA /* Info.plist */,
 				089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */,
+				0896151C1E815D6F00F1AFDA /* Constants.swift */,
 			);
 			path = DomZdravlja;
 			sourceTree = "<group>";
@@ -337,7 +340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		74596B3D8D48D13B2B23252A /* [CP] Embed Pods Frameworks */ = {
@@ -397,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DD74217338A9AD8D993A3836 /* [CP] Copy Pods Resources */ = {
@@ -427,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F828A51F8FAB1A87FF3184BC /* [CP] Embed Pods Frameworks */ = {
@@ -453,8 +456,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */,
-				089614EE1E7FD11800F1AFDA /* ViewController.swift in Sources */,
+				089614EE1E7FD11800F1AFDA /* MainScreenViewController.swift in Sources */,
 				089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */,
+				0896151D1E815D6F00F1AFDA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +721,7 @@
 				089615151E7FD11800F1AFDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		089615161E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaTests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +730,7 @@
 				089615181E7FD11800F1AFDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		089615191E7FD11800F1AFDA /* Build configuration list for PBXNativeTarget "DomZdravljaUITests" */ = {
 			isa = XCConfigurationList;
@@ -733,6 +739,7 @@
 				0896151B1E7FD11800F1AFDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
