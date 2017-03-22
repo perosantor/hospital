@@ -20,12 +20,21 @@ class MainScreenViewController: UIViewController {
     
     @IBOutlet weak var buttonEmergencyCall: UIButton!
     
+    @IBOutlet weak var imageViewBackground: UIImageView!
     
     //MARK: - Lifecycle
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let overlay: UIView = UIView(frame: CGRect(x: self.imageViewBackground.frame.origin.x,
+                                                   y: self.imageViewBackground.frame.origin.y - 20,
+                                                   width: self.imageViewBackground.frame.size.width + 40,
+                                                   height: self.imageViewBackground.frame.size.height))
+        
+        overlay.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.2)
+        self.imageViewBackground.addSubview(overlay)
         
         self.setOptionButtonsAppearance()
         
@@ -41,7 +50,7 @@ class MainScreenViewController: UIViewController {
 
     
     @IBAction func handleTapOnOptionButton(_ sender: UIButton) {
-        
+
     }
     
     @IBAction func handleTapOnDrawerButton(_ sender: UIButton) {
