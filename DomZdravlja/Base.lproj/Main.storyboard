@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Screen View Controller-->
+        <!--Master View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MasterViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,158 +24,174 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rZb-70-3oA">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Co9-RY-Rox">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0k-p3-Aw7" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="220"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0k-p3-Aw7" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-8S-Kxd">
-                                                <rect key="frame" x="10" y="40" width="40" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="gr3-ed-OZy"/>
-                                                    <constraint firstAttribute="height" constant="40" id="k7f-BM-uUP"/>
-                                                </constraints>
-                                                <state key="normal" title="Button" image="Menu-Filled-100"/>
-                                                <connections>
-                                                    <action selector="handleTapOnDrawerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUD-Jh-S9z"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-WK-l44">
-                                                <rect key="frame" x="320" y="40" width="40" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="Sva-5z-BW7"/>
-                                                    <constraint firstAttribute="height" constant="40" id="usH-Ho-nxr"/>
-                                                </constraints>
-                                                <state key="normal" title="Button" image="phone"/>
-                                                <connections>
-                                                    <action selector="handleTapOnEmergencyCallButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOU-dY-q4J"/>
-                                                </connections>
-                                            </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="59n-H2-1Em">
-                                                <rect key="frame" x="0.0" y="120" width="375" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="cbN-ie-DCd"/>
-                                                </constraints>
-                                            </imageView>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eek-RF-76u">
-                                                <rect key="frame" x="0.0" y="245" width="375" height="75"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="75" id="4QX-jP-PZi"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                <state key="normal" title="ИНФО ЦЕНТАР"/>
-                                                <connections>
-                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAE-us-IXs"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLP-YU-uFh">
-                                                <rect key="frame" x="0.0" y="330" width="375" height="75"/>
-                                                <state key="normal" title="ВЕСТИ"/>
-                                                <connections>
-                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KR9-sk-C3P"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qv-a5-gzK">
-                                                <rect key="frame" x="0.0" y="415" width="375" height="75"/>
-                                                <state key="normal" title="ЕЛЕКТРОНСКО ЗАКАЗИВАЊЕ"/>
-                                                <connections>
-                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWG-ec-fVL"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-Vl-cHJ">
-                                                <rect key="frame" x="0.0" y="500" width="375" height="75"/>
-                                                <state key="normal" title="ДРУШТВЕНЕ МРЕЖЕ"/>
-                                                <connections>
-                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCf-Lq-4AW"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4m-G9-1qw">
-                                                <rect key="frame" x="0.0" y="585" width="375" height="75"/>
-                                                <state key="normal" title="САВЕТИ ЛЕКАРА"/>
-                                                <connections>
-                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xv-5i-K1l"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It1-ON-abO">
-                                                <rect key="frame" x="0.0" y="670" width="375" height="75"/>
-                                                <state key="normal" title="ИНДЕКС ТЕЛЕСНЕ МАСЕ"/>
-                                                <connections>
-                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXk-vO-768"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-8S-Kxd">
+                                        <rect key="frame" x="10" y="40" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstItem="hwN-Vl-cHJ" firstAttribute="top" secondItem="2Qv-a5-gzK" secondAttribute="bottom" constant="10" id="2f5-Mh-pxO"/>
-                                            <constraint firstAttribute="trailing" secondItem="It1-ON-abO" secondAttribute="trailing" id="A2W-QH-Uxz"/>
-                                            <constraint firstItem="h4m-G9-1qw" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="Bbk-x2-Ncs"/>
-                                            <constraint firstItem="2Qv-a5-gzK" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="C5T-86-084"/>
-                                            <constraint firstItem="QLP-YU-uFh" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="F4f-z5-hpb"/>
-                                            <constraint firstAttribute="trailing" secondItem="Eek-RF-76u" secondAttribute="trailing" id="ImY-yv-bAE"/>
-                                            <constraint firstItem="2Qv-a5-gzK" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="J3K-Jq-CSK"/>
-                                            <constraint firstAttribute="trailing" secondItem="2Qv-a5-gzK" secondAttribute="trailing" id="JUZ-o5-t2p"/>
-                                            <constraint firstItem="59n-H2-1Em" firstAttribute="top" secondItem="F0c-8S-Kxd" secondAttribute="bottom" constant="40" id="KTv-Hk-NMf"/>
-                                            <constraint firstItem="59n-H2-1Em" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="Mr2-Wf-KZE"/>
-                                            <constraint firstAttribute="bottom" secondItem="It1-ON-abO" secondAttribute="bottom" constant="10" id="OGJ-Vi-rUe"/>
-                                            <constraint firstItem="hwN-Vl-cHJ" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="PCf-ph-fHQ"/>
-                                            <constraint firstItem="Eek-RF-76u" firstAttribute="top" secondItem="59n-H2-1Em" secondAttribute="bottom" constant="25" id="RW8-8t-faq"/>
-                                            <constraint firstItem="It1-ON-abO" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="RnR-eo-wdk"/>
-                                            <constraint firstAttribute="trailing" secondItem="hwN-Vl-cHJ" secondAttribute="trailing" id="SgY-To-ji5"/>
-                                            <constraint firstItem="QLP-YU-uFh" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="V9F-gy-hxO"/>
-                                            <constraint firstAttribute="trailing" secondItem="59n-H2-1Em" secondAttribute="trailing" id="W57-AS-Clw"/>
-                                            <constraint firstItem="Eek-RF-76u" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="XB4-XN-gca"/>
-                                            <constraint firstAttribute="trailing" secondItem="QLP-YU-uFh" secondAttribute="trailing" id="aMW-Te-L77"/>
-                                            <constraint firstItem="QLP-YU-uFh" firstAttribute="top" secondItem="Eek-RF-76u" secondAttribute="bottom" constant="10" id="av1-yz-upD"/>
-                                            <constraint firstItem="h4m-G9-1qw" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="c6z-El-UK2"/>
-                                            <constraint firstItem="F0c-8S-Kxd" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" constant="10" id="dG3-1E-EBM"/>
-                                            <constraint firstAttribute="trailing" secondItem="h4m-G9-1qw" secondAttribute="trailing" id="fKb-O2-2Df"/>
-                                            <constraint firstItem="It1-ON-abO" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="gV2-dt-MHc"/>
-                                            <constraint firstItem="2Qv-a5-gzK" firstAttribute="top" secondItem="QLP-YU-uFh" secondAttribute="bottom" constant="10" id="ga7-iD-TPk"/>
-                                            <constraint firstItem="hwN-Vl-cHJ" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="ka8-9m-tdf"/>
-                                            <constraint firstItem="h4m-G9-1qw" firstAttribute="top" secondItem="hwN-Vl-cHJ" secondAttribute="bottom" constant="10" id="nK7-rC-bVI"/>
-                                            <constraint firstItem="It1-ON-abO" firstAttribute="top" secondItem="h4m-G9-1qw" secondAttribute="bottom" constant="10" id="nxK-NF-N3f"/>
-                                            <constraint firstItem="F0c-8S-Kxd" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="40" id="p7t-oB-pYu"/>
-                                            <constraint firstAttribute="trailing" secondItem="wQY-WK-l44" secondAttribute="trailing" constant="15" id="rrc-lR-gHS"/>
-                                            <constraint firstItem="wQY-WK-l44" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="40" id="vXZ-qT-g0T"/>
+                                            <constraint firstAttribute="width" constant="40" id="gr3-ed-OZy"/>
+                                            <constraint firstAttribute="height" constant="40" id="k7f-BM-uUP"/>
                                         </constraints>
-                                    </view>
+                                        <state key="normal" title="Button" image="Menu-Filled-100"/>
+                                        <connections>
+                                            <action selector="handleTapOnDrawerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mV-2R-VaV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-WK-l44">
+                                        <rect key="frame" x="320" y="40" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Sva-5z-BW7"/>
+                                            <constraint firstAttribute="height" constant="40" id="usH-Ho-nxr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="phone"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="59n-H2-1Em">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="cbN-ie-DCd"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="M0k-p3-Aw7" firstAttribute="top" secondItem="Co9-RY-Rox" secondAttribute="top" id="Ap6-BH-2PK"/>
-                                    <constraint firstAttribute="trailing" secondItem="M0k-p3-Aw7" secondAttribute="trailing" id="Fze-Ou-By1"/>
-                                    <constraint firstItem="M0k-p3-Aw7" firstAttribute="leading" secondItem="Co9-RY-Rox" secondAttribute="leading" id="bAi-yN-KTg"/>
-                                    <constraint firstAttribute="bottom" secondItem="M0k-p3-Aw7" secondAttribute="bottom" id="bRc-fQ-5yB"/>
+                                    <constraint firstAttribute="height" constant="220" id="634-OX-jMa"/>
+                                    <constraint firstItem="59n-H2-1Em" firstAttribute="top" secondItem="F0c-8S-Kxd" secondAttribute="bottom" constant="40" id="KTv-Hk-NMf"/>
+                                    <constraint firstItem="59n-H2-1Em" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="Mr2-Wf-KZE"/>
+                                    <constraint firstAttribute="trailing" secondItem="59n-H2-1Em" secondAttribute="trailing" id="W57-AS-Clw"/>
+                                    <constraint firstItem="F0c-8S-Kxd" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" constant="10" id="dG3-1E-EBM"/>
+                                    <constraint firstItem="F0c-8S-Kxd" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="40" id="p7t-oB-pYu"/>
+                                    <constraint firstAttribute="trailing" secondItem="wQY-WK-l44" secondAttribute="trailing" constant="15" id="rrc-lR-gHS"/>
+                                    <constraint firstItem="wQY-WK-l44" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="40" id="vXZ-qT-g0T"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Co9-RY-Rox" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M65-zK-AzM"/>
-                            <constraint firstAttribute="trailing" secondItem="Co9-RY-Rox" secondAttribute="trailing" id="SoK-KN-RAk"/>
+                            <constraint firstItem="M0k-p3-Aw7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BvB-c8-cHt"/>
+                            <constraint firstItem="M0k-p3-Aw7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Kpv-Q5-bC1"/>
                             <constraint firstItem="rZb-70-3oA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WHm-Sn-Pjn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Co9-RY-Rox" secondAttribute="bottom" id="fA2-it-Wq5"/>
-                            <constraint firstItem="M0k-p3-Aw7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gqg-yi-2d2"/>
                             <constraint firstItem="rZb-70-3oA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hCa-51-f7a"/>
-                            <constraint firstItem="Co9-RY-Rox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k2d-rC-pT3"/>
+                            <constraint firstAttribute="trailing" secondItem="M0k-p3-Aw7" secondAttribute="trailing" id="msL-1T-6bp"/>
                             <constraint firstAttribute="trailing" secondItem="rZb-70-3oA" secondAttribute="trailing" id="tQl-C1-KWj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rZb-70-3oA" secondAttribute="bottom" id="vOl-gE-ksB"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonDrawer" destination="F0c-8S-Kxd" id="mUU-Y3-8qi"/>
-                        <outlet property="buttonEmergencyCall" destination="wQY-WK-l44" id="bDC-6A-VuF"/>
-                        <outlet property="imageViewBackground" destination="rZb-70-3oA" id="4P6-0z-NnN"/>
-                        <outletCollection property="buttonsOption" destination="hwN-Vl-cHJ" collectionClass="NSMutableArray" id="lLp-Pj-PUG"/>
-                        <outletCollection property="buttonsOption" destination="Eek-RF-76u" collectionClass="NSMutableArray" id="Ku7-3V-oWi"/>
-                        <outletCollection property="buttonsOption" destination="QLP-YU-uFh" collectionClass="NSMutableArray" id="f08-su-QRB"/>
-                        <outletCollection property="buttonsOption" destination="2Qv-a5-gzK" collectionClass="NSMutableArray" id="zxP-1w-dGe"/>
-                        <outletCollection property="buttonsOption" destination="h4m-G9-1qw" collectionClass="NSMutableArray" id="EbG-8e-rfQ"/>
-                        <outletCollection property="buttonsOption" destination="It1-ON-abO" collectionClass="NSMutableArray" id="jiv-ea-Q3M"/>
+                        <outlet property="buttonDrawer" destination="F0c-8S-Kxd" id="51A-Mv-3Mc"/>
+                        <outlet property="buttonEmergencyCall" destination="wQY-WK-l44" id="gfH-RB-8Ae"/>
+                        <outlet property="imageViewBackground" destination="rZb-70-3oA" id="TXV-jt-I2e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+        <!--Main Options View Controller-->
+        <scene sceneID="blH-e4-3DQ">
+            <objects>
+                <viewController storyboardIdentifier="idMainOptionsViewController" id="9Fh-mR-jsL" customClass="MainOptionsViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tlE-S8-wbn"/>
+                        <viewControllerLayoutGuide type="bottom" id="aXi-pr-b1w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AUG-6B-mqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbP-cT-H0S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHs-HJ-1Ng">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-Yi-hOd">
+                                                <rect key="frame" x="0.0" y="425" width="375" height="75"/>
+                                                <state key="normal" title="ИНДЕКС ТЕЛЕСНЕ МАСЕ"/>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-NW-XN5">
+                                                <rect key="frame" x="0.0" y="170" width="375" height="75"/>
+                                                <state key="normal" title="ЕЛЕКТРОНСКО ЗАКАЗИВАЊЕ"/>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-y5-JEr">
+                                                <rect key="frame" x="0.0" y="340" width="375" height="75"/>
+                                                <state key="normal" title="САВЕТИ ЛЕКАРА"/>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-r5-j0k">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="0Hr-n9-0UE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <state key="normal" title="ИНФО ЦЕНТАР"/>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQP-F0-rle">
+                                                <rect key="frame" x="0.0" y="85" width="375" height="75"/>
+                                                <state key="normal" title="ВЕСТИ"/>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-wK-vaF">
+                                                <rect key="frame" x="0.0" y="255" width="375" height="75"/>
+                                                <state key="normal" title="ДРУШТВЕНЕ МРЕЖЕ"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="top" secondItem="BNO-NW-XN5" secondAttribute="bottom" constant="10" id="1Gn-nF-MdS"/>
+                                            <constraint firstItem="BNO-NW-XN5" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="72L-hD-HqS"/>
+                                            <constraint firstItem="BNO-NW-XN5" firstAttribute="top" secondItem="TQP-F0-rle" secondAttribute="bottom" constant="10" id="86X-Dp-vPo"/>
+                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="EwJ-s7-K04"/>
+                                            <constraint firstItem="AZY-y5-JEr" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="F14-AO-h2Z"/>
+                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="FZF-Xp-Rbp"/>
+                                            <constraint firstItem="TQP-F0-rle" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="RTB-C7-Obc"/>
+                                            <constraint firstItem="TQP-F0-rle" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="SUu-yg-YHI"/>
+                                            <constraint firstItem="AZY-y5-JEr" firstAttribute="top" secondItem="IDf-wK-vaF" secondAttribute="bottom" constant="10" id="YT4-de-N8m"/>
+                                            <constraint firstItem="n3u-Yi-hOd" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="ZkH-EW-0gZ"/>
+                                            <constraint firstItem="TQP-F0-rle" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="aGo-Ra-iqU"/>
+                                            <constraint firstItem="BNO-NW-XN5" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="d1N-nA-wTe"/>
+                                            <constraint firstItem="sSB-r5-j0k" firstAttribute="leading" secondItem="wHs-HJ-1Ng" secondAttribute="leading" id="fYq-EQ-Hjj"/>
+                                            <constraint firstItem="AZY-y5-JEr" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="hpe-wT-3JT"/>
+                                            <constraint firstItem="n3u-Yi-hOd" firstAttribute="top" secondItem="AZY-y5-JEr" secondAttribute="bottom" constant="10" id="ipR-KJ-zRT"/>
+                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="js3-By-fw8"/>
+                                            <constraint firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="k7s-yf-r54"/>
+                                            <constraint firstItem="TQP-F0-rle" firstAttribute="top" secondItem="sSB-r5-j0k" secondAttribute="bottom" constant="10" id="nk6-tq-s2q"/>
+                                            <constraint firstItem="n3u-Yi-hOd" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="obI-JG-YO0"/>
+                                            <constraint firstItem="n3u-Yi-hOd" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="rRU-mN-OJE"/>
+                                            <constraint firstItem="AZY-y5-JEr" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="rX9-7D-9TH"/>
+                                            <constraint firstItem="sSB-r5-j0k" firstAttribute="top" secondItem="wHs-HJ-1Ng" secondAttribute="top" id="urQ-5T-VT3"/>
+                                            <constraint firstAttribute="bottom" secondItem="n3u-Yi-hOd" secondAttribute="bottom" id="v8o-NJ-vME"/>
+                                            <constraint firstItem="BNO-NW-XN5" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="ytW-m1-TBB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wHs-HJ-1Ng" secondAttribute="trailing" id="aXv-2o-1OS"/>
+                                    <constraint firstAttribute="bottom" secondItem="wHs-HJ-1Ng" secondAttribute="bottom" id="rGV-VM-mjS"/>
+                                    <constraint firstItem="wHs-HJ-1Ng" firstAttribute="top" secondItem="MbP-cT-H0S" secondAttribute="top" id="w3S-53-yTk"/>
+                                    <constraint firstItem="wHs-HJ-1Ng" firstAttribute="leading" secondItem="MbP-cT-H0S" secondAttribute="leading" id="wha-tW-2OK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aXi-pr-b1w" firstAttribute="top" secondItem="MbP-cT-H0S" secondAttribute="bottom" id="8id-SJ-nj8"/>
+                            <constraint firstAttribute="trailing" secondItem="MbP-cT-H0S" secondAttribute="trailing" id="B4q-Qf-rew"/>
+                            <constraint firstItem="MbP-cT-H0S" firstAttribute="leading" secondItem="AUG-6B-mqs" secondAttribute="leading" id="deR-iS-wLN"/>
+                            <constraint firstItem="wHs-HJ-1Ng" firstAttribute="width" secondItem="AUG-6B-mqs" secondAttribute="width" id="edl-fe-l0E"/>
+                            <constraint firstItem="MbP-cT-H0S" firstAttribute="top" secondItem="tlE-S8-wbn" secondAttribute="bottom" id="xmZ-BR-mVD"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outletCollection property="buttonsOption" destination="sSB-r5-j0k" collectionClass="NSMutableArray" id="iX4-EY-dJa"/>
+                        <outletCollection property="buttonsOption" destination="TQP-F0-rle" collectionClass="NSMutableArray" id="eX6-Kw-srg"/>
+                        <outletCollection property="buttonsOption" destination="BNO-NW-XN5" collectionClass="NSMutableArray" id="B70-Kl-9Xg"/>
+                        <outletCollection property="buttonsOption" destination="IDf-wK-vaF" collectionClass="NSMutableArray" id="fAs-on-nxW"/>
+                        <outletCollection property="buttonsOption" destination="AZY-y5-JEr" collectionClass="NSMutableArray" id="nkT-4J-iIH"/>
+                        <outletCollection property="buttonsOption" destination="n3u-Yi-hOd" collectionClass="NSMutableArray" id="tkr-K2-NKd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpI-Jl-SYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="136.28185907046478"/>
         </scene>
     </scenes>
     <resources>
