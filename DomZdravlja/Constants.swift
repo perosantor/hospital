@@ -11,7 +11,7 @@ import Foundation
 
 struct Constants {
     struct Color {
-        static let CustomRed = UIColor(colorLiteralRed: 188/255, green: 0/255, blue: 10, alpha: 1)
+        static let CustomRed = UIColor(colorLiteralRed: 188/255, green: 0/255, blue: 10/255, alpha: 1)
     }
     
     struct Path {

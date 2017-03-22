@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,60 +24,85 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Co9-RY-Rox">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0k-p3-Aw7" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="725"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0k-p3-Aw7" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pS0-pY-Raw">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="705"/>
+                                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pS0-pY-Raw">
+                                                <rect key="frame" x="0.0" y="20" width="375" height="735"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-8S-Kxd">
-                                                <rect key="frame" x="10" y="25" width="50" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-8S-Kxd">
+                                                <rect key="frame" x="10" y="40" width="40" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="gr3-ed-OZy"/>
-                                                    <constraint firstAttribute="height" constant="50" id="k7f-BM-uUP"/>
+                                                    <constraint firstAttribute="width" constant="40" id="gr3-ed-OZy"/>
+                                                    <constraint firstAttribute="height" constant="40" id="k7f-BM-uUP"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Button" image="Menu-Filled-100"/>
+                                                <connections>
+                                                    <action selector="handleTapOnDrawerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUD-Jh-S9z"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-WK-l44">
-                                                <rect key="frame" x="315" y="25" width="50" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-WK-l44">
+                                                <rect key="frame" x="320" y="40" width="40" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="Sva-5z-BW7"/>
-                                                    <constraint firstAttribute="height" constant="50" id="usH-Ho-nxr"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Sva-5z-BW7"/>
+                                                    <constraint firstAttribute="height" constant="40" id="usH-Ho-nxr"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Button" image="phone"/>
+                                                <connections>
+                                                    <action selector="handleTapOnEmergencyCallButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOU-dY-q4J"/>
+                                                </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="59n-H2-1Em">
-                                                <rect key="frame" x="0.0" y="100" width="375" height="100"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="59n-H2-1Em">
+                                                <rect key="frame" x="0.0" y="120" width="375" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="cbN-ie-DCd"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eek-RF-76u">
-                                                <rect key="frame" x="0.0" y="225" width="375" height="70"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eek-RF-76u">
+                                                <rect key="frame" x="0.0" y="245" width="375" height="75"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="4QX-jP-PZi"/>
+                                                    <constraint firstAttribute="height" constant="75" id="4QX-jP-PZi"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <state key="normal" title="ИНФО ЦЕНТАР"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAE-us-IXs"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLP-YU-uFh">
-                                                <rect key="frame" x="0.0" y="305" width="375" height="70"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLP-YU-uFh">
+                                                <rect key="frame" x="0.0" y="330" width="375" height="75"/>
+                                                <state key="normal" title="ВЕСТИ"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KR9-sk-C3P"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qv-a5-gzK">
-                                                <rect key="frame" x="0.0" y="385" width="375" height="70"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qv-a5-gzK">
+                                                <rect key="frame" x="0.0" y="415" width="375" height="75"/>
+                                                <state key="normal" title="ЕЛЕКТРОНСКО ЗАКАЗИВАЊЕ"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWG-ec-fVL"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-Vl-cHJ">
-                                                <rect key="frame" x="0.0" y="465" width="375" height="70"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-Vl-cHJ">
+                                                <rect key="frame" x="0.0" y="500" width="375" height="75"/>
+                                                <state key="normal" title="ДРУШТВЕНЕ МРЕЖЕ"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCf-Lq-4AW"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4m-G9-1qw">
-                                                <rect key="frame" x="0.0" y="545" width="375" height="70"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4m-G9-1qw">
+                                                <rect key="frame" x="0.0" y="585" width="375" height="75"/>
+                                                <state key="normal" title="САВЕТИ ЛЕКАРА"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xv-5i-K1l"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It1-ON-abO">
-                                                <rect key="frame" x="0.0" y="625" width="375" height="70"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It1-ON-abO">
+                                                <rect key="frame" x="0.0" y="670" width="375" height="75"/>
+                                                <state key="normal" title="ИНДЕКС ТЕЛЕСНЕ МАСЕ"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXk-vO-768"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,7 +115,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Eek-RF-76u" secondAttribute="trailing" id="ImY-yv-bAE"/>
                                             <constraint firstItem="2Qv-a5-gzK" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="J3K-Jq-CSK"/>
                                             <constraint firstAttribute="trailing" secondItem="2Qv-a5-gzK" secondAttribute="trailing" id="JUZ-o5-t2p"/>
-                                            <constraint firstItem="59n-H2-1Em" firstAttribute="top" secondItem="F0c-8S-Kxd" secondAttribute="bottom" constant="25" id="KTv-Hk-NMf"/>
+                                            <constraint firstItem="59n-H2-1Em" firstAttribute="top" secondItem="F0c-8S-Kxd" secondAttribute="bottom" constant="40" id="KTv-Hk-NMf"/>
                                             <constraint firstItem="59n-H2-1Em" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="Mr2-Wf-KZE"/>
                                             <constraint firstAttribute="bottom" secondItem="It1-ON-abO" secondAttribute="bottom" constant="10" id="OGJ-Vi-rUe"/>
                                             <constraint firstItem="hwN-Vl-cHJ" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="PCf-ph-fHQ"/>
@@ -110,13 +135,13 @@
                                             <constraint firstAttribute="trailing" secondItem="h4m-G9-1qw" secondAttribute="trailing" id="fKb-O2-2Df"/>
                                             <constraint firstItem="It1-ON-abO" firstAttribute="leading" secondItem="M0k-p3-Aw7" secondAttribute="leading" id="gV2-dt-MHc"/>
                                             <constraint firstItem="2Qv-a5-gzK" firstAttribute="top" secondItem="QLP-YU-uFh" secondAttribute="bottom" constant="10" id="ga7-iD-TPk"/>
-                                            <constraint firstItem="pS0-pY-Raw" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" id="hk8-MV-SLq"/>
+                                            <constraint firstItem="pS0-pY-Raw" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="20" id="hk8-MV-SLq"/>
                                             <constraint firstItem="hwN-Vl-cHJ" firstAttribute="height" secondItem="Eek-RF-76u" secondAttribute="height" id="ka8-9m-tdf"/>
                                             <constraint firstItem="h4m-G9-1qw" firstAttribute="top" secondItem="hwN-Vl-cHJ" secondAttribute="bottom" constant="10" id="nK7-rC-bVI"/>
                                             <constraint firstItem="It1-ON-abO" firstAttribute="top" secondItem="h4m-G9-1qw" secondAttribute="bottom" constant="10" id="nxK-NF-N3f"/>
-                                            <constraint firstItem="F0c-8S-Kxd" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="25" id="p7t-oB-pYu"/>
-                                            <constraint firstAttribute="trailing" secondItem="wQY-WK-l44" secondAttribute="trailing" constant="10" id="rrc-lR-gHS"/>
-                                            <constraint firstItem="wQY-WK-l44" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="25" id="vXZ-qT-g0T"/>
+                                            <constraint firstItem="F0c-8S-Kxd" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="40" id="p7t-oB-pYu"/>
+                                            <constraint firstAttribute="trailing" secondItem="wQY-WK-l44" secondAttribute="trailing" constant="15" id="rrc-lR-gHS"/>
+                                            <constraint firstItem="wQY-WK-l44" firstAttribute="top" secondItem="M0k-p3-Aw7" secondAttribute="top" constant="40" id="vXZ-qT-g0T"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -137,10 +162,26 @@
                             <constraint firstItem="Co9-RY-Rox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k2d-rC-pT3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonDrawer" destination="F0c-8S-Kxd" id="mUU-Y3-8qi"/>
+                        <outlet property="buttonEmergencyCall" destination="wQY-WK-l44" id="bDC-6A-VuF"/>
+                        <outletCollection property="buttonsOption" destination="hwN-Vl-cHJ" collectionClass="NSMutableArray" id="lLp-Pj-PUG"/>
+                        <outletCollection property="buttonsOption" destination="Eek-RF-76u" collectionClass="NSMutableArray" id="Ku7-3V-oWi"/>
+                        <outletCollection property="buttonsOption" destination="QLP-YU-uFh" collectionClass="NSMutableArray" id="f08-su-QRB"/>
+                        <outletCollection property="buttonsOption" destination="2Qv-a5-gzK" collectionClass="NSMutableArray" id="zxP-1w-dGe"/>
+                        <outletCollection property="buttonsOption" destination="h4m-G9-1qw" collectionClass="NSMutableArray" id="EbG-8e-rfQ"/>
+                        <outletCollection property="buttonsOption" destination="It1-ON-abO" collectionClass="NSMutableArray" id="jiv-ea-Q3M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Menu-Filled-100" width="100" height="100"/>
+        <image name="background" width="146" height="258"/>
+        <image name="logo" width="568" height="139"/>
+        <image name="phone" width="313" height="313"/>
+    </resources>
 </document>
