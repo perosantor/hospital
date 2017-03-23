@@ -7,20 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
+import KYDrawerController
 
 class MasterViewController: UIViewController {
 
-    
-    //MARK: - Outlets
-    
-    @IBOutlet weak var buttonDrawer: UIButton!
-    
-    @IBOutlet weak var buttonEmergencyCall: UIButton!
-    
-    @IBOutlet weak var imageViewBackground: UIImageView!
-    
-    
-    //MARK: -
+    private var currentChildViewController : UIViewController?
     
     private lazy var mainOptionsViewController: MainOptionsViewController = {
         // Load Storyboard
@@ -34,6 +26,20 @@ class MasterViewController: UIViewController {
         
         return viewController
     }()
+    
+    
+    //MARK: - Outlets
+    
+    
+    @IBOutlet weak var buttonDrawer: UIButton!
+    
+    @IBOutlet weak var buttonEmergencyCall: UIButton!
+    
+    @IBOutlet weak var imageViewBackground: UIImageView!
+    
+    
+    //MARK: - Utilities
+    
     
     private func add(asChildViewController viewController: UIViewController) {
         // Add Child View Controller
@@ -52,6 +58,8 @@ class MasterViewController: UIViewController {
         
         // Notify Child View Controller
         viewController.didMove(toParentViewController: self)
+        
+        currentChildViewController = viewController
     }
     
     private func remove(asChildViewController viewController: UIViewController) {
@@ -65,12 +73,12 @@ class MasterViewController: UIViewController {
         viewController.removeFromParentViewController()
     }
     
+    
     //MARK: - Lifecycle
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setupView()
     }
     
@@ -97,8 +105,18 @@ class MasterViewController: UIViewController {
     
     //MARK: - Actions
 
+    let speechSynthesizer = AVSpeechSynthesizer()
     @IBAction func handleTapOnDrawerButton(_ sender: UIButton) {
-        self.remove(asChildViewController: mainOptionsViewController)
+        //self.remove(asChildViewController: mainOptionsViewController)
+        if ((self.parent as? KYDrawerController) != nil) {
+            let drawer = self.parent as! KYDrawerController
+            drawer.setDrawerState(KYDrawerController.DrawerState.opened, animated: true)
+        }
+        else {
+            // obj is not a string array
+        }
+    
+       
     }
     
     
