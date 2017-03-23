@@ -18,4 +18,30 @@ struct Constants {
         static let Documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         static let Tmp = NSTemporaryDirectory()
     }
+    
+    struct DrawerButtonTitle {
+        static let MainPage = "Главна страница"
+        static let InfoCenter = "Инфо центар"
+        static let News = "Вести"
+        static let Scheduling = "Електронско заказивање"
+        static let CheckInsurance = "Провера здравственог осигурања"
+        static let BodyMass = "Индекс телесне масе"
+        static let SocialNetworks = "Друштвене мреже"
+        static let Vaccines = "Вакцинација"
+        static let MissionAndVision = "Мисија и визија"
+        
+        static let Departments = "Службе"
+        static let ScreeningRectal = "Колоректални скрининг"
+        static let ScreeningUterus = "Скрининг грлића материце"
+        static let ScreeningTeat = "Скрининг рака дојке"
+        static let Feedback = "Замерке/Похвале"
+        static let PatientRights = "Права пацијената"
+        static let PatientDuties = "Дужности пацијената"
+        static let Contact = "Контакт"
+        static let Settings = "Подешавања"
+    }
+    
+    struct Font {
+        static let ButtonTitle = UIFont.systemFont(ofSize: 17, weight: UIFontWeightRegular)
+    }
 }

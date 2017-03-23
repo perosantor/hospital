@@ -17,7 +17,7 @@
 		0896150F1E7FD11800F1AFDA /* DomZdravljaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896150E1E7FD11800F1AFDA /* DomZdravljaUITests.swift */; };
 		0896151D1E815D6F00F1AFDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896151C1E815D6F00F1AFDA /* Constants.swift */; };
 		08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944371E82AAB9001B201B /* MainOptionsViewController.swift */; };
-		08B9443A1E82E6B5001B201B /* DrawerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944391E82E6B5001B201B /* DrawerTableViewController.swift */; };
+		08B9443C1E83DB62001B201B /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9443B1E83DB62001B201B /* DrawerViewController.swift */; };
 		43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */; };
 		588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */; };
 		E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */; };
@@ -57,7 +57,7 @@
 		089615101E7FD11800F1AFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0896151C1E815D6F00F1AFDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		08B944371E82AAB9001B201B /* MainOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainOptionsViewController.swift; sourceTree = "<group>"; };
-		08B944391E82E6B5001B201B /* DrawerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableViewController.swift; sourceTree = "<group>"; };
+		08B9443B1E83DB62001B201B /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
 		664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravlja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +131,7 @@
 				089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */,
 				0896151C1E815D6F00F1AFDA /* Constants.swift */,
 				08B944371E82AAB9001B201B /* MainOptionsViewController.swift */,
-				08B944391E82E6B5001B201B /* DrawerTableViewController.swift */,
+				08B9443B1E83DB62001B201B /* DrawerViewController.swift */,
 			);
 			path = DomZdravlja;
 			sourceTree = "<group>";
@@ -463,10 +463,10 @@
 			files = (
 				089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */,
 				08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */,
-				08B9443A1E82E6B5001B201B /* DrawerTableViewController.swift in Sources */,
 				089614EE1E7FD11800F1AFDA /* MasterViewController.swift in Sources */,
 				089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */,
 				0896151D1E815D6F00F1AFDA /* Constants.swift in Sources */,
+				08B9443C1E83DB62001B201B /* DrawerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
