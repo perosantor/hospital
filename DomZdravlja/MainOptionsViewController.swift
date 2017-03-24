@@ -21,7 +21,7 @@ class MainOptionsViewController: UIViewController {
             button.backgroundColor = Constants.Color.CustomRed
             button.alpha = 0.8
             button.setTitleColor(UIColor.white, for: .normal)
-            button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: UIFontWeightRegular)
+            button.titleLabel?.font = Constants.Font.ButtonTitle
         }
     }
     

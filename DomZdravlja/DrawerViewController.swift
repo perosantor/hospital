@@ -7,30 +7,31 @@
 //
 
 import UIKit
+import KYDrawerController
 
 class DrawerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
     @IBOutlet weak var tableViewDrawerOptions: UITableView!
     
-    let names = [Constants.DrawerButtonTitle.MainPage,
-                 Constants.DrawerButtonTitle.InfoCenter,
-                 Constants.DrawerButtonTitle.News,
-                 Constants.DrawerButtonTitle.Scheduling,
-                 Constants.DrawerButtonTitle.CheckInsurance,
-                 Constants.DrawerButtonTitle.BodyMass,
-                 Constants.DrawerButtonTitle.SocialNetworks,
-                 Constants.DrawerButtonTitle.Vaccines,
-                 Constants.DrawerButtonTitle.MissionAndVision,
-                 Constants.DrawerButtonTitle.Departments,
-                 Constants.DrawerButtonTitle.ScreeningRectal,
-                 Constants.DrawerButtonTitle.ScreeningUterus,
-                 Constants.DrawerButtonTitle.ScreeningTeat,
-                 Constants.DrawerButtonTitle.Feedback,
-                 Constants.DrawerButtonTitle.PatientRights,
-                 Constants.DrawerButtonTitle.PatientDuties,
-                 Constants.DrawerButtonTitle.Contact,
-                 Constants.DrawerButtonTitle.Settings]
+    let names = [Constants.View.Main,
+                 Constants.View.InfoCenter,
+                 Constants.View.News,
+                 Constants.View.Scheduling,
+                 Constants.View.CheckInsurance,
+                 Constants.View.BodyMass,
+                 Constants.View.SocialNetworks,
+                 Constants.View.Vaccines,
+                 Constants.View.MissionAndVision,
+                 Constants.View.Departments,
+                 Constants.View.ScreeningRectal,
+                 Constants.View.ScreeningUterus,
+                 Constants.View.ScreeningTeat,
+                 Constants.View.Feedback,
+                 Constants.View.PatientRights,
+                 Constants.View.PatientDuties,
+                 Constants.View.Contact,
+                 Constants.View.Settings]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +71,16 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("")
+        var master: MasterViewController?
+        if ((self.parent as? KYDrawerController) != nil) {
+            let drawer = self.parent as! KYDrawerController
+            if ((drawer.childViewControllers[0] as? MasterViewController) != nil ) {
+                master = drawer.childViewControllers[0] as? MasterViewController
+                master?.load(viewWithType: names[indexPath.row])
+            }
+            drawer.setDrawerState(.closed, animated: true)
+        }
+        print("\(indexPath.row)")
     }
 
     /*

@@ -19,8 +19,8 @@ struct Constants {
         static let Tmp = NSTemporaryDirectory()
     }
     
-    struct DrawerButtonTitle {
-        static let MainPage = "Главна страница"
+    struct View {
+        static let Main = "Главна страница"
         static let InfoCenter = "Инфо центар"
         static let News = "Вести"
         static let Scheduling = "Електронско заказивање"
@@ -41,6 +41,12 @@ struct Constants {
         static let Settings = "Подешавања"
     }
     
+    
+//    static let pair = [
+//        View.Main : "MainOptionsViewController",
+//        View.InfoCenter : "InfoCenterViewController"
+//    ]
+//    
     struct Font {
         static let ButtonTitle = UIFont.systemFont(ofSize: 17, weight: UIFontWeightRegular)
     }

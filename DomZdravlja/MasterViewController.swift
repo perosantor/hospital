@@ -15,18 +15,31 @@ class MasterViewController: UIViewController {
     private var currentChildViewController : UIViewController?
     
     private lazy var mainOptionsViewController: MainOptionsViewController = {
+        
+        return self.instantiateViewController(storyboardId: "idMainOptionsViewController") as! MainOptionsViewController
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        var viewController = storyboard.instantiateViewController(withIdentifier: "idMainOptionsViewController") as! MainOptionsViewController
+//        
+//        // Add View Controller as Child View Controller
+//        self.add(asChildViewController: viewController)
+//        
+//        return viewController
+    }()
+    
+    
+    private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         // Instantiate View Controller
-        var viewController = storyboard.instantiateViewController(withIdentifier: "idMainOptionsViewController") as! MainOptionsViewController
+        let viewController = storyboard.instantiateViewController(withIdentifier: storyboardId)
         
         // Add View Controller as Child View Controller
         self.add(asChildViewController: viewController)
         
         return viewController
-    }()
-    
+    }
     
     //MARK: - Outlets
     
@@ -36,6 +49,22 @@ class MasterViewController: UIViewController {
     @IBOutlet weak var buttonEmergencyCall: UIButton!
     
     @IBOutlet weak var imageViewBackground: UIImageView!
+    
+    
+    //MARK: - Public methods
+    
+    
+    public func load(viewWithType view:String) {
+        self.remove(asChildViewController: currentChildViewController!)
+        switch view {
+        case Constants.View.Main:
+            self.add(asChildViewController: mainOptionsViewController)
+            break
+        default:
+            print("error")
+        }
+        
+    }
     
     
     //MARK: - Utilities
@@ -105,9 +134,8 @@ class MasterViewController: UIViewController {
     
     //MARK: - Actions
 
-    let speechSynthesizer = AVSpeechSynthesizer()
     @IBAction func handleTapOnDrawerButton(_ sender: UIButton) {
-        //self.remove(asChildViewController: mainOptionsViewController)
+        
         if ((self.parent as? KYDrawerController) != nil) {
             let drawer = self.parent as! KYDrawerController
             drawer.setDrawerState(KYDrawerController.DrawerState.opened, animated: true)
