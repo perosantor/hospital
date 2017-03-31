@@ -18,6 +18,11 @@
 		0896151D1E815D6F00F1AFDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896151C1E815D6F00F1AFDA /* Constants.swift */; };
 		08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944371E82AAB9001B201B /* MainOptionsViewController.swift */; };
 		08B9443C1E83DB62001B201B /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9443B1E83DB62001B201B /* DrawerViewController.swift */; };
+		08B944401E854B64001B201B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9443F1E854B64001B201B /* NewsViewController.swift */; };
+		08B944431E856196001B201B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944411E856196001B201B /* NewsTableViewCell.swift */; };
+		08B944441E856196001B201B /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B944421E856196001B201B /* NewsTableViewCell.xib */; };
+		08B944461E85690D001B201B /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944451E85690D001B201B /* News.swift */; };
+		08B944481E8886F8001B201B /* CommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944471E8886F8001B201B /* CommunicationService.swift */; };
 		43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */; };
 		588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */; };
 		E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */; };
@@ -58,6 +63,11 @@
 		0896151C1E815D6F00F1AFDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		08B944371E82AAB9001B201B /* MainOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainOptionsViewController.swift; sourceTree = "<group>"; };
 		08B9443B1E83DB62001B201B /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		08B9443F1E854B64001B201B /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		08B944411E856196001B201B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		08B944421E856196001B201B /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		08B944451E85690D001B201B /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		08B944471E8886F8001B201B /* CommunicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationService.swift; sourceTree = "<group>"; };
 		4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
 		664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravlja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,16 +132,12 @@
 		089614EA1E7FD11800F1AFDA /* DomZdravlja */ = {
 			isa = PBXGroup;
 			children = (
-				089614EB1E7FD11800F1AFDA /* AppDelegate.swift */,
-				089614ED1E7FD11800F1AFDA /* MasterViewController.swift */,
-				089614EF1E7FD11800F1AFDA /* Main.storyboard */,
-				089614F51E7FD11800F1AFDA /* Assets.xcassets */,
-				089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */,
-				089614FA1E7FD11800F1AFDA /* Info.plist */,
-				089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */,
-				0896151C1E815D6F00F1AFDA /* Constants.swift */,
-				08B944371E82AAB9001B201B /* MainOptionsViewController.swift */,
-				08B9443B1E83DB62001B201B /* DrawerViewController.swift */,
+				08B9444A1E88881D001B201B /* Application */,
+				08B9444C1E888842001B201B /* ViewControllers */,
+				08B9444D1E888851001B201B /* Helpers */,
+				08B9444E1E88885B001B201B /* Views */,
+				08B9444B1E888829001B201B /* Models */,
+				08B944491E888803001B201B /* Services */,
 			);
 			path = DomZdravlja;
 			sourceTree = "<group>";
@@ -152,6 +158,63 @@
 				089615101E7FD11800F1AFDA /* Info.plist */,
 			);
 			path = DomZdravljaUITests;
+			sourceTree = "<group>";
+		};
+		08B944491E888803001B201B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				08B944471E8886F8001B201B /* CommunicationService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		08B9444A1E88881D001B201B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				089614EB1E7FD11800F1AFDA /* AppDelegate.swift */,
+				089614EF1E7FD11800F1AFDA /* Main.storyboard */,
+				089614F51E7FD11800F1AFDA /* Assets.xcassets */,
+				089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */,
+				089614FA1E7FD11800F1AFDA /* Info.plist */,
+				089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		08B9444B1E888829001B201B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08B944451E85690D001B201B /* News.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		08B9444C1E888842001B201B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				089614ED1E7FD11800F1AFDA /* MasterViewController.swift */,
+				08B944371E82AAB9001B201B /* MainOptionsViewController.swift */,
+				08B9443B1E83DB62001B201B /* DrawerViewController.swift */,
+				08B9443F1E854B64001B201B /* NewsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		08B9444D1E888851001B201B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0896151C1E815D6F00F1AFDA /* Constants.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		08B9444E1E88885B001B201B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08B944411E856196001B201B /* NewsTableViewCell.swift */,
+				08B944421E856196001B201B /* NewsTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		6CE8B08C383B8C63F3AFD2C0 /* Frameworks */ = {
@@ -298,6 +361,7 @@
 			files = (
 				089614F91E7FD11800F1AFDA /* LaunchScreen.storyboard in Resources */,
 				089614F61E7FD11800F1AFDA /* Assets.xcassets in Resources */,
+				08B944441E856196001B201B /* NewsTableViewCell.xib in Resources */,
 				089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,8 +527,12 @@
 			files = (
 				089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */,
 				08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */,
+				08B944431E856196001B201B /* NewsTableViewCell.swift in Sources */,
+				08B944461E85690D001B201B /* News.swift in Sources */,
+				08B944481E8886F8001B201B /* CommunicationService.swift in Sources */,
 				089614EE1E7FD11800F1AFDA /* MasterViewController.swift in Sources */,
 				089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */,
+				08B944401E854B64001B201B /* NewsViewController.swift in Sources */,
 				0896151D1E815D6F00F1AFDA /* Constants.swift in Sources */,
 				08B9443C1E83DB62001B201B /* DrawerViewController.swift in Sources */,
 			);

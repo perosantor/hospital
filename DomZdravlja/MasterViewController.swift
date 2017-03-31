@@ -15,18 +15,12 @@ class MasterViewController: UIViewController {
     private var currentChildViewController : UIViewController?
     
     private lazy var mainOptionsViewController: MainOptionsViewController = {
-        
         return self.instantiateViewController(storyboardId: "idMainOptionsViewController") as! MainOptionsViewController
-        
-//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//        var viewController = storyboard.instantiateViewController(withIdentifier: "idMainOptionsViewController") as! MainOptionsViewController
-//        
-//        // Add View Controller as Child View Controller
-//        self.add(asChildViewController: viewController)
-//        
-//        return viewController
     }()
     
+    private lazy var newsViewController: NewsViewController = {
+        return self.instantiateViewController(storyboardId: "idNewsViewController") as! NewsViewController
+    } ()
     
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard

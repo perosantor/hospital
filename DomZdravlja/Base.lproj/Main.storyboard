@@ -262,6 +262,50 @@
             </objects>
             <point key="canvasLocation" x="876" y="136.28185907046478"/>
         </scene>
+        <!--News View Controller-->
+        <scene sceneID="ujN-kO-DuO">
+            <objects>
+                <viewController storyboardIdentifier="idNewsViewController" id="srS-z2-Dgm" customClass="NewsViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Eg-lF-g39"/>
+                        <viewControllerLayoutGuide type="bottom" id="hN7-Zt-3LJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4iz-yJ-mdk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zeX-vO-Mai">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellNews" id="Ufw-WO-wFr">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ufw-WO-wFr" id="7ZP-pj-i6B">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hN7-Zt-3LJ" firstAttribute="top" secondItem="zeX-vO-Mai" secondAttribute="bottom" id="163-rV-IbU"/>
+                            <constraint firstItem="zeX-vO-Mai" firstAttribute="leading" secondItem="4iz-yJ-mdk" secondAttribute="leading" id="QpL-v7-jz0"/>
+                            <constraint firstItem="zeX-vO-Mai" firstAttribute="top" secondItem="1Eg-lF-g39" secondAttribute="bottom" id="XbI-bi-n07"/>
+                            <constraint firstAttribute="trailing" secondItem="zeX-vO-Mai" secondAttribute="trailing" id="u7y-H9-pyf"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="zeX-vO-Mai" id="IiM-G9-WFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw1-U4-Vui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="135.38230884557723"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Menu-Filled-100" width="100" height="100"/>

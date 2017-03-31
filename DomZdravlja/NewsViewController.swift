@@ -8,11 +8,19 @@
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.delegate = self;
+        self.tableView.dataSource = self;
+        
+        self.tableView.backgroundColor = UIColor.white
+        self.tableView.separatorStyle = .none
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +30,27 @@ class NewsViewController: UIViewController {
     }
     
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cellNews") ?? UITableViewCell()
+        
+//        cell.textLabel?.text = names[indexPath.row]
+//        cell.textLabel?.textColor = UIColor.white
+//        cell.textLabel?.font = Constants.Font.ButtonTitle
+//        cell.backgroundColor = UIColor.clear
+//        cell.selectionStyle = .none
+        
+        return cell
+    }
+
+    
     /*
     // MARK: - Navigation
 
