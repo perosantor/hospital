@@ -23,6 +23,7 @@
 		08B944441E856196001B201B /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B944421E856196001B201B /* NewsTableViewCell.xib */; };
 		08B944461E85690D001B201B /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944451E85690D001B201B /* News.swift */; };
 		08B944481E8886F8001B201B /* CommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944471E8886F8001B201B /* CommunicationService.swift */; };
+		08B944C21E8E8E07001B201B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944C11E8E8E07001B201B /* Utilities.swift */; };
 		43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */; };
 		588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */; };
 		E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */; };
@@ -68,6 +69,7 @@
 		08B944421E856196001B201B /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		08B944451E85690D001B201B /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		08B944471E8886F8001B201B /* CommunicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationService.swift; sourceTree = "<group>"; };
+		08B944C11E8E8E07001B201B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
 		664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravlja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				0896151C1E815D6F00F1AFDA /* Constants.swift */,
+				08B944C11E8E8E07001B201B /* Utilities.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 			files = (
 				089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */,
 				08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */,
+				08B944C21E8E8E07001B201B /* Utilities.swift in Sources */,
 				08B944431E856196001B201B /* NewsTableViewCell.swift in Sources */,
 				08B944461E85690D001B201B /* News.swift in Sources */,
 				08B944481E8886F8001B201B /* CommunicationService.swift in Sources */,
