@@ -10,6 +10,8 @@ target 'DomZdravlja' do
   pod 'Reachability'
   pod 'SVProgressHUD'
   pod 'KYDrawerController'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   target 'DomZdravljaTests' do
     inherit! :search_paths
