@@ -55,6 +55,9 @@ class MasterViewController: UIViewController {
         case Constants.View.Main:
             self.add(asChildViewController: mainOptionsViewController)
             break
+        case Constants.View.News:
+            self.add(asChildViewController: newsViewController)
+            break
         default:
             print("error")
         }

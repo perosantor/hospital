@@ -21,6 +21,9 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.backgroundColor = UIColor.white
         self.tableView.separatorStyle = .none
         
+        CommunicationService.sharedInstace.fetchNews { (newsArray, errorMessage) in
+            print(newsArray!)
+        }
         // Do any additional setup after loading the view.
     }
 

@@ -171,10 +171,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHs-HJ-1Ng">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="585"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-Yi-hOd">
-                                                <rect key="frame" x="0.0" y="510" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="520" width="375" height="75"/>
                                                 <state key="normal" title="ИНДЕКС ТЕЛЕСНЕ МАСЕ"/>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-NW-XN5">
@@ -182,7 +182,7 @@
                                                 <state key="normal" title="ЕЛЕКТРОНСКО ЗАКАЗИВАЊЕ"/>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-y5-JEr">
-                                                <rect key="frame" x="0.0" y="425" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="435" width="375" height="75"/>
                                                 <state key="normal" title="САВЕТИ ЛЕКАРА"/>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-r5-j0k">
@@ -198,7 +198,7 @@
                                                 <state key="normal" title="ВЕСТИ"/>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-wK-vaF">
-                                                <rect key="frame" x="0.0" y="340" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="350" width="375" height="75"/>
                                                 <state key="normal" title="ДРУШТВЕНЕ МРЕЖЕ"/>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sg-B4-Wt4">
@@ -223,7 +223,7 @@
                                             <constraint firstItem="TQP-F0-rle" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="aGo-Ra-iqU"/>
                                             <constraint firstItem="6Sg-B4-Wt4" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="cKa-tO-L2r"/>
                                             <constraint firstItem="BNO-NW-XN5" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="d1N-nA-wTe"/>
-                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="top" secondItem="6Sg-B4-Wt4" secondAttribute="bottom" id="dCH-2v-Xhr"/>
+                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="top" secondItem="6Sg-B4-Wt4" secondAttribute="bottom" constant="10" id="dCH-2v-Xhr"/>
                                             <constraint firstItem="sSB-r5-j0k" firstAttribute="leading" secondItem="wHs-HJ-1Ng" secondAttribute="leading" id="fYq-EQ-Hjj"/>
                                             <constraint firstItem="AZY-y5-JEr" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="hpe-wT-3JT"/>
                                             <constraint firstItem="n3u-Yi-hOd" firstAttribute="top" secondItem="AZY-y5-JEr" secondAttribute="bottom" constant="10" id="ipR-KJ-zRT"/>
@@ -298,7 +298,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hN7-Zt-3LJ" firstAttribute="top" secondItem="zeX-vO-Mai" secondAttribute="bottom" id="163-rV-IbU"/>
                             <constraint firstItem="zeX-vO-Mai" firstAttribute="leading" secondItem="4iz-yJ-mdk" secondAttribute="leading" id="QpL-v7-jz0"/>
