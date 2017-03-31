@@ -50,4 +50,8 @@ struct Constants {
     struct Font {
         static let ButtonTitle = UIFont.systemFont(ofSize: 17, weight: UIFontWeightRegular)
     }
+    
+    struct Url {
+        static let newsUrl = "http://www.dzsabac.org.rs/android/droid.php"
+    }
 }

@@ -7,7 +7,7 @@ target 'DomZdravlja' do
 
   # Pods for DomZdravlja
 
-  pod 'Reachability'
+  pod 'ReachabilitySwift'
   pod 'SVProgressHUD'
   pod 'KYDrawerController'
   pod 'Alamofire'

@@ -1,24 +1,24 @@
 PODS:
   - Alamofire (4.0.1)
   - KYDrawerController (2.0.1)
-  - Reachability (3.2)
+  - ReachabilitySwift (3)
   - SVProgressHUD (2.0.3)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire
   - KYDrawerController
-  - Reachability
+  - ReachabilitySwift
   - SVProgressHUD
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   KYDrawerController: b716cfa5730dc2133a67efcfc28b3b5a2cff6101
-  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: ce11f2f765bef3225e52aa536b72a5a17b4c90be
+PODFILE CHECKSUM: a34c63cad92d0e3e8494908098af2ba7d907bc95
 
 COCOAPODS: 1.1.1
