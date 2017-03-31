@@ -171,18 +171,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHs-HJ-1Ng">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="585"/>
                                         <subviews>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-Yi-hOd">
-                                                <rect key="frame" x="0.0" y="425" width="375" height="75"/>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-Yi-hOd">
+                                                <rect key="frame" x="0.0" y="510" width="375" height="75"/>
                                                 <state key="normal" title="ИНДЕКС ТЕЛЕСНЕ МАСЕ"/>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-NW-XN5">
                                                 <rect key="frame" x="0.0" y="170" width="375" height="75"/>
                                                 <state key="normal" title="ЕЛЕКТРОНСКО ЗАКАЗИВАЊЕ"/>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-y5-JEr">
-                                                <rect key="frame" x="0.0" y="340" width="375" height="75"/>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-y5-JEr">
+                                                <rect key="frame" x="0.0" y="425" width="375" height="75"/>
                                                 <state key="normal" title="САВЕТИ ЛЕКАРА"/>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-r5-j0k">
@@ -197,25 +197,33 @@
                                                 <rect key="frame" x="0.0" y="85" width="375" height="75"/>
                                                 <state key="normal" title="ВЕСТИ"/>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-wK-vaF">
-                                                <rect key="frame" x="0.0" y="255" width="375" height="75"/>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-wK-vaF">
+                                                <rect key="frame" x="0.0" y="340" width="375" height="75"/>
                                                 <state key="normal" title="ДРУШТВЕНЕ МРЕЖЕ"/>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sg-B4-Wt4">
+                                                <rect key="frame" x="0.0" y="255" width="375" height="85"/>
+                                                <state key="normal" title="ПРОВЕРА ЗДРАВСТВЕНОГ ОСИГУРАЊА"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="top" secondItem="BNO-NW-XN5" secondAttribute="bottom" constant="10" id="1Gn-nF-MdS"/>
                                             <constraint firstItem="BNO-NW-XN5" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="72L-hD-HqS"/>
                                             <constraint firstItem="BNO-NW-XN5" firstAttribute="top" secondItem="TQP-F0-rle" secondAttribute="bottom" constant="10" id="86X-Dp-vPo"/>
+                                            <constraint firstItem="6Sg-B4-Wt4" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="C25-mK-Pd3"/>
+                                            <constraint firstItem="6Sg-B4-Wt4" firstAttribute="top" secondItem="BNO-NW-XN5" secondAttribute="bottom" constant="10" id="CxE-Gs-gK9"/>
                                             <constraint firstItem="IDf-wK-vaF" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="EwJ-s7-K04"/>
                                             <constraint firstItem="AZY-y5-JEr" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="F14-AO-h2Z"/>
                                             <constraint firstItem="IDf-wK-vaF" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="FZF-Xp-Rbp"/>
                                             <constraint firstItem="TQP-F0-rle" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="RTB-C7-Obc"/>
                                             <constraint firstItem="TQP-F0-rle" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="SUu-yg-YHI"/>
                                             <constraint firstItem="AZY-y5-JEr" firstAttribute="top" secondItem="IDf-wK-vaF" secondAttribute="bottom" constant="10" id="YT4-de-N8m"/>
+                                            <constraint firstItem="6Sg-B4-Wt4" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" constant="10" id="Zba-pC-SLT"/>
                                             <constraint firstItem="n3u-Yi-hOd" firstAttribute="leading" secondItem="sSB-r5-j0k" secondAttribute="leading" id="ZkH-EW-0gZ"/>
                                             <constraint firstItem="TQP-F0-rle" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="aGo-Ra-iqU"/>
+                                            <constraint firstItem="6Sg-B4-Wt4" firstAttribute="trailing" secondItem="sSB-r5-j0k" secondAttribute="trailing" id="cKa-tO-L2r"/>
                                             <constraint firstItem="BNO-NW-XN5" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="d1N-nA-wTe"/>
+                                            <constraint firstItem="IDf-wK-vaF" firstAttribute="top" secondItem="6Sg-B4-Wt4" secondAttribute="bottom" id="dCH-2v-Xhr"/>
                                             <constraint firstItem="sSB-r5-j0k" firstAttribute="leading" secondItem="wHs-HJ-1Ng" secondAttribute="leading" id="fYq-EQ-Hjj"/>
                                             <constraint firstItem="AZY-y5-JEr" firstAttribute="height" secondItem="sSB-r5-j0k" secondAttribute="height" id="hpe-wT-3JT"/>
                                             <constraint firstItem="n3u-Yi-hOd" firstAttribute="top" secondItem="AZY-y5-JEr" secondAttribute="bottom" constant="10" id="ipR-KJ-zRT"/>
@@ -256,6 +264,7 @@
                         <outletCollection property="buttonsOption" destination="IDf-wK-vaF" collectionClass="NSMutableArray" id="fAs-on-nxW"/>
                         <outletCollection property="buttonsOption" destination="AZY-y5-JEr" collectionClass="NSMutableArray" id="nkT-4J-iIH"/>
                         <outletCollection property="buttonsOption" destination="n3u-Yi-hOd" collectionClass="NSMutableArray" id="tkr-K2-NKd"/>
+                        <outletCollection property="buttonsOption" destination="6Sg-B4-Wt4" collectionClass="NSMutableArray" id="Hu7-m0-z6n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpI-Jl-SYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
