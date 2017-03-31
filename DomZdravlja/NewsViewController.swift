@@ -11,18 +11,31 @@ import UIKit
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    let xibName = "NewsTableViewCell"
+    let cellId = "cellNews"
+    
+    var dataSourceArray:[News] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: xibName, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: cellId)
 
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         
-        self.tableView.backgroundColor = UIColor.white
+        self.tableView.backgroundColor = UIColor.clear
         self.tableView.separatorStyle = .none
         
         CommunicationService.sharedInstace.fetchNews { (newsArray, errorMessage) in
-            print("\(newsArray)")
+            if let newsArray = newsArray {
+                if newsArray.count > 0 {
+                    self.dataSourceArray = newsArray
+                    self.tableView.reloadData()
+                }
+            }
             
         }
         // Do any additional setup after loading the view.
@@ -35,15 +48,18 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return self.dataSourceArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cellNews") ?? UITableViewCell()
+        let cell:NewsTableViewCell! = self.tableView.dequeueReusableCell(withIdentifier: cellId) as! NewsTableViewCell
+        
+        cell.labelText.text = self.dataSourceArray[indexPath.row].content
+        cell.labelTitle.text = self.dataSourceArray[indexPath.row].title
         
 //        cell.textLabel?.text = names[indexPath.row]
 //        cell.textLabel?.textColor = UIColor.white

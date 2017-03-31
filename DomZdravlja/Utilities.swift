@@ -12,7 +12,7 @@ class Utilities {
     
     class func getDate(fromString string: String?) -> Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-mm-yyyy" //Your date format
+        dateFormatter.dateFormat = "dd-mm-yyyy"
         if string != nil {
             let date = dateFormatter.date(from: string!)
             return date
@@ -21,6 +21,14 @@ class Utilities {
             return nil
         }
     }
+    
+    class func getString(fromDate date: Date) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-mm-yyyy"
+        let newDate = dateFormatter.string(from: date)
+        return newDate
+    }
+    
 }
 
 

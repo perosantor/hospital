@@ -39,7 +39,9 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableViewDrawerOptions.delegate = self;
         self.tableViewDrawerOptions.dataSource = self;
         
-        self.tableViewDrawerOptions.backgroundColor = UIColor.black
+        self.view.backgroundColor = UIColor.clear
+        self.tableViewDrawerOptions.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+
         self.tableViewDrawerOptions.separatorStyle = .none
 
         // Do any additional setup after loading the view.
