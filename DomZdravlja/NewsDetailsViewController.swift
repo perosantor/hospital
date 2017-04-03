@@ -19,9 +19,7 @@ class NewsDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.webViewContent.loadRequest(URLRequest(url: URL(string: "http://www.dzsabac.org.rs/?p=8446")!))
-        
-        self.webViewContent.loadHTMLString("<html><body text=\"#FFFFFF\" face=\"Bookman Old Style, Book Antiqua, Garamond\" size=\"5\">%@</body></html>" + self.selectedNews!.content!, baseURL:nil)
+        self.webViewContent.loadHTMLString("<html><body text=\"#FFFFFF\" face=\"Bookman Old Style, Book Antiqua, Garamond\" size=\"25\"></body></html>" + self.selectedNews!.content!, baseURL:nil)
         self.webViewContent.isOpaque = false
         
         self.labelTitle.text = self.selectedNews?.title
@@ -36,13 +34,6 @@ class NewsDetailsViewController: UIViewController {
         
         
         self.view.backgroundColor = Constants.Color.CustomRed
-        
-//        if let url = NSURL(string: ),
-//            let html = try? String(contentsOfURL: url)  {
-//            print(html)
-//        }
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

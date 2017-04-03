@@ -22,6 +22,10 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idNewsViewController") as! NewsViewController
     } ()
     
+    private lazy var appointmentFormViewController: AppointmentFormViewController = {
+        return self.instantiateViewController(storyboardId: "idAppointmentFormViewController") as! AppointmentFormViewController
+    } ()
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -30,7 +34,7 @@ class MasterViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: storyboardId)
         
         // Add View Controller as Child View Controller
-        self.add(asChildViewController: viewController)
+        add(asChildViewController: viewController)
         
         return viewController
     }
@@ -50,14 +54,18 @@ class MasterViewController: UIViewController {
     
     
     public func load(viewWithType view:String) {
-        self.remove(asChildViewController: currentChildViewController!)
+        remove(asChildViewController: currentChildViewController!)
         switch view {
         case Constants.View.Main:
-            self.add(asChildViewController: mainOptionsViewController)
+            add(asChildViewController: mainOptionsViewController)
             break
         case Constants.View.News:
-            self.add(asChildViewController: newsViewController)
+            add(asChildViewController: newsViewController)
             break
+        case Constants.View.Scheduling:
+            add(asChildViewController: appointmentFormViewController)
+            break
+        
         default:
             print("error")
         }
@@ -106,12 +114,12 @@ class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupView()
+        setupView()
     }
     
     private func setupView() {
-        self.addBackgroundOverlay()
-        self.add(asChildViewController: mainOptionsViewController)
+        addBackgroundOverlay()
+        add(asChildViewController: mainOptionsViewController)
     }
     
     private func addBackgroundOverlay() {
@@ -120,7 +128,7 @@ class MasterViewController: UIViewController {
                                                    width: self.imageViewBackground.frame.size.width + 40,
                                                    height: self.imageViewBackground.frame.size.height))
         
-        overlay.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.2)
+        overlay.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.6)
         self.imageViewBackground.addSubview(overlay)
     }
 

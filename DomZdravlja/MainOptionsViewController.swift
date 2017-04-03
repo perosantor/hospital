@@ -13,7 +13,7 @@ class MainOptionsViewController: UIViewController {
     @IBOutlet var buttonsOption: [UIButton]!
     
     override func viewDidLoad() {
-        self.setOptionButtonsAppearance()
+        setOptionButtonsAppearance()
     }
     
     func setOptionButtonsAppearance() {

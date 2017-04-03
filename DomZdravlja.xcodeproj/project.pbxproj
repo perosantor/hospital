@@ -26,6 +26,9 @@
 		08B944C21E8E8E07001B201B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B944C11E8E8E07001B201B /* Utilities.swift */; };
 		08C2E3E31E8EDB4C00AA518A /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2E3E21E8EDB4C00AA518A /* NewsDetailsViewController.swift */; };
 		08C2E3E51E9022E500AA518A /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2E3E41E9022E500AA518A /* InsetLabel.swift */; };
+		08C2E3E71E925DD800AA518A /* AppointmentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2E3E61E925DD800AA518A /* AppointmentFormViewController.swift */; };
+		08C2E3E91E925FA100AA518A /* InputTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C2E3E81E925FA100AA518A /* InputTextFieldView.xib */; };
+		08C2E3EB1E92657500AA518A /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2E3EA1E92657500AA518A /* InputTextFieldView.swift */; };
 		43888D18D274D28D70B57E20 /* Pods_DomZdravlja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */; };
 		588D615A7CFF87E741A59F3B /* Pods_DomZdravljaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17083DE8458F53B79731917 /* Pods_DomZdravljaUITests.framework */; };
 		E701C1A244F6851BF8F74729 /* Pods_DomZdravljaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A00AE87D0CB6C1DCAC49CB3 /* Pods_DomZdravljaTests.framework */; };
@@ -74,6 +77,9 @@
 		08B944C11E8E8E07001B201B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		08C2E3E21E8EDB4C00AA518A /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		08C2E3E41E9022E500AA518A /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		08C2E3E61E925DD800AA518A /* AppointmentFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentFormViewController.swift; sourceTree = "<group>"; };
+		08C2E3E81E925FA100AA518A /* InputTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTextFieldView.xib; sourceTree = "<group>"; };
+		08C2E3EA1E92657500AA518A /* InputTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		4CE57F489E6C04D987947029 /* Pods-DomZdravljaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaUITests/Pods-DomZdravljaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1F6712D9E91EC8EA5E39F3 /* Pods-DomZdravljaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomZdravljaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomZdravljaTests/Pods-DomZdravljaTests.release.xcconfig"; sourceTree = "<group>"; };
 		664A3A74F0DAC5B48C7CF00B /* Pods_DomZdravlja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomZdravlja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +209,7 @@
 				08B9443B1E83DB62001B201B /* DrawerViewController.swift */,
 				08B9443F1E854B64001B201B /* NewsViewController.swift */,
 				08C2E3E21E8EDB4C00AA518A /* NewsDetailsViewController.swift */,
+				08C2E3E61E925DD800AA518A /* AppointmentFormViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -222,6 +229,8 @@
 			children = (
 				08B944411E856196001B201B /* NewsTableViewCell.swift */,
 				08B944421E856196001B201B /* NewsTableViewCell.xib */,
+				08C2E3EA1E92657500AA518A /* InputTextFieldView.swift */,
+				08C2E3E81E925FA100AA518A /* InputTextFieldView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -372,6 +381,7 @@
 				089614F61E7FD11800F1AFDA /* Assets.xcassets in Resources */,
 				08B944441E856196001B201B /* NewsTableViewCell.xib in Resources */,
 				089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */,
+				08C2E3E91E925FA100AA518A /* InputTextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +546,8 @@
 			files = (
 				08C2E3E31E8EDB4C00AA518A /* NewsDetailsViewController.swift in Sources */,
 				089614F41E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld in Sources */,
+				08C2E3EB1E92657500AA518A /* InputTextFieldView.swift in Sources */,
+				08C2E3E71E925DD800AA518A /* AppointmentFormViewController.swift in Sources */,
 				08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */,
 				08B944C21E8E8E07001B201B /* Utilities.swift in Sources */,
 				08B944431E856196001B201B /* NewsTableViewCell.swift in Sources */,

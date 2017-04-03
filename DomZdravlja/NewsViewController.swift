@@ -61,6 +61,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.labelText.text = self.dataSourceArray[indexPath.row].content
         cell.labelTitle.text = self.dataSourceArray[indexPath.row].title
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -70,7 +71,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController  = storyboard.instantiateViewController(withIdentifier :"idNewsDetailsViewController") as! NewsDetailsViewController
         viewController.selectedNews = self.dataSourceArray[indexPath.row]
-        self.present(viewController, animated: true)
+        present(viewController, animated: true)
     }
     
     /*

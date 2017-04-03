@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -346,7 +347,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZv-Fe-evV">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZv-Fe-evV">
                                 <rect key="frame" x="0.0" y="40.5" width="375" height="573.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
@@ -379,6 +380,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYH-oa-3KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2208.8000000000002" y="150.67466266866569"/>
+        </scene>
+        <!--Appointment Form View Controller-->
+        <scene sceneID="kwh-U8-5y0">
+            <objects>
+                <viewController storyboardIdentifier="idAppointmentFormViewController" id="4cP-vl-0MT" customClass="AppointmentFormViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lAB-59-zFM"/>
+                        <viewControllerLayoutGuide type="bottom" id="FTB-C3-gec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pwc-QH-i24">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xra-qy-bfr" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                <rect key="frame" x="16" y="8" width="343" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UFE-Rp-Ma7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xra-qy-bfr" firstAttribute="trailing" secondItem="pwc-QH-i24" secondAttribute="trailingMargin" id="BDV-mi-lTU"/>
+                            <constraint firstItem="Xra-qy-bfr" firstAttribute="top" secondItem="lAB-59-zFM" secondAttribute="bottom" constant="8" id="LEV-xk-RSx"/>
+                            <constraint firstItem="Xra-qy-bfr" firstAttribute="leading" secondItem="pwc-QH-i24" secondAttribute="leadingMargin" id="PUt-DG-Rkf"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVL-wd-kYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="151.57421289355324"/>
         </scene>
     </scenes>
     <resources>
