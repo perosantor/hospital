@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -390,29 +389,159 @@
                         <viewControllerLayoutGuide type="bottom" id="FTB-C3-gec"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pwc-QH-i24">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xra-qy-bfr" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                <rect key="frame" x="16" y="8" width="343" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9S9-2A-tOR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhn-TV-3bw" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="755.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-9d-cqa">
+                                                <rect key="frame" x="8" y="624" width="359" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-8u-mNy">
+                                                <rect key="frame" x="0.0" y="648.5" width="183.5" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="DNO-Md-wq3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <connections>
+                                                    <action selector="handleTapOnAppointmentButton:" destination="4cP-vl-0MT" eventType="touchUpInside" id="e2h-lp-DFq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyE-85-0ha">
+                                                <rect key="frame" x="191.5" y="648" width="183.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="handleTapOnTherapyButton:" destination="4cP-vl-0MT" eventType="touchUpInside" id="pNm-dn-Nv9"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8j7-4Z-Kha">
+                                                <rect key="frame" x="8" y="8" width="359" height="600"/>
+                                                <subviews>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gR7-s7-Gfq" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="5Ag-Ae-q3G"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnL-3L-Jhz" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="100" width="359" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="S1z-KI-syo"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUb-ro-U3z" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="200" width="359" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="Yc6-vk-CHR"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkL-Mh-z79" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="300" width="359" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="fId-KK-Iru"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-Qc-Gbg" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="400" width="359" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="ZSA-PZ-blF"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lg9-wm-w37" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="500" width="359" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="a1p-Eh-WBV"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki3-Dw-Ric">
+                                                <rect key="frame" x="8" y="687.5" width="359" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="s6z-lW-Ehe"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="handleTapOnSendButton:" destination="4cP-vl-0MT" eventType="touchUpInside" id="SgK-dO-Djt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Ki3-Dw-Ric" firstAttribute="top" secondItem="ggA-8u-mNy" secondAttribute="bottom" constant="8" id="3lh-3u-We9"/>
+                                            <constraint firstItem="ggA-8u-mNy" firstAttribute="top" secondItem="qPu-9d-cqa" secondAttribute="bottom" constant="8" id="3y8-Bt-EDM"/>
+                                            <constraint firstAttribute="trailing" secondItem="8j7-4Z-Kha" secondAttribute="trailing" constant="8" id="8kf-Uz-GKv"/>
+                                            <constraint firstItem="yyE-85-0ha" firstAttribute="width" secondItem="ggA-8u-mNy" secondAttribute="width" id="FVf-l6-0ZI"/>
+                                            <constraint firstItem="yyE-85-0ha" firstAttribute="leading" secondItem="ggA-8u-mNy" secondAttribute="trailing" constant="8" id="Mq9-rr-QbR"/>
+                                            <constraint firstItem="qPu-9d-cqa" firstAttribute="top" secondItem="8j7-4Z-Kha" secondAttribute="bottom" constant="16" id="PSs-er-eX8"/>
+                                            <constraint firstItem="yyE-85-0ha" firstAttribute="height" secondItem="ggA-8u-mNy" secondAttribute="height" id="Rbs-Wf-ZPC"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ki3-Dw-Ric" secondAttribute="bottom" constant="8" id="Udn-fo-egY"/>
+                                            <constraint firstAttribute="trailing" secondItem="qPu-9d-cqa" secondAttribute="trailing" constant="8" id="VAl-fw-ze0"/>
+                                            <constraint firstItem="8j7-4Z-Kha" firstAttribute="top" secondItem="Nhn-TV-3bw" secondAttribute="top" constant="8" id="WuX-WI-bDD"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ki3-Dw-Ric" secondAttribute="trailing" constant="8" id="hsQ-KZ-0NN"/>
+                                            <constraint firstItem="8j7-4Z-Kha" firstAttribute="leading" secondItem="Nhn-TV-3bw" secondAttribute="leading" constant="8" id="snu-fW-K7h"/>
+                                            <constraint firstAttribute="trailing" secondItem="yyE-85-0ha" secondAttribute="trailing" id="tw0-2Z-ma1"/>
+                                            <constraint firstItem="Ki3-Dw-Ric" firstAttribute="leading" secondItem="Nhn-TV-3bw" secondAttribute="leading" constant="8" id="uXu-L2-YwN"/>
+                                            <constraint firstItem="ggA-8u-mNy" firstAttribute="leading" secondItem="Nhn-TV-3bw" secondAttribute="leading" id="x1O-aA-fex"/>
+                                            <constraint firstItem="yyE-85-0ha" firstAttribute="centerY" secondItem="ggA-8u-mNy" secondAttribute="centerY" id="xrf-Jk-1a8"/>
+                                            <constraint firstItem="qPu-9d-cqa" firstAttribute="leading" secondItem="Nhn-TV-3bw" secondAttribute="leading" constant="8" id="yIk-0P-a23"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="UFE-Rp-Ma7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nhn-TV-3bw" secondAttribute="trailing" id="3WT-qE-AH4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nhn-TV-3bw" secondAttribute="bottom" id="Ue5-Bh-iME"/>
+                                    <constraint firstItem="Nhn-TV-3bw" firstAttribute="top" secondItem="9S9-2A-tOR" secondAttribute="top" id="dDZ-nu-tG1"/>
+                                    <constraint firstItem="Nhn-TV-3bw" firstAttribute="leading" secondItem="9S9-2A-tOR" secondAttribute="leading" id="r6R-Bd-9Ls"/>
                                 </constraints>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xra-qy-bfr" firstAttribute="trailing" secondItem="pwc-QH-i24" secondAttribute="trailingMargin" id="BDV-mi-lTU"/>
-                            <constraint firstItem="Xra-qy-bfr" firstAttribute="top" secondItem="lAB-59-zFM" secondAttribute="bottom" constant="8" id="LEV-xk-RSx"/>
-                            <constraint firstItem="Xra-qy-bfr" firstAttribute="leading" secondItem="pwc-QH-i24" secondAttribute="leadingMargin" id="PUt-DG-Rkf"/>
+                            <constraint firstItem="9S9-2A-tOR" firstAttribute="top" secondItem="lAB-59-zFM" secondAttribute="bottom" id="Ciw-Ac-60N"/>
+                            <constraint firstItem="FTB-C3-gec" firstAttribute="top" secondItem="9S9-2A-tOR" secondAttribute="bottom" id="EWW-Ld-hwP"/>
+                            <constraint firstAttribute="trailing" secondItem="9S9-2A-tOR" secondAttribute="trailing" id="G47-bo-VQk"/>
+                            <constraint firstItem="Nhn-TV-3bw" firstAttribute="width" secondItem="pwc-QH-i24" secondAttribute="width" id="Ghs-l3-7tR"/>
+                            <constraint firstItem="9S9-2A-tOR" firstAttribute="leading" secondItem="pwc-QH-i24" secondAttribute="leading" id="cve-TS-BPG"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="802"/>
+                    <connections>
+                        <outlet property="buttonSend" destination="Ki3-Dw-Ric" id="aNq-VG-9WF"/>
+                        <outlet property="inputFieldDoctor" destination="aE4-Qc-Gbg" id="sJy-jC-hed"/>
+                        <outlet property="inputFieldEmail" destination="DnL-3L-Jhz" id="04C-lB-FEd"/>
+                        <outlet property="inputFieldID" destination="DkL-Mh-z79" id="wNa-Ei-5yA"/>
+                        <outlet property="inputFieldName" destination="gR7-s7-Gfq" id="zZX-Ho-18S"/>
+                        <outlet property="inputFieldPhone" destination="GUb-ro-U3z" id="Llj-ts-IDv"/>
+                        <outlet property="inputFieldTime" destination="Lg9-wm-w37" id="C3P-eQ-NCF"/>
+                        <outlet property="labelTypeOfContact" destination="qPu-9d-cqa" id="1uf-Et-ry1"/>
+                        <outlet property="radioButtonAppointment" destination="ggA-8u-mNy" id="rad-wb-cn7"/>
+                        <outlet property="radioButtonTherapy" destination="yyE-85-0ha" id="iQp-BK-utE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVL-wd-kYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="151.57421289355324"/>
+            <point key="canvasLocation" x="2951.1999999999998" y="210.49475262368819"/>
         </scene>
     </scenes>
     <resources>
