@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -29,16 +30,16 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.backgroundColor = UIColor.clear
         self.tableView.separatorStyle = .none
         
+        SVProgressHUD.show()
         CommunicationService.sharedInstace.fetchNews { (newsArray, errorMessage) in
+            SVProgressHUD.dismiss()
             if let newsArray = newsArray {
                 if newsArray.count > 0 {
                     self.dataSourceArray = newsArray
                     self.tableView.reloadData()
                 }
             }
-            
         }
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,15 +62,16 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.labelText.text = self.dataSourceArray[indexPath.row].content
         cell.labelTitle.text = self.dataSourceArray[indexPath.row].title
         
-//        cell.textLabel?.text = names[indexPath.row]
-//        cell.textLabel?.textColor = UIColor.white
-//        cell.textLabel?.font = Constants.Font.ButtonTitle
-//        cell.backgroundColor = UIColor.clear
-//        cell.selectionStyle = .none
-        
         return cell
     }
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController  = storyboard.instantiateViewController(withIdentifier :"idNewsDetailsViewController") as! NewsDetailsViewController
+        viewController.selectedNews = self.dataSourceArray[indexPath.row]
+        self.present(viewController, animated: true)
+    }
     
     /*
     // MARK: - Navigation
