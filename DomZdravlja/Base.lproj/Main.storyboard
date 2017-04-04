@@ -537,6 +537,7 @@
                         <outlet property="labelTypeOfContact" destination="qPu-9d-cqa" id="1uf-Et-ry1"/>
                         <outlet property="radioButtonAppointment" destination="ggA-8u-mNy" id="rad-wb-cn7"/>
                         <outlet property="radioButtonTherapy" destination="yyE-85-0ha" id="iQp-BK-utE"/>
+                        <outlet property="scrollView" destination="9S9-2A-tOR" id="RpP-jV-UzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVL-wd-kYn" userLabel="First Responder" sceneMemberID="firstResponder"/>

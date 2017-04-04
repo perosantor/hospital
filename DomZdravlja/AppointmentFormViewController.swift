@@ -18,6 +18,7 @@ class AppointmentFormViewController: UIViewController {
     
     @IBOutlet weak var inputFieldTime: InputTextFieldView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var buttonSend: UIButton!
     @IBOutlet weak var radioButtonAppointment: UIButton!
@@ -100,6 +101,86 @@ class AppointmentFormViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        deregisterFromKeyboardNotifications()
+    }
+
+    func dismissKeyboard() {
+        for view in self.view.subviews {
+            if view.isFirstResponder {
+                view.resignFirstResponder()
+            }
+        }
+//        self.textFieldEmail.resignFirstResponder()
+//        self.textFieldPassword.resignFirstResponder()
+    }
+    
+    func registerForKeyboardNotifications(){
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWasShown(notification:)),
+                                               name: NSNotification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillBeHidden(notification:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide,
+                                               object: nil)
+    }
+    
+    func deregisterFromKeyboardNotifications(){
+        NotificationCenter.default.removeObserver(self,
+                                                  name: NSNotification.Name.UIKeyboardWillShow,
+                                                  object: nil)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: NSNotification.Name.UIKeyboardWillHide,
+                                                  object: nil)
+    }
+
+    
+    //MARK: - Notifications
+    
+    
+    func keyboardWasShown(notification: NSNotification){
+        //Need to calculate keyboard exact size
+        self.scrollView.isScrollEnabled = true
+        var info = notification.userInfo!
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
+        let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize!.height + 20, 0.0)
+        
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+        
+        var aRect : CGRect = self.view.frame
+        aRect.size.height -= keyboardSize!.height
+        
+        var activeField:UIView
+        for view in self.view.subviews {
+            if view.isFirstResponder {
+                activeField = view
+                if (!aRect.contains(activeField.frame.origin)){
+                    self.scrollView.scrollRectToVisible(activeField.frame, animated: true)
+                }
+            }
+        }
+    }
+    
+    func keyboardWillBeHidden(notification: NSNotification){
+        //Once keyboard disappears, restore original positions
+        var info = notification.userInfo!
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
+        let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, -keyboardSize!.height - 20, 0.0)
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+        self.view.endEditing(true)
+        self.scrollView.isScrollEnabled = false
+    }
     
     
 

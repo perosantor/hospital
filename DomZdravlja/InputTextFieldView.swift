@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InputTextFieldView: UIView {
+class InputTextFieldView: UIView, UITextFieldDelegate {
 
     let nibName:String = "InputTextFieldView"
     var view: UIView!
@@ -32,7 +32,6 @@ class InputTextFieldView: UIView {
         self.addSubview(self.view)
         
         setupAppearance()
-        
     }
     
     /*
@@ -51,9 +50,13 @@ class InputTextFieldView: UIView {
         self.label.font = UIFont.systemFont(ofSize: 12)
         self.label.textColor = UIColor.white
         
-        self.textField.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        self.textField.backgroundColor = UIColor.clear.withAlphaComponent(0.5)
+        self.textField.textColor = UIColor.white
         
         self.view.backgroundColor = UIColor.clear
         self.backgroundColor = UIColor.clear
+        
+        self.textField.delegate = self
     }
+
 }
