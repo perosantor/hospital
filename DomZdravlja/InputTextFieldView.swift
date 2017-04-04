@@ -42,6 +42,14 @@ class InputTextFieldView: UIView, UITextFieldDelegate {
     }
     */
     
+    public var isEmpty:Bool {
+        if (self.textField.text?.characters.count)! > 0 {
+            return false
+        } else {
+            return true
+        }
+    }
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textField: UITextField!
     

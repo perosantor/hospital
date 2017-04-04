@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class AppointmentFormViewController: UIViewController {
 
@@ -15,7 +16,6 @@ class AppointmentFormViewController: UIViewController {
     @IBOutlet weak var inputFieldPhone: InputTextFieldView!
     @IBOutlet weak var inputFieldID: InputTextFieldView!
     @IBOutlet weak var inputFieldDoctor: InputTextFieldView!
-    
     @IBOutlet weak var inputFieldTime: InputTextFieldView!
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -42,6 +42,20 @@ class AppointmentFormViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        deregisterFromKeyboardNotifications()
+    }
+
+    
+    //MARK: - Utilities
+    
     
     func setup() {
         self.view.backgroundColor = UIColor.clear
@@ -97,29 +111,21 @@ class AppointmentFormViewController: UIViewController {
     }
     
     @IBAction func handleTapOnSendButton(_ sender: UIButton) {
-        
+        if (self.inputFieldName.isEmpty ||
+            self.inputFieldPhone.isEmpty ||
+            self.inputFieldID.isEmpty ||
+            self.inputFieldDoctor.isEmpty ||
+            self.inputFieldTime.isEmpty ||
+            self.inputFieldEmail.isEmpty) {
+            SVProgressHUD.showError(withStatus: "Сва поља морају бити попуњена")
+            return
+        }
+        if !Utilities.isValidIDFormat(string: self.inputFieldID.textField.text) {
+            SVProgressHUD.showError(withStatus: "ЈМБГ поље мора бити исправно попуњено")
+            return
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        registerForKeyboardNotifications()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        deregisterFromKeyboardNotifications()
-    }
     
 
 }
