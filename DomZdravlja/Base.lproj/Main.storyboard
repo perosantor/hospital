@@ -396,16 +396,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhn-TV-3bw" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="755.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="635.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-9d-cqa">
-                                                <rect key="frame" x="8" y="624" width="359" height="16"/>
+                                                <rect key="frame" x="8" y="504" width="359" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-8u-mNy">
-                                                <rect key="frame" x="0.0" y="648.5" width="183.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="528.5" width="183.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="DNO-Md-wq3"/>
                                                 </constraints>
@@ -415,7 +415,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyE-85-0ha">
-                                                <rect key="frame" x="191.5" y="648" width="183.5" height="31"/>
+                                                <rect key="frame" x="191.5" y="528" width="183.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
@@ -426,55 +426,55 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8j7-4Z-Kha">
-                                                <rect key="frame" x="8" y="8" width="359" height="600"/>
+                                                <rect key="frame" x="8" y="8" width="359" height="480"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gR7-s7-Gfq" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="5Ag-Ae-q3G"/>
+                                                            <constraint firstAttribute="height" constant="80" id="5Ag-Ae-q3G"/>
                                                         </constraints>
                                                     </view>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnL-3L-Jhz" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="100" width="359" height="100"/>
+                                                        <rect key="frame" x="0.0" y="80" width="359" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="S1z-KI-syo"/>
+                                                            <constraint firstAttribute="height" constant="80" id="S1z-KI-syo"/>
                                                         </constraints>
                                                     </view>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUb-ro-U3z" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="200" width="359" height="100"/>
+                                                        <rect key="frame" x="0.0" y="160" width="359" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="Yc6-vk-CHR"/>
+                                                            <constraint firstAttribute="height" constant="80" id="Yc6-vk-CHR"/>
                                                         </constraints>
                                                     </view>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkL-Mh-z79" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="300" width="359" height="100"/>
+                                                        <rect key="frame" x="0.0" y="240" width="359" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="fId-KK-Iru"/>
+                                                            <constraint firstAttribute="height" constant="80" id="fId-KK-Iru"/>
                                                         </constraints>
                                                     </view>
                                                     <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-Qc-Gbg" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="400" width="359" height="100"/>
+                                                        <rect key="frame" x="0.0" y="320" width="359" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="ZSA-PZ-blF"/>
+                                                            <constraint firstAttribute="height" constant="80" id="ZSA-PZ-blF"/>
                                                         </constraints>
                                                     </view>
                                                     <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lg9-wm-w37" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="500" width="359" height="100"/>
+                                                        <rect key="frame" x="0.0" y="400" width="359" height="80"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="a1p-Eh-WBV"/>
+                                                            <constraint firstAttribute="height" constant="80" id="a1p-Eh-WBV"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki3-Dw-Ric">
-                                                <rect key="frame" x="8" y="687.5" width="359" height="60"/>
+                                                <rect key="frame" x="8" y="567.5" width="359" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="s6z-lW-Ehe"/>
                                                 </constraints>
