@@ -114,6 +114,7 @@ class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         setupView()
     }
     
@@ -152,11 +153,6 @@ class MasterViewController: UIViewController {
     
        
     }
-    
-    
-    //MARK: - Utilities
-    
-    
     
 
 }

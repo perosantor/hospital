@@ -28,14 +28,27 @@ class AppointmentFormViewController: UIViewController {
     var therapySelected:Bool = false
     
     
+    //MARK: Lifecycle
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.hideKeyboardWhenTappedAround()
+        setup()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func setup() {
         self.view.backgroundColor = UIColor.clear
         
         self.radioButtonAppointment.setTitle("Испис терапије", for: .normal)
         self.radioButtonTherapy.setTitle("Преглед", for: .normal)
-    
+        
         self.radioButtonAppointment.setTitleColor(UIColor.white, for: .normal)
         self.radioButtonTherapy.setTitleColor(UIColor.white, for: .normal)
         self.radioButtonAppointment.imageView?.contentMode = .scaleAspectFit
@@ -59,14 +72,7 @@ class AppointmentFormViewController: UIViewController {
         self.inputFieldID?.label.text = "ЈМБГ:"
         self.inputFieldDoctor?.label.text = "Име и презиме изабраног лекара:"
         self.inputFieldTime?.label.text = "Оквирно време и датум прегледа:"
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     func set(button: UIButton, selected:Bool) {
         if selected {
@@ -75,6 +81,10 @@ class AppointmentFormViewController: UIViewController {
             button.setImage(UIImage.init(named: "radio_button_unselected"), for: .normal)
         }
     }
+    
+    
+    //MARK: Actions
+    
     
     @IBAction func handleTapOnAppointmentButton(_ sender: UIButton) {
         set(button: self.radioButtonAppointment, selected: true)
@@ -89,8 +99,6 @@ class AppointmentFormViewController: UIViewController {
     @IBAction func handleTapOnSendButton(_ sender: UIButton) {
         
     }
-    
-    
     
     /*
     // MARK: - Navigation
@@ -111,16 +119,6 @@ class AppointmentFormViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         deregisterFromKeyboardNotifications()
-    }
-
-    func dismissKeyboard() {
-        for view in self.view.subviews {
-            if view.isFirstResponder {
-                view.resignFirstResponder()
-            }
-        }
-//        self.textFieldEmail.resignFirstResponder()
-//        self.textFieldPassword.resignFirstResponder()
     }
     
     func registerForKeyboardNotifications(){
