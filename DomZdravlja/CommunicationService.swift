@@ -40,7 +40,34 @@ struct CommunicationService {
                 }
             }
         }
-        
     }
+    
+    let appointmentUrl = URL.init(string: Constants.Url.appointmentUrl)!
+    
+    func registerAppointment(name:String,
+                             phone:String,
+                             id:String,
+                             doctor:String,
+                             time:String,
+                             email:String,
+                             therapyAppointment:Bool,
+                             completion: @escaping (_ response:Any?, _ errorMessage:String?) -> ()) {
+        if Reachability.init()?.currentReachabilityStatus == .notReachable {
+            completion(nil, "No Internet access")
+        } else {
+            Alamofire.request(appointmentUrl).responseJSON { (responseData) -> Void in
+                if((responseData.result.value) != nil) {
+                    //let jsonArray = JSON(responseData.result.value!)
+                    //print(swiftyJsonVar)
+                    
+                    completion(nil, nil)
+                    
+                } else {
+                    completion(nil, "Error")
+                }
+            }
+        }
+    }
+    
 
 }

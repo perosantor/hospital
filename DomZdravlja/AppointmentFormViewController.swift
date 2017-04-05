@@ -124,8 +124,20 @@ class AppointmentFormViewController: UIViewController {
             SVProgressHUD.showError(withStatus: "ЈМБГ поље мора бити исправно попуњено")
             return
         }
-    }
-    
-    
+        
 
+        let name = self.inputFieldName.textField.text!
+        let phone = self.inputFieldPhone.textField.text!
+        let id = self.inputFieldID.textField.text!
+        let doctor = self.inputFieldDoctor.textField.text!
+        let time = self.inputFieldTime.textField.text!
+        let email = self.inputFieldEmail.textField.text!
+        
+        SVProgressHUD.show()
+        CommunicationService.sharedInstace.registerAppointment(name: name, phone: phone, id: id, doctor: doctor, time: time, email: email, therapyAppointment: therapySelected) { (response, errorMessage) in
+            print("\(response)")
+        }
+        
+        
+    }
 }

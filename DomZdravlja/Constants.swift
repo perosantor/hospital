@@ -53,5 +53,6 @@ struct Constants {
     
     struct Url {
         static let newsUrl = "http://www.dzsabac.org.rs/android/droid.php"
+        static let appointmentUrl = "http://www.dzsabac.org.rs/android/sender.php"
     }
 }
