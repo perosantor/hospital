@@ -26,6 +26,10 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idAppointmentFormViewController") as! AppointmentFormViewController
     } ()
     
+    private lazy var insuranceCheckViewController: InsuranceCheckViewController = {
+        return self.instantiateViewController(storyboardId: "idInsuranceCheckViewController") as! InsuranceCheckViewController
+    } ()
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -65,7 +69,9 @@ class MasterViewController: UIViewController {
         case Constants.View.Scheduling:
             add(asChildViewController: appointmentFormViewController)
             break
-        
+        case Constants.View.CheckInsurance:
+            add(asChildViewController: insuranceCheckViewController)
+            break
         default:
             print("error")
         }
