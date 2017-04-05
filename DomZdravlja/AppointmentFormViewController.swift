@@ -75,10 +75,7 @@ class AppointmentFormViewController: UIViewController {
         self.labelTypeOfContact.text = "Тип контакта"
         self.labelTypeOfContact.textColor = UIColor.white
         
-        self.buttonSend.setTitleColor(UIColor.white, for: .normal)
-        self.buttonSend.setTitle("ПОШАЉИ", for: .normal)
-        self.buttonSend.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        self.buttonSend.backgroundColor = Constants.Color.CustomRed
+        Utilities.setRedButton(self.buttonSend, title: "ПОШАЉИ")
         
         self.inputFieldName?.label.text = "Име и презиме пацијента:"
         self.inputFieldEmail?.label.text = "И-мејл адреса:"

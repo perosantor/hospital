@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Utilities {
     
@@ -42,6 +43,13 @@ class Utilities {
         }
         
         
+    }
+    
+    class func setRedButton(_ button:UIButton, title: String) {
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.backgroundColor = Constants.Color.CustomRed
     }
     
 }

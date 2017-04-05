@@ -27,11 +27,7 @@ class NewsDetailsViewController: UIViewController {
         self.labelTitle.font = UIFont.systemFont(ofSize: 22)
         self.labelTitle.backgroundColor = Constants.Color.CustomRed
         
-        
-        self.buttonBack.backgroundColor = Constants.Color.CustomRed
-        self.buttonBack .setTitleColor(UIColor.white, for: .normal)
-        self.buttonBack.setTitle("ВРАТИ СЕ НАЗАД", for: .normal)
-        
+        Utilities.setRedButton(self.buttonBack, title: "ВРАТИ СЕ НАЗАД")
         
         self.view.backgroundColor = Constants.Color.CustomRed
     }

@@ -85,9 +85,9 @@ class MasterViewController: UIViewController {
         
         // Configure Child View
         viewController.view.frame = CGRect(x: view.frame.origin.x,
-                                                y: view.frame.origin.y + 260,
-                                                width: view.frame.width,
-                                                height: view.frame.height - 260)
+                                           y: view.frame.origin.y + 210,
+                                           width: view.frame.width,
+                                           height: view.frame.height - 210)
         
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
