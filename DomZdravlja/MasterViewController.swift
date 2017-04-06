@@ -30,6 +30,10 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idInsuranceCheckViewController") as! InsuranceCheckViewController
     } ()
     
+    private lazy var bmiCalculatorViewController: BMICalculatorViewController = {
+        return self.instantiateViewController(storyboardId: "idBMICalculatorViewController") as! BMICalculatorViewController
+    } ()
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -71,6 +75,9 @@ class MasterViewController: UIViewController {
             break
         case Constants.View.CheckInsurance:
             add(asChildViewController: insuranceCheckViewController)
+            break
+        case Constants.View.BodyMass:
+            add(asChildViewController: bmiCalculatorViewController)
             break
         default:
             print("error")

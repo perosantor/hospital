@@ -49,6 +49,8 @@ struct Constants {
         static let newsUrl = URL.init(string: "http://www.dzsabac.org.rs/android/droid.php")!
         static let appointmentUrl = URL.init(string: "http://www.dzsabac.org.rs/android/sender.php")!
         static let insuranceCheckUrl = URL.init(string: "http://89.216.105.89:3306/services/pzosabac.php")!
+        
+        
     }
     
     struct Messages {

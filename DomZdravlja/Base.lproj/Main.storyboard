@@ -566,14 +566,12 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="YZ4-Ro-zN3"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="i6P-Ay-1gY"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kma-K4-PFH" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="8" width="359" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="3Fd-8G-yt3"/>
                                                     <constraint firstAttribute="height" constant="80" id="rxh-qj-QsN"/>
                                                 </constraints>
                                             </view>
@@ -690,6 +688,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByJ-9X-NAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3645.5999999999999" y="149.77511244377811"/>
+        </scene>
+        <!--Calculator View Controller-->
+        <scene sceneID="7jd-G9-RVr">
+            <objects>
+                <viewController storyboardIdentifier="idBMICalculatorViewController" id="cTz-z1-SJi" customClass="BMICalculatorViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eoM-UH-vlV"/>
+                        <viewControllerLayoutGuide type="bottom" id="S4Q-MF-hQP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s9l-mT-QNN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50L-4v-5Al">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atB-sd-LbY" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="326.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVi-ap-8Mc" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="359" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="3rN-aR-gP6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW6-QR-18q" customClass="InputTextFieldView" customModule="DomZdravlja" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="96" width="359" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="F9L-dg-6yP"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n70-xc-qET">
+                                                <rect key="frame" x="8" y="236.5" width="175.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="vlj-3Z-Gvm"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="handleTapOnCalculateButton:" destination="cTz-z1-SJi" eventType="touchUpInside" id="Dko-JP-5wQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-4j-FHD">
+                                                <rect key="frame" x="191.5" y="236.5" width="175.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="sQg-v2-3Hh"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="handleTapOnClearButton:" destination="cTz-z1-SJi" eventType="touchUpInside" id="PRE-fy-tEy"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfc-Bz-yJs">
+                                                <rect key="frame" x="8" y="196" width="359" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lW6-QR-18q" firstAttribute="leading" secondItem="atB-sd-LbY" secondAttribute="leading" constant="8" id="37d-Cc-NdB"/>
+                                            <constraint firstAttribute="trailing" secondItem="lW6-QR-18q" secondAttribute="trailing" constant="8" id="3iP-Fb-ByZ"/>
+                                            <constraint firstItem="hfc-Bz-yJs" firstAttribute="leading" secondItem="atB-sd-LbY" secondAttribute="leading" constant="8" id="4e2-hc-ONG"/>
+                                            <constraint firstItem="cRV-4j-FHD" firstAttribute="width" secondItem="n70-xc-qET" secondAttribute="width" id="7gT-eI-bV5"/>
+                                            <constraint firstAttribute="trailing" secondItem="sVi-ap-8Mc" secondAttribute="trailing" constant="8" id="7k9-zd-Jik"/>
+                                            <constraint firstAttribute="trailing" secondItem="hfc-Bz-yJs" secondAttribute="trailing" constant="8" id="Hnf-O6-uOw"/>
+                                            <constraint firstItem="hfc-Bz-yJs" firstAttribute="top" secondItem="lW6-QR-18q" secondAttribute="bottom" constant="20" id="Nh0-jY-h4d"/>
+                                            <constraint firstItem="sVi-ap-8Mc" firstAttribute="leading" secondItem="atB-sd-LbY" secondAttribute="leading" constant="8" id="NsQ-LL-0Ie"/>
+                                            <constraint firstItem="n70-xc-qET" firstAttribute="top" secondItem="hfc-Bz-yJs" secondAttribute="bottom" constant="20" id="bah-LA-hqT"/>
+                                            <constraint firstItem="lW6-QR-18q" firstAttribute="top" secondItem="sVi-ap-8Mc" secondAttribute="bottom" constant="8" id="eqC-8S-Ub7"/>
+                                            <constraint firstAttribute="trailing" secondItem="cRV-4j-FHD" secondAttribute="trailing" constant="8" id="f4V-Wv-TXG"/>
+                                            <constraint firstItem="n70-xc-qET" firstAttribute="leading" secondItem="atB-sd-LbY" secondAttribute="leading" constant="8" id="hY0-wd-EZd"/>
+                                            <constraint firstItem="cRV-4j-FHD" firstAttribute="centerY" secondItem="n70-xc-qET" secondAttribute="centerY" id="oGH-kF-S0B"/>
+                                            <constraint firstItem="sVi-ap-8Mc" firstAttribute="top" secondItem="atB-sd-LbY" secondAttribute="top" constant="8" id="pNw-V9-1Ir"/>
+                                            <constraint firstItem="cRV-4j-FHD" firstAttribute="leading" secondItem="n70-xc-qET" secondAttribute="trailing" constant="8" id="qQj-rI-Ofe"/>
+                                            <constraint firstAttribute="bottom" secondItem="n70-xc-qET" secondAttribute="bottom" constant="30" id="uQb-A5-aSP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="atB-sd-LbY" secondAttribute="trailing" id="J8I-J2-ktJ"/>
+                                    <constraint firstItem="atB-sd-LbY" firstAttribute="top" secondItem="50L-4v-5Al" secondAttribute="top" id="ZVE-pl-xKC"/>
+                                    <constraint firstItem="atB-sd-LbY" firstAttribute="leading" secondItem="50L-4v-5Al" secondAttribute="leading" id="cAT-2L-zYW"/>
+                                    <constraint firstAttribute="bottom" secondItem="atB-sd-LbY" secondAttribute="bottom" id="lla-rR-99A"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="atB-sd-LbY" firstAttribute="width" secondItem="s9l-mT-QNN" secondAttribute="width" id="DVx-lm-Sdj"/>
+                            <constraint firstItem="50L-4v-5Al" firstAttribute="top" secondItem="s9l-mT-QNN" secondAttribute="top" id="Gql-Fv-t5r"/>
+                            <constraint firstItem="50L-4v-5Al" firstAttribute="leading" secondItem="s9l-mT-QNN" secondAttribute="leading" id="KZy-hf-gsy"/>
+                            <constraint firstAttribute="trailing" secondItem="50L-4v-5Al" secondAttribute="trailing" id="P6o-Ge-8ly"/>
+                            <constraint firstItem="S4Q-MF-hQP" firstAttribute="top" secondItem="50L-4v-5Al" secondAttribute="bottom" id="chV-ZQ-wCH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCalculate" destination="n70-xc-qET" id="9yV-ic-gTX"/>
+                        <outlet property="buttonClear" destination="cRV-4j-FHD" id="NOc-7y-CCe"/>
+                        <outlet property="inputViewHeight" destination="sVi-ap-8Mc" id="Roc-Ng-vK0"/>
+                        <outlet property="inputViewWeight" destination="lW6-QR-18q" id="QQs-cm-cpi"/>
+                        <outlet property="labelResult" destination="hfc-Bz-yJs" id="R7d-EC-LGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAh-Xk-Fu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4365.6000000000004" y="152.47376311844079"/>
         </scene>
     </scenes>
     <resources>
