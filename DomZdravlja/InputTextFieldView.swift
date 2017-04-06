@@ -54,9 +54,7 @@ class InputTextFieldView: UIView, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     
     func setupAppearance() {
-        self.label.backgroundColor = UIColor.clear
-        self.label.font = UIFont.systemFont(ofSize: 12)
-        self.label.textColor = UIColor.white
+        Utilities.setSubtitleLabel(label)
         
         self.textField.backgroundColor = UIColor.clear.withAlphaComponent(0.5)
         self.textField.textColor = UIColor.white

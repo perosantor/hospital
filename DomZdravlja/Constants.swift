@@ -41,12 +41,6 @@ struct Constants {
         static let Settings = "Подешавања"
     }
     
-    
-//    static let pair = [
-//        View.Main : "MainOptionsViewController",
-//        View.InfoCenter : "InfoCenterViewController"
-//    ]
-//    
     struct Font {
         static let ButtonTitle = UIFont.systemFont(ofSize: 17, weight: UIFontWeightRegular)
     }
@@ -54,5 +48,6 @@ struct Constants {
     struct Url {
         static let newsUrl = "http://www.dzsabac.org.rs/android/droid.php"
         static let appointmentUrl = "http://www.dzsabac.org.rs/android/sender.php"
+        static let insuranceCheckUrl = URL.init(string: "http://89.216.105.89:3306/services/pzosabac.php")!
     }
 }

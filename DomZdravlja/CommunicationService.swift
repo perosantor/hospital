@@ -15,7 +15,6 @@ struct CommunicationService {
     static let sharedInstace = CommunicationService()
     
     let newsUrl = URL.init(string: Constants.Url.newsUrl)!
-    
     func fetchNews(completion: @escaping (_ response:[News]?, _ errorMessage:String?) -> ()) {
         if Reachability.init()?.currentReachabilityStatus == .notReachable {
             completion(nil, "No Internet access")
@@ -43,7 +42,6 @@ struct CommunicationService {
     }
     
     let appointmentUrl = URL.init(string: Constants.Url.appointmentUrl)!
-    
     func registerAppointment(name:String,
                              phone:String,
                              id:String,
@@ -68,6 +66,28 @@ struct CommunicationService {
             }
         }
     }
+
     
+    //let insuranceCheckUrl = URL.init(string: Constants.Url.insuranceCheckUrl)!
+    func checkInsurance(lbo:String, completion: @escaping (_ response:Array<String?>?, _ errorMessage:String?) -> ()) {
+        
+        if Reachability.init()?.currentReachabilityStatus == .notReachable {
+            completion(nil, "No Internet access")
+        } else {
+            Alamofire.request(Constants.Url.insuranceCheckUrl, method: .post, parameters: ["lbo":"27100138281"])
+                .responseJSON { responseData in
+                    if((responseData.result.value) != nil) {
+                        let jsonArray = JSON(responseData.result.value!)
+                        let name = jsonArray["ime"].stringValue
+                        let surname = jsonArray["prezime"].stringValue
+                        let expireDate = jsonArray["overena_do"].stringValue
+                        completion([name, surname, expireDate], nil)
+                    } else {
+                        completion(nil, "No response")
+                    }
+            }
+        }
+    }
+
 
 }

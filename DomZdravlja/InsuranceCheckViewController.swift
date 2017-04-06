@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class InsuranceCheckViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class InsuranceCheckViewController: UIViewController {
     @IBOutlet weak var labelSurname: UILabel!
     @IBOutlet weak var labelExpireDate: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: - Lifecycle
     
@@ -55,8 +57,7 @@ class InsuranceCheckViewController: UIViewController {
         
         for label in labels {
             
-            label.textColor = UIColor.white
-            label.font = UIFont.systemFont(ofSize: 16)
+            Utilities.setSubtitleLabel(label)
             
             switch label.tag {
             case 1:
@@ -79,14 +80,28 @@ class InsuranceCheckViewController: UIViewController {
     // MARK: - Utilities
     
 
-    /*
-    // MARK: - Navigation
+    
+    // MARK: - Actions
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+   
+    @IBAction func handleTaoOnCheckButton(_ sender: UIButton) {
+        
+        SVProgressHUD.show()
+        CommunicationService.sharedInstace.checkInsurance(lbo: "") { (array, errorMessage) in
+            if errorMessage != nil {
+                SVProgressHUD.showError(withStatus: errorMessage)
+            } else {
+                SVProgressHUD.dismiss()
+                if array?.count == 3 {
+                    self.labelName.text = array?[0]
+                    self.labelSurname.text = array?[1]
+                    self.labelExpireDate.text = array?[2]
+                    let bottomOffset = CGPoint(x: 0,
+                                               y: self.scrollView.contentSize.height - self.scrollView.bounds.size.height)
+                    self.scrollView.setContentOffset(bottomOffset, animated: true)
+                }
+            }
+        }
     }
-    */
-
+    
 }

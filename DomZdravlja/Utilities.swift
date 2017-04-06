@@ -52,6 +52,12 @@ class Utilities {
         button.backgroundColor = Constants.Color.CustomRed
     }
     
+    class func setSubtitleLabel(_ label:UILabel) {
+        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.backgroundColor = UIColor.clear
+    }
+    
 }
 
 
