@@ -91,13 +91,28 @@ class BMICalculatorViewController: UIViewController {
             return
         }
         
-        var bmi:Double = 0
-        var level = ""
-        var idealWeight = 0
-        var idealWeightDelta = 0
-        var suggestedWeight = 0
+        let bmi = round(weight / (height*height*(1/10000)))
         
-        bmi = round(100000 * weight / height / height) / 10
+        var level:String
+        switch bmi {
+            case (0...14): level = "која је тешко потхрањена"
+            case (14...18): level = "која је потхрањена"
+            case (18...21): level = "нормалне тежине"
+            case (21...23): level = "идеалне тежине"
+            case (23...25): level = "нормалне тежине"
+            case (25...30): level = "која је гојазна"
+            case (30...100): level = "која је тешко гојазна"
+        default:
+            level = ""
+            SVProgressHUD.showError(withStatus: "Проверите унете податке")
+        }
+        
+        let min = round( 18.5 * weight * weight / 1000)
+        let max = round( 25.0 * weight * weight / 1000 ) / 10
+        let idealWeight = round( 10 * ( min + max ) / 2 ) / 10
+        
+        let idealWeightDelta = abs(round(weight - idealWeight))
+        let suggestedWeight = idealWeight
         
         self.labelResult.text = "Ваш индекс телесне масе је \(bmi) \rпо коме сте ви особа \(level). \rВаша идеална тежина је \(idealWeight) килограма од које одступате \(idealWeightDelta). \rВаша препоручена тежина је \(suggestedWeight) килограма.\r"
     }
