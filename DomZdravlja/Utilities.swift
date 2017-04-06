@@ -41,9 +41,25 @@ class Utilities {
         } else {
             return false
         }
-        
-        
     }
+    
+    class func isValidLBOFormat(string: String?) -> Bool {
+        return Utilities.isValidFormat(string:string, regex: "^[0-9]{11}$")
+    }
+    
+    class func isValidFormat(string: String?, regex:String) -> Bool {
+        if string != nil {
+            let regex = try? NSRegularExpression(pattern: regex, options: [])
+            if let regex = regex {
+                let match = regex.numberOfMatches(in: string!, options: [], range: NSRange(location: 0, length: string!.characters.count))
+                return match == 1
+            }
+            return false
+        } else {
+            return false
+        }
+    }
+    
     
     class func setRedButton(_ button:UIButton, title: String) {
         button.setTitleColor(UIColor.white, for: .normal)

@@ -46,8 +46,13 @@ struct Constants {
     }
     
     struct Url {
-        static let newsUrl = "http://www.dzsabac.org.rs/android/droid.php"
-        static let appointmentUrl = "http://www.dzsabac.org.rs/android/sender.php"
+        static let newsUrl = URL.init(string: "http://www.dzsabac.org.rs/android/droid.php")!
+        static let appointmentUrl = URL.init(string: "http://www.dzsabac.org.rs/android/sender.php")!
         static let insuranceCheckUrl = URL.init(string: "http://89.216.105.89:3306/services/pzosabac.php")!
+    }
+    
+    struct Messages {
+        static let DefaultError = "Дошло је до грешке"
+        static let Offline = "Потребно је да будете конектовани на интернет"
     }
 }

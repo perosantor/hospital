@@ -14,12 +14,11 @@ import ReachabilitySwift
 struct CommunicationService {
     static let sharedInstace = CommunicationService()
     
-    let newsUrl = URL.init(string: Constants.Url.newsUrl)!
     func fetchNews(completion: @escaping (_ response:[News]?, _ errorMessage:String?) -> ()) {
         if Reachability.init()?.currentReachabilityStatus == .notReachable {
-            completion(nil, "No Internet access")
+            completion(nil, Constants.Messages.Offline)
         } else {
-            Alamofire.request(newsUrl).responseJSON { (responseData) -> Void in
+            Alamofire.request(Constants.Url.newsUrl).responseJSON { (responseData) -> Void in
                 if((responseData.result.value) != nil) {
                     let jsonArray = JSON(responseData.result.value!)
                     //print(swiftyJsonVar)
@@ -35,13 +34,12 @@ struct CommunicationService {
                     completion(newsArray, nil)
                     
                 } else {
-                    completion(nil, "Error")
+                    completion(nil, Constants.Messages.DefaultError)
                 }
             }
         }
     }
     
-    let appointmentUrl = URL.init(string: Constants.Url.appointmentUrl)!
     func registerAppointment(name:String,
                              phone:String,
                              id:String,
@@ -51,9 +49,9 @@ struct CommunicationService {
                              therapyAppointment:Bool,
                              completion: @escaping (_ response:Any?, _ errorMessage:String?) -> ()) {
         if Reachability.init()?.currentReachabilityStatus == .notReachable {
-            completion(nil, "No Internet access")
+            completion(nil, Constants.Messages.Offline)
         } else {
-            Alamofire.request(appointmentUrl).responseJSON { (responseData) -> Void in
+            Alamofire.request(Constants.Url.appointmentUrl).responseJSON { (responseData) -> Void in
                 if((responseData.result.value) != nil) {
                     //let jsonArray = JSON(responseData.result.value!)
                     //print(swiftyJsonVar)
@@ -61,29 +59,34 @@ struct CommunicationService {
                     completion(nil, nil)
                     
                 } else {
-                    completion(nil, "Error")
+                    completion(nil, Constants.Messages.DefaultError)
                 }
             }
         }
     }
 
-    
-    //let insuranceCheckUrl = URL.init(string: Constants.Url.insuranceCheckUrl)!
-    func checkInsurance(lbo:String, completion: @escaping (_ response:Array<String?>?, _ errorMessage:String?) -> ()) {
+    func checkInsurance(lbo:String,
+                        completion: @escaping (_ response:Array<String?>?, _ errorMessage:String?) -> ()) {
         
         if Reachability.init()?.currentReachabilityStatus == .notReachable {
-            completion(nil, "No Internet access")
+            completion(nil, Constants.Messages.Offline)
         } else {
-            Alamofire.request(Constants.Url.insuranceCheckUrl, method: .post, parameters: ["lbo":"27100138281"])
+            Alamofire.request(Constants.Url.insuranceCheckUrl, method: .post, parameters: ["lbo":lbo])
                 .responseJSON { responseData in
                     if((responseData.result.value) != nil) {
                         let jsonArray = JSON(responseData.result.value!)
                         let name = jsonArray["ime"].stringValue
                         let surname = jsonArray["prezime"].stringValue
                         let expireDate = jsonArray["overena_do"].stringValue
-                        completion([name, surname, expireDate], nil)
+                        
+                        if name == "" && surname == "" && expireDate == "" {
+                            completion(nil, "Дошло је до грешке, вероватно сте унели погрешан ЛБО")
+                        } else {
+                            completion([name, surname, expireDate], nil)
+                        }
+                        
                     } else {
-                        completion(nil, "No response")
+                        completion(nil, Constants.Messages.DefaultError)
                     }
             }
         }

@@ -27,20 +27,29 @@ class InsuranceCheckViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    
     // MARK: - Lifecycle
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         setup()
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        deregisterFromKeyboardNotifications()
     }
     
     
@@ -76,29 +85,44 @@ class InsuranceCheckViewController: UIViewController {
         }
     }
     
+    func scrollToBottom() {
+        let bottomOffset = CGPoint(x: 0,
+                                   y: self.scrollView.contentSize.height - self.scrollView.bounds.size.height)
+        self.scrollView.setContentOffset(bottomOffset, animated: true)
+    }
     
-    // MARK: - Utilities
-    
-
     
     // MARK: - Actions
 
    
     @IBAction func handleTaoOnCheckButton(_ sender: UIButton) {
         
+        //let testLBO = "27100138281"
+        
+        let lboNumber = self.inputFieldLBO.textField.text!
+        
+        if !Utilities.isValidLBOFormat(string: lboNumber) {
+            SVProgressHUD.showError(withStatus: "Погрешан ЛБО број")
+            return
+        }
+        if !Utilities.isValidLBOFormat(string: self.inputFieldZK.textField.text) {
+            SVProgressHUD.showError(withStatus: "Погрешан ЗК број")
+            return
+        }
+        
         SVProgressHUD.show()
-        CommunicationService.sharedInstace.checkInsurance(lbo: "") { (array, errorMessage) in
+        CommunicationService.sharedInstace.checkInsurance(lbo: lboNumber) { (array, errorMessage) in
             if errorMessage != nil {
                 SVProgressHUD.showError(withStatus: errorMessage)
             } else {
                 SVProgressHUD.dismiss()
                 if array?.count == 3 {
-                    self.labelName.text = array?[0]
-                    self.labelSurname.text = array?[1]
-                    self.labelExpireDate.text = array?[2]
-                    let bottomOffset = CGPoint(x: 0,
-                                               y: self.scrollView.contentSize.height - self.scrollView.bounds.size.height)
-                    self.scrollView.setContentOffset(bottomOffset, animated: true)
+                        self.labelName.text = array?[0]
+                        self.labelSurname.text = array?[1]
+                        self.labelExpireDate.text = array?[2]
+                        self.scrollToBottom()
+                } else {
+                    SVProgressHUD.showError(withStatus: Constants.Messages.DefaultError)
                 }
             }
         }
