@@ -10,7 +10,7 @@ import UIKit
 
 class CustomView: UIView {
 
-    let nibName:String = "InputTextFieldView"
+    var nibName:String = "CustomView"
     var view: UIView!
     //public var loginHandler:((username: String, password: String) -> Void)?
     //if(loginHandler == nil) { print(„No loginHandler defined“) return } loginHandler!( username: usernameTextfield.text! password: passwordTextfield.text!) }

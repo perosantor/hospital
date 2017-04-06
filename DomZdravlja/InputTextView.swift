@@ -15,9 +15,5 @@ class InputTextView: CustomView {
         
         
     }
-
-    
-    
-    
     
 }

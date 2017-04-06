@@ -34,6 +34,10 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idBMICalculatorViewController") as! BMICalculatorViewController
     } ()
     
+    private lazy var socialViewController: SocialNetworksViewController = {
+        return self.instantiateViewController(storyboardId: "idSocialNetworksViewController") as! SocialNetworksViewController
+    } ()
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -79,6 +83,10 @@ class MasterViewController: UIViewController {
         case Constants.View.BodyMass:
             add(asChildViewController: bmiCalculatorViewController)
             break
+        case Constants.View.SocialNetworks:
+            add(asChildViewController: socialViewController)
+            break
+
         default:
             print("error")
         }
