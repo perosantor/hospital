@@ -38,6 +38,10 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idSocialNetworksViewController") as! SocialNetworksViewController
     } ()
     
+    private lazy var contactViewController: ContactViewController = {
+        return self.instantiateViewController(storyboardId: "idContactViewController") as! ContactViewController
+    } ()
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -86,7 +90,9 @@ class MasterViewController: UIViewController {
         case Constants.View.SocialNetworks:
             add(asChildViewController: socialViewController)
             break
-
+        case Constants.View.Contact:
+            add(asChildViewController: contactViewController)
+            break
         default:
             print("error")
         }
