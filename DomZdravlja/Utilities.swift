@@ -66,6 +66,8 @@ class Utilities {
         button.setTitle(title, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.backgroundColor = Constants.Color.CustomRed
+        button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
+        button.titleLabel?.textAlignment = NSTextAlignment.center
     }
     
     class func setSubtitleLabel(_ label:UILabel) {

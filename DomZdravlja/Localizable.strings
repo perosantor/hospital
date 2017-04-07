@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  DomZdravlja
+
+  Created by Petar Santor on 4/7/17.
+  Copyright © 2017 Petar Santor. All rights reserved.
+*/
+
+"Form sent successfully" = "Успешно послато";
+"All fields must be filled" = "Сва поља морају бити попуњена";
+

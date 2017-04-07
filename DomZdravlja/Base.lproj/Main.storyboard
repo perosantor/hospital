@@ -915,24 +915,24 @@
                                                     <constraint firstAttribute="height" constant="180" id="EbQ-Ha-ZIt"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfP-AQ-ui2">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfP-AQ-ui2">
                                                 <rect key="frame" x="8" y="460" width="359" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Bkc-Gu-VBI"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="handleTapOnSendProtector:" destination="nht-Pi-Dlu" eventType="touchUpInside" id="8oa-ZU-Xpv"/>
+                                                    <action selector="handleTapOnSendButton:" destination="nht-Pi-Dlu" eventType="touchUpInside" id="E14-yq-Lpf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-Ga-Tk4">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-Ga-Tk4">
                                                 <rect key="frame" x="8" y="528" width="359" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="nFo-TU-tLt"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="handleTapOnSendLegal:" destination="nht-Pi-Dlu" eventType="touchUpInside" id="klv-gX-MtR"/>
+                                                    <action selector="handleTapOnSendButton:" destination="nht-Pi-Dlu" eventType="touchUpInside" id="BkC-Jv-vhg"/>
                                                 </connections>
                                             </button>
                                         </subviews>

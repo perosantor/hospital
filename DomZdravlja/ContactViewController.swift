@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ContactViewController: UIViewController {
     
@@ -52,6 +53,7 @@ class ContactViewController: UIViewController {
 
     // MARK: - Utilities
     
+    
     func setup() {
         self.view.backgroundColor = UIColor.clear
         
@@ -65,18 +67,58 @@ class ContactViewController: UIViewController {
         self.inputViewContactReason.textField.text = "Пример добре праксе"
     }
     
-    
-    
+
     // MARK: - Actions
     
     
-    @IBAction func handleTapOnSendProtector(_ sender: UIButton) {
+    @IBAction func handleTapOnSendButton(_ sender: UIButton) {
+    
+        var name:String = ""
+        if let entered = self.inputViewName.textField.text {
+            name = entered
+        }
+        var email:String = ""
+        if let entered = self.inputViewEmail.textField.text {
+            email = entered
+        }
+        var reason:String = ""
+        if let entered = self.inputViewContactReason.textField.text {
+            reason = entered
+        }
+        var message:String = ""
+        if let entered = self.inputViewMessage.textView.text {
+            message = entered
+        }
+        
+        if name == "" || email == "" || reason == "" || message == "" {
+            SVProgressHUD.showError(withStatus: NSLocalizedString("All fields must be filled", comment: ""))
+            return
+        }
+        
+        let msg =  name + "\r" + email + "\r" + reason + "\r" + message
+        
+        
+        if sender.tag == 1 {
+            SVProgressHUD.show()
+            CommunicationService.sharedInstace.sendContactFormToPatientProtector(messageData: msg) { (success, errorMessage) in
+                if success {
+                    SVProgressHUD.showInfo(withStatus: NSLocalizedString("Form sent successfully", comment: ""))
+                } else {
+                    SVProgressHUD.showError(withStatus: errorMessage)
+                }
+            }
+        } else if sender.tag == 2 {
+            SVProgressHUD.show()
+            CommunicationService.sharedInstace.sendContactFormToLegalService(messageData: msg) { (success, errorMessage) in
+                if success {
+                    SVProgressHUD.showInfo(withStatus: NSLocalizedString("Form sent successfully", comment: ""))
+                } else {
+                    SVProgressHUD.showError(withStatus: errorMessage)
+                }
+
+        }
         
     }
-    
-    @IBAction func handleTapOnSendLegal(_ sender: UIButton) {
-        
     }
-    
 
 }
