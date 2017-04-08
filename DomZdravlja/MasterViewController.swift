@@ -50,6 +50,8 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idSettingsViewController") as! SettingsViewController
     } ()
     
+    private var overlayExplaner:ExplanationOverlayView?
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -150,6 +152,19 @@ class MasterViewController: UIViewController {
         viewController.removeFromParentViewController()
     }
     
+    public func showExplanationOverlay() {
+        
+        self.overlayExplaner = ExplanationOverlayView(frame: CGRect.init(x: self.view.frame.origin.x,
+                                                                    y: self.view.frame.origin.y,
+                                                                    width: self.view.frame.size.width,
+                                                                    height: self.view.frame.size.height))
+        self.overlayExplaner?.dismissOverlayHandler = self.hideExplanationOverlay
+        self.view.addSubview(self.overlayExplaner!)
+    }
+    
+    func hideExplanationOverlay() {
+        self.overlayExplaner?.removeFromSuperview()
+    }
     
     //MARK: - Lifecycle
     
@@ -171,7 +186,7 @@ class MasterViewController: UIViewController {
                                                    width: self.imageViewBackground.frame.size.width + 40,
                                                    height: self.imageViewBackground.frame.size.height))
         
-        overlay.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.6)
+        overlay.backgroundColor = Constants.Color.OverlayGrey
         self.imageViewBackground.addSubview(overlay)
     }
 

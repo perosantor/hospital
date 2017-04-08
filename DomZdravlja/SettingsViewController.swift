@@ -80,12 +80,14 @@ class SettingsViewController: UIViewController {
             }
         }
         
-        UIApplication.shared.openURL(NSURL(string: "itms://itunes.apple.com/de/app/x-gift/id839686104?mt=8&uo=4")! as URL)
+        //UIApplication.shared.openURL(NSURL(string: "itms://itunes.apple.com/de/app/x-gift/id839686104?mt=8&uo=4")! as URL)
 
     }
     
     @IBAction func handleTapOnShowExplanationButton(_ sender: UIButton) {
-        
+        if let parentVC = self.parent as? MasterViewController {
+            parentVC.showExplanationOverlay()
+        }
     }
     
     
