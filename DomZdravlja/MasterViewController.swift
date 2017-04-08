@@ -208,9 +208,23 @@ class MasterViewController: UIViewController {
         else {
             // obj is not a string array
         }
-    
-       
     }
+    
+    @IBAction func handleTapOnCallButton(_ sender: UIButton) {
+        callNumber(phoneNumber: "381115194")
+    }
+    
+    private func callNumber(phoneNumber:String) {
+        
+        if let phoneCallURL = URL(string: "tel://\(phoneNumber)") {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
+    }
+    
     
 
 }

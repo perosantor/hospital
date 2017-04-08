@@ -115,6 +115,9 @@
                                             <constraint firstAttribute="height" constant="40" id="usH-Ho-nxr"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="phone"/>
+                                        <connections>
+                                            <action selector="handleTapOnCallButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSp-Ca-odG"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="59n-H2-1Em">
                                         <rect key="frame" x="0.0" y="70" width="375" height="100"/>
