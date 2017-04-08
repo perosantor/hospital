@@ -40,6 +40,7 @@ struct Constants {
         static let PatientDuties = "Дужности пацијената"
         static let Contact = "Контакт"
         static let Settings = "Подешавања"
+        static let DoctorsAdvice = "Савети лекара"
     }
     
     struct Font {
