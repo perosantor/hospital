@@ -143,4 +143,25 @@ struct CommunicationService {
         }
     }
     
+    func sendInquiry(forUrl url: URL, withMessage msg:String, completion: @escaping (_ response:Bool, _ errorMessage:String?) -> ()) {
+        
+        if Reachability.init()?.currentReachabilityStatus == .notReachable {
+            completion(false, Constants.Messages.Offline)
+        } else {
+            Alamofire.request(url, method: .post, parameters: ["body":msg])
+                .responseString { responseData in
+                    
+                    switch responseData.result {
+                    case .success:
+                        completion(true, nil)
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                        completion(false, Constants.Messages.DefaultError + " : \(error.localizedDescription)")
+                    }
+            }
+        }
+    }
+
+    
+    
 }

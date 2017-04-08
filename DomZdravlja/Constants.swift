@@ -51,7 +51,7 @@ struct Constants {
         static let insuranceCheckUrl = URL.init(string: "http://89.216.105.89:3306/services/pzosabac.php")!
         static let patientProtectorUrl = URL.init(string: "http://www.dzsabac.org.rs/android/zastitniku.php")!
         static let patientLegalServiceUrl = URL.init(string: "http://www.dzsabac.org.rs/android/prijavi.php")!
-        
+        static let feedbackContactUrl = URL.init(string: "http://www.dzsabac.org.rs/android/kontakt.php")!
         
     }
     

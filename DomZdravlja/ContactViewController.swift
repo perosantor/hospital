@@ -95,7 +95,7 @@ class ContactViewController: UIViewController {
             return
         }
         
-        let msg =  name + "\r" + email + "\r" + reason + "\r" + message
+        let msg =  "Име: " + name + "\rЕ-пошта: " + email + "\rРазлог обраћања: " + reason + "\rПорука: " + message
         
         
         if sender.tag == 1 {
