@@ -46,6 +46,10 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idFeedbackViewController") as! FeedbackViewController
     } ()
     
+    private lazy var settingsViewController: SettingsViewController = {
+        return self.instantiateViewController(storyboardId: "idSettingsViewController") as! SettingsViewController
+    } ()
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -100,7 +104,9 @@ class MasterViewController: UIViewController {
         case Constants.View.Feedback:
             add(asChildViewController: contactViewController)
             break
-       
+        case Constants.View.Settings:
+            add(asChildViewController: settingsViewController)
+            break
         
         default:
             print("error")
@@ -177,6 +183,7 @@ class MasterViewController: UIViewController {
     
     //MARK: - Actions
 
+    
     @IBAction func handleTapOnDrawerButton(_ sender: UIButton) {
         
         if ((self.parent as? KYDrawerController) != nil) {

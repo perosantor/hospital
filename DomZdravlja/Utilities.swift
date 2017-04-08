@@ -62,17 +62,30 @@ class Utilities {
     
     
     class func setRedButton(_ button:UIButton, title: String) {
+        setButton(button, title: title, height: 18)
+    }
+    
+    class func setRedButtonSmall(_ button:UIButton, title: String) {
+        setButton(button, title: title, height: 10)
+    }
+    
+    class func setButton(_ button:UIButton, title: String, height: CGFloat) {
         button.setTitleColor(UIColor.white, for: .normal)
         button.setTitle(title, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: height)
         button.backgroundColor = Constants.Color.CustomRed
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
         button.titleLabel?.textAlignment = NSTextAlignment.center
     }
-    
     class func setSubtitleLabel(_ label:UILabel) {
         label.textColor = UIColor.white
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 13)
+        label.backgroundColor = UIColor.clear
+    }
+    
+    class func setТitleLabel(_ label:UILabel) {
+        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 18)
         label.backgroundColor = UIColor.clear
     }
     
