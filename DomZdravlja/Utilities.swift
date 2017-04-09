@@ -62,21 +62,38 @@ class Utilities {
     
     
     class func setRedButton(_ button:UIButton, title: String) {
-        setButton(button, title: title, height: 18)
+        setButton(button, title: title, height: 18, color:nil)
     }
     
     class func setRedButtonSmall(_ button:UIButton, title: String) {
-        setButton(button, title: title, height: 10)
+        setButton(button, title: title, height: 10, color: nil)
     }
     
-    class func setButton(_ button:UIButton, title: String, height: CGFloat) {
+    class func setButton(_ button:UIButton, title: String?, height: CGFloat, color:UIColor?) {
         button.setTitleColor(UIColor.white, for: .normal)
-        button.setTitle(title, for: .normal)
+        if title != nil {
+            button.setTitle(title, for: .normal)
+        }
         button.titleLabel?.font = UIFont.systemFont(ofSize: height)
-        button.backgroundColor = Constants.Color.CustomRed
+        if color == nil {
+            button.backgroundColor = Constants.Color.CustomRed
+        } else {
+            button.backgroundColor = color
+        }
         button.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
         button.titleLabel?.textAlignment = NSTextAlignment.center
     }
+    
+    class func setInfoButton(_ button:UIButton) {
+        setButton(button, title: nil, height: 18, color: nil)
+    }
+    
+    class func setInfoSubtitleButton(_ button:UIButton) {
+        setButton(button, title: nil, height: 18, color: UIColor.clear)
+    }
+
+
+    
     class func setSubtitleLabel(_ label:UILabel) {
         label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 13)

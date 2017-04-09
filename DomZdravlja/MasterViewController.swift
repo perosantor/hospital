@@ -50,6 +50,11 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idSettingsViewController") as! SettingsViewController
     } ()
     
+    private lazy var infoCenterViewController: InfoCenterViewController = {
+        return self.instantiateViewController(storyboardId: "idInfoCenterViewController") as! InfoCenterViewController
+    } ()
+
+    
     private var overlayExplaner:ExplanationOverlayView?
     
     private func instantiateViewController(storyboardId: String) -> UIViewController {
@@ -109,7 +114,9 @@ class MasterViewController: UIViewController {
         case Constants.View.Settings:
             add(asChildViewController: settingsViewController)
             break
-        
+        case Constants.View.InfoCenter:
+            add(asChildViewController: infoCenterViewController)
+            break
         default:
             print("error")
         }

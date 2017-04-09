@@ -296,6 +296,187 @@
             </objects>
             <point key="canvasLocation" x="876" y="136.28185907046478"/>
         </scene>
+        <!--Info Center View Controller-->
+        <scene sceneID="7g7-HO-Ady">
+            <objects>
+                <viewController storyboardIdentifier="idInfoCenterViewController" id="wWE-AO-qzg" customClass="InfoCenterViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uCw-An-WZ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="XWd-fc-0rE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ovT-vr-a05">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-y1-Iug">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ff-WU-du9" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="EvF-aW-3Nk">
+                                                <rect key="frame" x="0.0" y="8" width="375" height="550"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERQ-pu-qmP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="zKw-kb-haq"/>
+                                                        </constraints>
+                                                        <state key="normal" title="О НАМА"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="ki5-ze-yt9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqu-fe-qKE">
+                                                        <rect key="frame" x="0.0" y="61" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="Bhj-Cl-Ekm"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Мисија и визија"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="0kM-EV-OLk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kae-pX-gkN">
+                                                        <rect key="frame" x="0.0" y="107" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="uOT-3o-IFW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Службе"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="LTo-vQ-n2W"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REh-NQ-3Mg">
+                                                        <rect key="frame" x="0.0" y="153" width="375" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="aCd-97-YAr"/>
+                                                        </constraints>
+                                                        <state key="normal" title="СКРИНИНГ"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="Gei-ud-RVH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2p-FM-ycJ">
+                                                        <rect key="frame" x="0.0" y="214" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="pMu-cF-Eag"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Колатерални скрининг"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="wH9-Dz-6AK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzo-qe-Qf7">
+                                                        <rect key="frame" x="0.0" y="260" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="nfg-Co-nch"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Скрининг грлића материце"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="NRr-68-fbB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-Ev-OUC">
+                                                        <rect key="frame" x="0.0" y="306" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="6pL-Qv-xhM"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Скрининг дојке"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="3aq-N8-g0A"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aco-Jf-0fd">
+                                                        <rect key="frame" x="0.0" y="352" width="375" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="0hT-04-2dh"/>
+                                                        </constraints>
+                                                        <state key="normal" title="ПРАВА ПАЦИЈЕНАТА"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="LK9-Fs-Z54"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQa-l1-uXq">
+                                                        <rect key="frame" x="0.0" y="413" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="Lt1-RX-fKe"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Пријави"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="1Zs-aL-OUm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhJ-Ll-E47">
+                                                        <rect key="frame" x="0.0" y="459" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="Hl5-0n-Ll5"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Права пацијената"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="NLQ-Lr-SuZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ9-fP-Pt4">
+                                                        <rect key="frame" x="0.0" y="505" width="375" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="750" constant="45" id="koS-0b-NcC"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Дужности пацијената"/>
+                                                        <connections>
+                                                            <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="hjU-i5-meY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="EvF-aW-3Nk" firstAttribute="top" secondItem="0ff-WU-du9" secondAttribute="top" constant="8" id="Bln-2M-bQt"/>
+                                            <constraint firstAttribute="trailing" secondItem="EvF-aW-3Nk" secondAttribute="trailing" id="FiE-OC-0Rw"/>
+                                            <constraint firstItem="EvF-aW-3Nk" firstAttribute="leading" secondItem="0ff-WU-du9" secondAttribute="leading" id="THW-Do-7ia"/>
+                                            <constraint firstAttribute="bottom" secondItem="EvF-aW-3Nk" secondAttribute="bottom" constant="8" id="byu-QD-f72"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0ff-WU-du9" firstAttribute="top" secondItem="IeA-y1-Iug" secondAttribute="top" id="331-aE-4JB"/>
+                                    <constraint firstItem="0ff-WU-du9" firstAttribute="leading" secondItem="IeA-y1-Iug" secondAttribute="leading" id="MNG-tj-ZeA"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ff-WU-du9" secondAttribute="bottom" id="OPU-j3-gNN"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ff-WU-du9" secondAttribute="trailing" id="XM1-xO-L6i"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XWd-fc-0rE" firstAttribute="top" secondItem="IeA-y1-Iug" secondAttribute="bottom" id="CNd-Kk-8x5"/>
+                            <constraint firstAttribute="trailing" secondItem="IeA-y1-Iug" secondAttribute="trailing" id="DG2-0E-uH6"/>
+                            <constraint firstItem="0ff-WU-du9" firstAttribute="width" secondItem="ovT-vr-a05" secondAttribute="width" id="Ial-u3-I9l"/>
+                            <constraint firstItem="IeA-y1-Iug" firstAttribute="leading" secondItem="ovT-vr-a05" secondAttribute="leading" id="dTs-lV-EDT"/>
+                            <constraint firstItem="IeA-y1-Iug" firstAttribute="top" secondItem="uCw-An-WZ6" secondAttribute="bottom" id="h6O-3h-hgQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="ERQ-pu-qmP" collectionClass="NSMutableArray" id="UfX-Rm-Pa8"/>
+                        <outletCollection property="buttons" destination="lqu-fe-qKE" collectionClass="NSMutableArray" id="4Cf-M6-5cC"/>
+                        <outletCollection property="buttons" destination="kae-pX-gkN" collectionClass="NSMutableArray" id="mMz-rR-Ja5"/>
+                        <outletCollection property="buttons" destination="REh-NQ-3Mg" collectionClass="NSMutableArray" id="df3-Eb-Z6t"/>
+                        <outletCollection property="buttons" destination="R2p-FM-ycJ" collectionClass="NSMutableArray" id="nYJ-GN-wOu"/>
+                        <outletCollection property="buttons" destination="Zzo-qe-Qf7" collectionClass="NSMutableArray" id="Zun-b9-bgV"/>
+                        <outletCollection property="buttons" destination="cjk-Ev-OUC" collectionClass="NSMutableArray" id="P5D-3S-OKG"/>
+                        <outletCollection property="buttons" destination="Aco-Jf-0fd" collectionClass="NSMutableArray" id="uhj-fh-Eah"/>
+                        <outletCollection property="buttons" destination="eQa-l1-uXq" collectionClass="NSMutableArray" id="Mcl-QE-25V"/>
+                        <outletCollection property="buttons" destination="GhJ-Ll-E47" collectionClass="NSMutableArray" id="1xr-T3-9HJ"/>
+                        <outletCollection property="buttons" destination="OQ9-fP-Pt4" collectionClass="NSMutableArray" id="flG-iB-O7N"/>
+                        <outletCollection property="constraintFirstDropdown" destination="Bhj-Cl-Ekm" collectionClass="NSMutableArray" id="G95-9d-7d7"/>
+                        <outletCollection property="constraintFirstDropdown" destination="uOT-3o-IFW" collectionClass="NSMutableArray" id="u9T-gf-tAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0v4-zu-siX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="833.43328335832086"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="ujN-kO-DuO">
             <objects>
