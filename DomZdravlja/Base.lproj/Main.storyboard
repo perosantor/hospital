@@ -477,6 +477,52 @@
             </objects>
             <point key="canvasLocation" x="876" y="833.43328335832086"/>
         </scene>
+        <!--Info Details View Controller-->
+        <scene sceneID="OtR-Ii-FYi">
+            <objects>
+                <viewController storyboardIdentifier="idInfoDetailsViewController" id="TY9-Yq-7Y6" customClass="InfoDetailsViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yca-aO-BGa"/>
+                        <viewControllerLayoutGuide type="bottom" id="HyN-h4-cxI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6w9-Wc-VK1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogI-aH-YPi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-ba-gel">
+                                <rect key="frame" x="0.0" y="28.5" width="375" height="638.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cD5-ba-gel" secondAttribute="trailing" id="5cX-7f-Lpo"/>
+                            <constraint firstItem="HyN-h4-cxI" firstAttribute="top" secondItem="cD5-ba-gel" secondAttribute="bottom" id="5p1-zq-unH"/>
+                            <constraint firstItem="ogI-aH-YPi" firstAttribute="leading" secondItem="6w9-Wc-VK1" secondAttribute="leading" id="C4T-R7-QbQ"/>
+                            <constraint firstItem="cD5-ba-gel" firstAttribute="top" secondItem="ogI-aH-YPi" secondAttribute="bottom" constant="8" id="Dtk-8v-siZ"/>
+                            <constraint firstItem="ogI-aH-YPi" firstAttribute="top" secondItem="yca-aO-BGa" secondAttribute="bottom" id="Rj7-0F-C8P"/>
+                            <constraint firstAttribute="trailing" secondItem="ogI-aH-YPi" secondAttribute="trailing" id="T8x-9H-YYk"/>
+                            <constraint firstItem="cD5-ba-gel" firstAttribute="leading" secondItem="6w9-Wc-VK1" secondAttribute="leading" id="dUP-bu-Xjf"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="labelTitle" destination="ogI-aH-YPi" id="hpm-f2-X6Z"/>
+                        <outlet property="textViewContent" destination="cD5-ba-gel" id="CCv-ag-dOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4t-PH-BK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535.2" y="833.43328335832086"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="ujN-kO-DuO">
             <objects>

@@ -82,7 +82,7 @@ class InfoCenterViewController: UIViewController {
         case 1:
             toggleDropdown(buttonTags: [2,3])
             break
-
+        
         case 4:
             toggleDropdown(buttonTags: [5,6,7])
             break
