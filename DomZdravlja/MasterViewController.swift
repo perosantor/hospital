@@ -14,6 +14,8 @@ class MasterViewController: UIViewController {
 
     private var currentChildViewController : UIViewController?
     
+    @IBOutlet weak var imageViewLogo: UIImageView!
+    
     private lazy var mainOptionsViewController: MainOptionsViewController = {
         return self.instantiateViewController(storyboardId: "idMainOptionsViewController") as! MainOptionsViewController
     }()
@@ -53,6 +55,10 @@ class MasterViewController: UIViewController {
     private lazy var infoCenterViewController: InfoCenterViewController = {
         return self.instantiateViewController(storyboardId: "idInfoCenterViewController") as! InfoCenterViewController
     } ()
+    
+    private lazy var infoDetailsViewController: InfoDetailsViewController = {
+        return self.instantiateViewController(storyboardId: "idInfoDetailsViewController") as! InfoDetailsViewController
+    } ()
 
     
     private var overlayExplaner:ExplanationOverlayView?
@@ -65,7 +71,7 @@ class MasterViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: storyboardId)
         
         // Add View Controller as Child View Controller
-        add(asChildViewController: viewController)
+        add(asChildViewController: viewController, type:nil)
         
         return viewController
     }
@@ -86,36 +92,76 @@ class MasterViewController: UIViewController {
     
     public func load(viewWithType view:String) {
         remove(asChildViewController: currentChildViewController!)
+        
+        if self.imageViewLogo.isHidden {
+            self.imageViewLogo.isHidden = false
+        }
+        
         switch view {
         case Constants.View.Main:
-            add(asChildViewController: mainOptionsViewController)
+            add(asChildViewController: mainOptionsViewController, type:nil)
             break
         case Constants.View.News:
-            add(asChildViewController: newsViewController)
+            add(asChildViewController: newsViewController, type:nil)
             break
         case Constants.View.Scheduling:
-            add(asChildViewController: appointmentFormViewController)
+            add(asChildViewController: appointmentFormViewController, type:nil)
             break
         case Constants.View.CheckInsurance:
-            add(asChildViewController: insuranceCheckViewController)
+            add(asChildViewController: insuranceCheckViewController, type:nil)
             break
         case Constants.View.BodyMass:
-            add(asChildViewController: bmiCalculatorViewController)
+            add(asChildViewController: bmiCalculatorViewController, type:nil)
             break
         case Constants.View.SocialNetworks:
-            add(asChildViewController: socialViewController)
+            add(asChildViewController: socialViewController, type:nil)
             break
         case Constants.View.Contact:
-            add(asChildViewController: feedbackViewController)
+            add(asChildViewController: feedbackViewController, type:nil)
             break
         case Constants.View.Feedback:
-            add(asChildViewController: contactViewController)
+            add(asChildViewController: contactViewController, type:nil)
             break
         case Constants.View.Settings:
-            add(asChildViewController: settingsViewController)
+            add(asChildViewController: settingsViewController, type:nil)
             break
         case Constants.View.InfoCenter:
-            add(asChildViewController: infoCenterViewController)
+            add(asChildViewController: infoCenterViewController, type:nil)
+            break
+        case Constants.View.MissionAndVision:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.MissionAndVision)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setMissionAndVisionText()
+            break
+        case Constants.View.Departments:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.Departments)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setDepartmentsText()
+            break
+        case Constants.View.ScreeningRectal:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.ScreeningRectal)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setColorectalScanningText()
+            break
+        case Constants.View.ScreeningUterus:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.ScreeningUterus)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setUterusScanningText()
+            break
+        case Constants.View.ScreeningTeat:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.ScreeningTeat)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setUterusScanningText()
+            break
+        case Constants.View.PatientRights:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.PatientRights)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setPatientRightsText()
+            break
+        case Constants.View.PatientDuties:
+            add(asChildViewController: infoDetailsViewController, type:Constants.View.PatientDuties)
+            self.imageViewLogo.isHidden = true
+            infoDetailsViewController.setPatientObligationsText()
             break
         default:
             print("error")
@@ -127,7 +173,7 @@ class MasterViewController: UIViewController {
     //MARK: - Utilities
     
     
-    private func add(asChildViewController viewController: UIViewController) {
+    private func add(asChildViewController viewController: UIViewController, type:String?) {
         // Add Child View Controller
         addChildViewController(viewController)
         
@@ -135,10 +181,15 @@ class MasterViewController: UIViewController {
         view.addSubview(viewController.view)
         
         // Configure Child View
+        var offset:CGFloat = 100
+        if type == nil {
+            offset = 210
+        }
+        
         viewController.view.frame = CGRect(x: view.frame.origin.x,
-                                           y: view.frame.origin.y + 210,
+                                           y: view.frame.origin.y + offset,
                                            width: view.frame.width,
-                                           height: view.frame.height - 210)
+                                           height: view.frame.height - offset)
         
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
@@ -184,7 +235,7 @@ class MasterViewController: UIViewController {
     
     private func setupView() {
         addBackgroundOverlay()
-        add(asChildViewController: mainOptionsViewController)
+        add(asChildViewController: mainOptionsViewController, type:nil)
     }
     
     private func addBackgroundOverlay() {
