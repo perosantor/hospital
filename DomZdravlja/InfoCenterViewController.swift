@@ -18,6 +18,7 @@ class InfoCenterViewController: UIViewController {
     
     @IBOutlet var constraintFirstDropdown: [NSLayoutConstraint]!
     
+    
     // MARK: - Lifecycle
     
     
@@ -54,6 +55,7 @@ class InfoCenterViewController: UIViewController {
                 break
             default:
                 Utilities.setInfoSubtitleButton(button)
+                button.isHidden = true
                 break
             }
         }
@@ -68,7 +70,6 @@ class InfoCenterViewController: UIViewController {
                 } else {
                     button.isHidden = true
                 }
-                
             }
         }
     }
@@ -78,16 +79,45 @@ class InfoCenterViewController: UIViewController {
     
     
     @IBAction func handleTapOnButton(_ sender: UIButton) {
+        
+        var master: MasterViewController?
+        if ((self.parent as? MasterViewController) != nil ) {
+            master = self.parent as? MasterViewController
+        }
+        
         switch sender.tag {
         case 1:
             toggleDropdown(buttonTags: [2,3])
             break
-        
         case 4:
             toggleDropdown(buttonTags: [5,6,7])
             break
         case 8:
             toggleDropdown(buttonTags: [9,10,11])
+            break
+        case 2:
+            master?.load(viewWithType: Constants.View.MissionAndVision)
+            break
+        case 3:
+            master?.load(viewWithType: Constants.View.Departments)
+            break
+        case 5:
+            master?.load(viewWithType: Constants.View.ScreeningRectal)
+            break
+        case 6:
+            master?.load(viewWithType: Constants.View.ScreeningUterus)
+            break
+        case 7:
+            master?.load(viewWithType: Constants.View.ScreeningTeat)
+            break
+        case 9:
+            master?.load(viewWithType: Constants.View.Feedback)
+            break
+        case 10:
+            master?.load(viewWithType: Constants.View.PatientRights)
+            break
+        case 11:
+            master?.load(viewWithType: Constants.View.PatientDuties)
             break
         default:
             break
