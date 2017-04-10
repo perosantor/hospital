@@ -7,9 +7,30 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     var localized: String {
-        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "") + "\n\n"
+    }
+    
+    var bolded:NSMutableAttributedString {
+        let attributes :Dictionary = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 16),
+                                      NSForegroundColorAttributeName: UIColor.white]
+        
+        // Create attributed string
+        let attrString = NSMutableAttributedString(string: self, attributes:attributes)
+        
+        return attrString
+    }
+    
+    var normal:NSMutableAttributedString {
+        let attributes :Dictionary = [NSFontAttributeName : UIFont.systemFont(ofSize: 15),
+                                      NSForegroundColorAttributeName: UIColor.white]
+        
+        // Create attributed string
+        let attrString = NSMutableAttributedString(string: self, attributes:attributes)
+        
+        return attrString
     }
 }
