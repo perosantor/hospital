@@ -68,6 +68,8 @@ class DrawerViewController: UIViewController, UITableViewDataSource, UITableView
         cell.textLabel?.font = Constants.Font.ButtonTitle
         cell.backgroundColor = UIColor.clear
         cell.selectionStyle = .none
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
+        cell.textLabel?.numberOfLines = 0
         
         return cell
     }

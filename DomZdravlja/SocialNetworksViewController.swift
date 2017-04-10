@@ -16,6 +16,9 @@ class SocialNetworksViewController: UIViewController {
     @IBOutlet weak var buttonTwitter: SocialMediaButtonView!
     @IBOutlet weak var buttonYoutube: SocialMediaButtonView!
     @IBOutlet weak var buttonFacebook: SocialMediaButtonView!
+    @IBOutlet weak var buttonLink: UIButton!
+    
+    var currentOption = 1
     
     let upperText = "Дом здравља је активан и на најпопуларнијим друштвеним мрежама – Твитеру (Twitter), Фејсбуку (Facebook) и Јутјубу (YouTube). Ово чинимо са циљем да се што је више могуће приближимо становништву и на овакав савремени начин, све са циљем промоције здравог живота, одговарајуће исхране и превенције."
     
@@ -44,6 +47,8 @@ class SocialNetworksViewController: UIViewController {
         
         Utilities.setSubtitleLabel(self.labelLower)
         Utilities.setSubtitleLabel(self.labelUpper)
+        
+        setLinkButtonAppearance(imageName: "twitter")
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,30 +64,52 @@ class SocialNetworksViewController: UIViewController {
             self.buttonFacebook.setUnselected()
             self.buttonYoutube.setUnselected()
             self.labelLower.text = twitterText
+            setLinkButtonAppearance(imageName: "twitter")
+            currentOption = 1
         case 2:
             self.buttonTwitter.setUnselected()
             self.buttonYoutube.setUnselected()
             self.labelLower.text = fbText
+            setLinkButtonAppearance(imageName: "facebook")
+            currentOption = 2
         case 3:
             self.buttonFacebook.setUnselected()
             self.buttonTwitter.setUnselected()
             self.labelLower.text = ytText
+            setLinkButtonAppearance(imageName: "youtube")
+            currentOption = 3
         default:
             self.buttonFacebook.setUnselected()
             self.buttonYoutube.setUnselected()
             self.buttonTwitter.setUnselected()
             self.labelLower.text = ""
+        
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setLinkButtonAppearance(imageName:String) {
+        self.buttonLink.setBackgroundImage(UIImage.init(named: imageName), for: .normal)
     }
-    */
+    
+    @IBAction func handleTapOnLinkButton(_ sender: UIButton) {
+        var link = URL.init(string: "https://twitter.com/#!/dzsabac")!
+        switch currentOption {
+        case 1:
+            link = URL.init(string: "https://twitter.com/#!/dzsabac")!
+            break
+        case 2:
+            link = URL.init(string: "https://m.facebook.com/dzsabac")!
+            break
+        case 3:
+            link = URL.init(string: "https://m.youtube.com/user/dzsabac")!
+            break
+        default:
+            break
+        }
+        
+        //UIApplication.shared.openURL(link)
+        UIApplication.shared.open(link, options: [:], completionHandler: nil)
+    }
+    
 
 }
