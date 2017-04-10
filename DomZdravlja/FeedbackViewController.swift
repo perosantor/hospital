@@ -22,6 +22,7 @@ class FeedbackViewController: UIViewController {
     @IBOutlet weak var buttonSend: UIButton!
     @IBOutlet weak var labelAdress: UILabel!
     
+    var url:URL = Constants.Url.feedbackContactUrl
     
     // MARK: - Lifecycle
     
@@ -49,7 +50,6 @@ class FeedbackViewController: UIViewController {
     }
     
     
-    
     // MARK: - Utilities
     
     
@@ -63,10 +63,19 @@ class FeedbackViewController: UIViewController {
         self.inputViewEmail.label.text = "Ваша е-пошта (обавезно)"
         self.inputViewMessage.label.text = "Ваша порука"
         
-        self.labelAdress.text = NSLocalizedString("Hospital-adress", comment: "")
+        self.labelAdress.text = "Hospital-adress".localized
         Utilities.setSubtitleLabel(self.labelAdress)
     }
     
+    public func setupAskDoctorAppearance() {
+        self.labelAdress.text = "Expect-Answer".localized
+        url = Constants.Url.askDoctorUrl
+    }
+    
+    public func setupContactAppearance() {
+        self.labelAdress.text = "Hospital-adress".localized
+        url = Constants.Url.feedbackContactUrl
+    }
     
     // MARK: - Actions
     
@@ -88,16 +97,16 @@ class FeedbackViewController: UIViewController {
         }
         
         if name == "" || email == "" || message == "" {
-            SVProgressHUD.showError(withStatus: NSLocalizedString("All fields must be filled", comment: ""))
+            SVProgressHUD.showError(withStatus: "All fields must be filled".localized)
             return
         }
         
         let msg =  "Име: " + name + "\rЕ-пошта: " + email + "\rПорука: " + message
         
         SVProgressHUD.show()
-        CommunicationService.sharedInstace.sendInquiry(forUrl: Constants.Url.feedbackContactUrl, withMessage: msg) { (success, errorMessage) in
+        CommunicationService.sharedInstace.sendInquiry(forUrl: self.url, withMessage: msg) { (success, errorMessage) in
             if success {
-                SVProgressHUD.showInfo(withStatus: NSLocalizedString("Form sent successfully", comment: ""))
+                SVProgressHUD.showInfo(withStatus: "Form sent successfully".localized)
             } else {
                 SVProgressHUD.showError(withStatus: errorMessage)
             }

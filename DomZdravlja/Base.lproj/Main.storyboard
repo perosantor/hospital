@@ -525,6 +525,59 @@
             </objects>
             <point key="canvasLocation" x="1535.2" y="833.43328335832086"/>
         </scene>
+        <!--Doctors Advice View Controller-->
+        <scene sceneID="2IT-8n-9kt">
+            <objects>
+                <viewController storyboardIdentifier="idDoctorsAdviceViewController" id="JK4-so-416" customClass="DoctorsAdviceViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m3B-HB-7hh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Apl-Wp-Ylg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="02j-ty-0XI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvA-uf-CcY">
+                                <rect key="frame" x="0.0" y="68" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1j6-Et-gh9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="handleTapOnVaccination:" destination="JK4-so-416" eventType="touchUpInside" id="Z6q-kY-qgV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRp-D2-zRf">
+                                <rect key="frame" x="32" y="0.0" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RBw-ed-XYe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="handleTapOnAskDoctor:" destination="JK4-so-416" eventType="touchUpInside" id="2OE-0g-a79"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rvA-uf-CcY" firstAttribute="top" secondItem="XRp-D2-zRf" secondAttribute="bottom" constant="8" id="2OT-I6-7JJ"/>
+                            <constraint firstAttribute="trailing" secondItem="rvA-uf-CcY" secondAttribute="trailing" id="DCW-MC-cnB"/>
+                            <constraint firstAttribute="trailing" secondItem="XRp-D2-zRf" secondAttribute="trailing" id="FU7-cA-bOR"/>
+                            <constraint firstItem="rvA-uf-CcY" firstAttribute="leading" secondItem="02j-ty-0XI" secondAttribute="leading" id="f0J-ff-k7E"/>
+                            <constraint firstItem="XRp-D2-zRf" firstAttribute="top" secondItem="m3B-HB-7hh" secondAttribute="bottom" id="tBQ-go-ufI"/>
+                            <constraint firstItem="XRp-D2-zRf" firstAttribute="leading" secondItem="02j-ty-0XI" secondAttribute="leading" id="vaM-wW-MyI"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonAskDoctor" destination="XRp-D2-zRf" id="3m2-4T-fRy"/>
+                        <outlet property="buttonVaccination" destination="rvA-uf-CcY" id="gEM-Nr-7th"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbN-ab-Kc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208.8000000000002" y="833.43328335832086"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="ujN-kO-DuO">
             <objects>

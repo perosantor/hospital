@@ -59,6 +59,10 @@ class MasterViewController: UIViewController {
     private lazy var infoDetailsViewController: InfoDetailsViewController = {
         return self.instantiateViewController(storyboardId: "idInfoDetailsViewController") as! InfoDetailsViewController
     } ()
+    
+    private lazy var doctorsAdviceViewController: DoctorsAdviceViewController = {
+        return self.instantiateViewController(storyboardId: "idDoctorsAdviceViewController") as! DoctorsAdviceViewController
+    } ()
 
     
     private var overlayExplaner:ExplanationOverlayView?
@@ -118,6 +122,8 @@ class MasterViewController: UIViewController {
             break
         case Constants.View.Contact:
             add(asChildViewController: feedbackViewController, type:nil)
+            let contactVC = currentChildViewController as! FeedbackViewController
+            contactVC.setupContactAppearance()
             break
         case Constants.View.Feedback:
             add(asChildViewController: contactViewController, type:nil)
@@ -162,6 +168,9 @@ class MasterViewController: UIViewController {
             add(asChildViewController: infoDetailsViewController, type:Constants.View.PatientDuties)
             self.imageViewLogo.isHidden = true
             infoDetailsViewController.setPatientObligationsText()
+            break
+        case Constants.View.DoctorsAdvice:
+            add(asChildViewController: doctorsAdviceViewController, type:nil)
             break
         default:
             print("error")
