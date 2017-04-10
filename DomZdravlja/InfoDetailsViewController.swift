@@ -30,12 +30,30 @@ class InfoDetailsViewController: UIViewController {
     
     public func setMissionAndVisionText() {
         self.labelTitle.text = "Mission-And-Vision-Title".localized
-        self.textViewContent.text = "Mission-And-Vision-Content".localized
+        
+        let attrString:NSMutableAttributedString = "mission1".localized.bolded
+        attrString.append("mission2".localized.normal)
+        attrString.append("vision1".localized.bolded)
+        attrString.append("vision2".localized.normal)
+        
+        self.textViewContent.attributedText = attrString
+
     }
     
     public func setDepartmentsText() {
         self.labelTitle.text = "Departments-Title".localized
-        self.textViewContent.text = "Departments-Content".localized
+        
+        let attrString:NSMutableAttributedString = "departments1".localized.bolded
+        attrString.append("departments2".localized.bolded)
+        attrString.append("departments3".localized.bolded)
+        attrString.append("departments4".localized.bolded)
+        attrString.append("departments5".localized.bolded)
+        attrString.append("departments6".localized.bolded)
+        attrString.append("departments7".localized.bolded)
+        attrString.append("departments8".localized.bolded)
+        attrString.append("departments9".localized.bolded)
+        
+        self.textViewContent.attributedText = attrString
     }
     
     public func setColorectalScanningText() {
@@ -75,6 +93,7 @@ class InfoDetailsViewController: UIViewController {
     
     public func setTeatScanningText() {
         self.labelTitle.text = "Teat-Scanning-Title".localized
+        
         let attrString:NSMutableAttributedString = "dojka2".localized.bolded
         attrString.append("dojka3".localized.normal)
         attrString.append("dojka4".localized.bolded)
@@ -91,12 +110,38 @@ class InfoDetailsViewController: UIViewController {
     
     public func setPatientRightsText() {
         self.labelTitle.text = "Patient-Rights-Title".localized
-        self.textViewContent.text = "Patient-Rights-Content".localized
+        
+        let attrString:NSMutableAttributedString = "povelja1".localized.bolded
+        attrString.append("povelja2".localized.bolded)
+        attrString.append("povelja3".localized.bolded)
+        attrString.append("povelja4".localized.bolded)
+        attrString.append("povelja5".localized.bolded)
+        attrString.append("povelja6".localized.bolded)
+        attrString.append("povelja7".localized.bolded)
+        attrString.append("povelja8".localized.bolded)
+        attrString.append("povelja9".localized.bolded)
+        attrString.append("povelja10".localized.bolded)
+        attrString.append("povelja11".localized.bolded)
+        attrString.append("povelja12".localized.bolded)
+        attrString.append("povelja13".localized.bolded)
+        attrString.append("povelja14".localized.bolded)
+        attrString.append("povelja15".localized.bolded)
+        attrString.append("povelja16".localized.bolded)
+        attrString.append("povelja17".localized.bolded)
+        attrString.append("povelja18".localized.bolded)
+        attrString.append("povelja19".localized.bolded)
+        
+        self.textViewContent.attributedText = attrString
     }
     
     public func setPatientObligationsText() {
         self.labelTitle.text = "Patient-Obligations-Title".localized
-        self.textViewContent.text = "Patient-Obligations-Content".localized
+        
+        let attrString:NSMutableAttributedString = "duznost1".localized.bolded
+        attrString.append("duznost2".localized.bolded)
+        attrString.append("duznost3".localized.bolded)
+        
+        self.textViewContent.attributedText = attrString
     }
     
     //

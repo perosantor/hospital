@@ -497,7 +497,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-ba-gel">
-                                <rect key="frame" x="0.0" y="29.5" width="375" height="637.5"/>
+                                <rect key="frame" x="0.0" y="21.5" width="375" height="645.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -509,7 +509,7 @@
                             <constraint firstAttribute="trailing" secondItem="cD5-ba-gel" secondAttribute="trailing" id="5cX-7f-Lpo"/>
                             <constraint firstItem="HyN-h4-cxI" firstAttribute="top" secondItem="cD5-ba-gel" secondAttribute="bottom" id="5p1-zq-unH"/>
                             <constraint firstItem="ogI-aH-YPi" firstAttribute="leading" secondItem="6w9-Wc-VK1" secondAttribute="leading" id="C4T-R7-QbQ"/>
-                            <constraint firstItem="cD5-ba-gel" firstAttribute="top" secondItem="ogI-aH-YPi" secondAttribute="bottom" constant="8" id="Dtk-8v-siZ"/>
+                            <constraint firstItem="cD5-ba-gel" firstAttribute="top" secondItem="ogI-aH-YPi" secondAttribute="bottom" id="Dtk-8v-siZ"/>
                             <constraint firstItem="ogI-aH-YPi" firstAttribute="top" secondItem="yca-aO-BGa" secondAttribute="bottom" id="Rj7-0F-C8P"/>
                             <constraint firstAttribute="trailing" secondItem="ogI-aH-YPi" secondAttribute="trailing" id="T8x-9H-YYk"/>
                             <constraint firstItem="cD5-ba-gel" firstAttribute="leading" secondItem="6w9-Wc-VK1" secondAttribute="leading" id="dUP-bu-Xjf"/>
