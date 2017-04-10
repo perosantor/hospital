@@ -23,27 +23,27 @@ class InfoDetailsViewController: UIViewController {
     }
     
     public func setMissionAndVisionText() {
-        self.labelTitle.text = NSLocalizedString("Mission-And-Vision-Title", comment: "")
+        self.labelTitle.text = "Mission-And-Vision-Title".localized
         self.textViewContent.text = NSLocalizedString("Mission-And-Vision-Content", comment: "")
     }
     
     public func setDepartmentsText() {
-        self.labelTitle.text = NSLocalizedString("Departments-Title", comment: "")
+        self.labelTitle.text = "Departments-Title".localized
         self.textViewContent.text = NSLocalizedString("Departments-Content", comment: "")
     }
     
     public func setColorectalScanningText() {
-        self.labelTitle.text = NSLocalizedString("Colorectal-Scanning-Title", comment: "")
-        self.textViewContent.text = NSLocalizedString("Colorectal-Scanning-Content", comment: "")
+        self.labelTitle.text = "Colorectal-Scanning-Title".localized
+        self.textViewContent.text = ""
     }
     
     public func setUterusScanningText() {
-        self.labelTitle.text = NSLocalizedString("Uterus-Scanning-Title", comment: "")
+        self.labelTitle.text = "Uterus-Scanning-Title".localized
         self.textViewContent.text = NSLocalizedString("Uterus-Scanning-Content", comment: "")
     }
     
     public func setTeatScanningText() {
-        self.labelTitle.text = NSLocalizedString("Teat-Scanning-Title", comment: "")
+        self.labelTitle.text = "Teat-Scanning-Title".localized
         self.textViewContent.text = NSLocalizedString("Teat-Scanning-Content", comment: "")
     }
     
