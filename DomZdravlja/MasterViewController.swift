@@ -63,6 +63,10 @@ class MasterViewController: UIViewController {
     private lazy var doctorsAdviceViewController: DoctorsAdviceViewController = {
         return self.instantiateViewController(storyboardId: "idDoctorsAdviceViewController") as! DoctorsAdviceViewController
     } ()
+    
+    private lazy var vaccinesViewController: VaccinesViewController = {
+        return self.instantiateViewController(storyboardId: "idVaccinesViewController") as! VaccinesViewController
+    } ()
 
     
     private var overlayExplaner:ExplanationOverlayView?
@@ -171,6 +175,9 @@ class MasterViewController: UIViewController {
             break
         case Constants.View.DoctorsAdvice:
             add(asChildViewController: doctorsAdviceViewController, type:nil)
+            break
+        case Constants.View.Vaccines:
+            add(asChildViewController: vaccinesViewController, type:nil)
             break
         default:
             print("error")

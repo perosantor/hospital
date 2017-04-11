@@ -578,6 +578,55 @@
             </objects>
             <point key="canvasLocation" x="2208.8000000000002" y="833.43328335832086"/>
         </scene>
+        <!--Vaccines View Controller-->
+        <scene sceneID="g6i-UJ-XAM">
+            <objects>
+                <viewController storyboardIdentifier="idVaccinesViewController" id="gTp-bt-Vsw" customClass="VaccinesViewController" customModule="DomZdravlja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3XX-uq-RCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="MIH-2D-bnk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bpQ-KF-A0o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DC8-er-lUX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellVaccine" rowHeight="50" id="SBn-ZC-BaW">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SBn-ZC-BaW" id="UDc-Jm-8bc">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gTp-bt-Vsw" id="nC2-8R-4gM"/>
+                                    <outlet property="delegate" destination="gTp-bt-Vsw" id="PrH-p7-3gp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DC8-er-lUX" firstAttribute="top" secondItem="3XX-uq-RCl" secondAttribute="bottom" id="94J-3i-gSu"/>
+                            <constraint firstItem="MIH-2D-bnk" firstAttribute="top" secondItem="DC8-er-lUX" secondAttribute="bottom" id="Gvt-qf-rhb"/>
+                            <constraint firstAttribute="trailing" secondItem="DC8-er-lUX" secondAttribute="trailing" id="XSu-rr-Jrb"/>
+                            <constraint firstItem="DC8-er-lUX" firstAttribute="leading" secondItem="bpQ-KF-A0o" secondAttribute="leading" id="whm-HR-YID"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="DC8-er-lUX" id="lea-hP-I1d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVB-cb-t4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2941.5999999999999" y="833.43328335832086"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="ujN-kO-DuO">
             <objects>
