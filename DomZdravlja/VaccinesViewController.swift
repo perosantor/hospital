@@ -76,7 +76,7 @@ class VaccinesViewController: UIViewController, UITableViewDelegate, UITableView
         
         if ((self.parent as? MasterViewController) != nil ) {
             let master: MasterViewController? = self.parent as? MasterViewController
-            master?.load(viewWithType: names[indexPath.row])
+            master?.addVaccineDetails(category: indexPath.row)
         }
     }
 

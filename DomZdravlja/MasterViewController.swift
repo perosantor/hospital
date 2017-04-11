@@ -67,6 +67,10 @@ class MasterViewController: UIViewController {
     private lazy var vaccinesViewController: VaccinesViewController = {
         return self.instantiateViewController(storyboardId: "idVaccinesViewController") as! VaccinesViewController
     } ()
+    
+    private lazy var vaccinesDetailsViewController: VaccinesDetailsViewController = {
+        return self.instantiateViewController(storyboardId: "idVaccinesDetailsViewController") as! VaccinesDetailsViewController
+    } ()
 
     
     private var overlayExplaner:ExplanationOverlayView?
@@ -107,36 +111,36 @@ class MasterViewController: UIViewController {
         
         switch view {
         case Constants.View.Main:
-            add(asChildViewController: mainOptionsViewController, type:nil)
+            add(asChildViewController: mainOptionsViewController)
             break
         case Constants.View.News:
-            add(asChildViewController: newsViewController, type:nil)
+            add(asChildViewController: newsViewController)
             break
         case Constants.View.Scheduling:
-            add(asChildViewController: appointmentFormViewController, type:nil)
+            add(asChildViewController: appointmentFormViewController)
             break
         case Constants.View.CheckInsurance:
-            add(asChildViewController: insuranceCheckViewController, type:nil)
+            add(asChildViewController: insuranceCheckViewController)
             break
         case Constants.View.BodyMass:
-            add(asChildViewController: bmiCalculatorViewController, type:nil)
+            add(asChildViewController: bmiCalculatorViewController)
             break
         case Constants.View.SocialNetworks:
-            add(asChildViewController: socialViewController, type:nil)
+            add(asChildViewController: socialViewController)
             break
         case Constants.View.Contact:
-            add(asChildViewController: feedbackViewController, type:nil)
+            add(asChildViewController: feedbackViewController)
             let contactVC = currentChildViewController as! FeedbackViewController
             contactVC.setupContactAppearance()
             break
         case Constants.View.Feedback:
-            add(asChildViewController: contactViewController, type:nil)
+            add(asChildViewController: contactViewController)
             break
         case Constants.View.Settings:
-            add(asChildViewController: settingsViewController, type:nil)
+            add(asChildViewController: settingsViewController)
             break
         case Constants.View.InfoCenter:
-            add(asChildViewController: infoCenterViewController, type:nil)
+            add(asChildViewController: infoCenterViewController)
             break
         case Constants.View.MissionAndVision:
             add(asChildViewController: infoDetailsViewController, type:Constants.View.MissionAndVision)
@@ -174,10 +178,10 @@ class MasterViewController: UIViewController {
             infoDetailsViewController.setPatientObligationsText()
             break
         case Constants.View.DoctorsAdvice:
-            add(asChildViewController: doctorsAdviceViewController, type:nil)
+            add(asChildViewController: doctorsAdviceViewController)
             break
         case Constants.View.Vaccines:
-            add(asChildViewController: vaccinesViewController, type:nil)
+            add(asChildViewController: vaccinesViewController)
             break
         default:
             print("error")
@@ -188,6 +192,15 @@ class MasterViewController: UIViewController {
     
     //MARK: - Utilities
     
+    
+    private func add(asChildViewController viewController: UIViewController) {
+        self.add(asChildViewController: viewController, type: nil)
+    }
+    
+    public func addVaccineDetails(category:Int) {
+        vaccinesDetailsViewController.category = category
+        self.add(asChildViewController: vaccinesDetailsViewController, type: nil)
+    }
     
     private func add(asChildViewController viewController: UIViewController, type:String?) {
         // Add Child View Controller
@@ -239,6 +252,7 @@ class MasterViewController: UIViewController {
     func hideExplanationOverlay() {
         self.overlayExplaner?.removeFromSuperview()
     }
+    
     
     //MARK: - Lifecycle
     

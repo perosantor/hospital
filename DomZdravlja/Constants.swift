@@ -61,4 +61,9 @@ struct Constants {
         static let DefaultError = "Дошло је до грешке"
         static let Offline = "Потребно је да будете конектовани на интернет"
     }
+    
+    struct VaccinesCategory {
+        static let First = 1
+        static let Second = 2
+    }
 }

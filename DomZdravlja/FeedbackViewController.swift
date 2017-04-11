@@ -24,6 +24,7 @@ class FeedbackViewController: UIViewController {
     
     var url:URL = Constants.Url.feedbackContactUrl
     
+    
     // MARK: - Lifecycle
     
     
@@ -76,6 +77,7 @@ class FeedbackViewController: UIViewController {
         self.labelAdress.text = "Hospital-adress".localized
         url = Constants.Url.feedbackContactUrl
     }
+    
     
     // MARK: - Actions
     

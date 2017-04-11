@@ -27,6 +27,7 @@
 		0869D1001E9B872200C8475E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D0FF1E9B872200C8475E /* String+Extension.swift */; };
 		0869D1021E9BCD5C00C8475E /* DoctorsAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D1011E9BCD5C00C8475E /* DoctorsAdviceViewController.swift */; };
 		0869D1041E9C046B00C8475E /* VaccinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D1031E9C046B00C8475E /* VaccinesViewController.swift */; };
+		0869D1061E9CD4EE00C8475E /* VaccinesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D1051E9CD4EE00C8475E /* VaccinesDetailsViewController.swift */; };
 		089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614EB1E7FD11800F1AFDA /* AppDelegate.swift */; };
 		089614EE1E7FD11800F1AFDA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614ED1E7FD11800F1AFDA /* MasterViewController.swift */; };
 		089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614EF1E7FD11800F1AFDA /* Main.storyboard */; };
@@ -92,6 +93,7 @@
 		0869D0FF1E9B872200C8475E /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		0869D1011E9BCD5C00C8475E /* DoctorsAdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorsAdviceViewController.swift; sourceTree = "<group>"; };
 		0869D1031E9C046B00C8475E /* VaccinesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccinesViewController.swift; sourceTree = "<group>"; };
+		0869D1051E9CD4EE00C8475E /* VaccinesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccinesDetailsViewController.swift; sourceTree = "<group>"; };
 		089614E81E7FD11800F1AFDA /* DomZdravlja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DomZdravlja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089614EB1E7FD11800F1AFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089614ED1E7FD11800F1AFDA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				0869D0FD1E9A795600C8475E /* InfoDetailsViewController.swift */,
 				0869D1011E9BCD5C00C8475E /* DoctorsAdviceViewController.swift */,
 				0869D1031E9C046B00C8475E /* VaccinesViewController.swift */,
+				0869D1051E9CD4EE00C8475E /* VaccinesDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				0869D0F41E98D66000C8475E /* FeedbackViewController.swift in Sources */,
 				0869D0E81E96731A00C8475E /* CustomView.swift in Sources */,
 				08C2E3EB1E92657500AA518A /* InputTextFieldView.swift in Sources */,
+				0869D1061E9CD4EE00C8475E /* VaccinesDetailsViewController.swift in Sources */,
 				08C2E3E71E925DD800AA518A /* AppointmentFormViewController.swift in Sources */,
 				0869D0FE1E9A795600C8475E /* InfoDetailsViewController.swift in Sources */,
 				08B944381E82AAB9001B201B /* MainOptionsViewController.swift in Sources */,
