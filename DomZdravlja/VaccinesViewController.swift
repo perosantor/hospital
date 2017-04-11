@@ -12,20 +12,20 @@ class VaccinesViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
-    let names = ["одмах по рођењу, односно у првом месецу живота",
-                 "у другом месецу живота",
-                 "у трећем месецу живота (одмах после навршеног другог месеца) ",
-                 "са три и по месеца",
-                 "до шестог месеца живота",
-                 "од 12. до навршеног 15. месеца живота",
-                 "од 17. до навршеног 24. месеца живота",
-                 "у седмог години, пре уписа у први разред основне школе",
-                 "у 12. години",
-                 "у 14. години, у завршном разреду основне школе",
-                 "након навршених 30 година",
-                 "након навршених 40 година",
-                 "након навршених 50 година",
-                 "након навршених 60 година"]
+    let names = ["vaccines-title1".localized,
+                 "vaccines-title2".localized,
+                 "vaccines-title3".localized,
+                 "vaccines-title4".localized,
+                 "vaccines-title5".localized,
+                 "vaccines-title6".localized,
+                 "vaccines-title7".localized,
+                 "vaccines-title8".localized,
+                 "vaccines-title9".localized,
+                 "vaccines-title10".localized,
+                 "vaccines-title11".localized,
+                 "vaccines-title12".localized,
+                 "vaccines-title13".localized,
+                 "vaccines-title14".localized]
     
     override func viewDidLoad() {
         super.viewDidLoad()

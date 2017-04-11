@@ -9,27 +9,20 @@
 import UIKit
 
 class VaccinesDetailsViewController: UIViewController {
-
-    var category:Int = 0
-    
     
     // MARK: - Outlets
     
+    
     @IBOutlet weak var labelTitle: UILabel!
-    
-    @IBOutlet weak var labelName1: UILabel!
-    @IBOutlet weak var labelName2: UILabel!
-    @IBOutlet weak var labelName3: UILabel!
-    @IBOutlet weak var labelName4: UILabel!
-    
-    @IBOutlet weak var labelDate1: UILabel!
-    @IBOutlet weak var labelDate2: UILabel!
-    @IBOutlet weak var labelDate3: UILabel!
-    @IBOutlet weak var labelDate4: UILabel!
-    
     @IBOutlet weak var labelContent: UILabel!
     
+    @IBOutlet weak var viewLabel1: LabelWithBackground!
+    @IBOutlet weak var viewLabel2: LabelWithBackground!
+    @IBOutlet weak var viewLabel4: LabelWithBackground!
+    @IBOutlet weak var viewLabel3: LabelWithBackground!
+    
     @IBOutlet weak var buttonBack: UIButton!
+    
     
     // MARK: - Lifecycle
     
@@ -58,6 +51,26 @@ class VaccinesDetailsViewController: UIViewController {
     
     // MARK: - Utilities
     
+    
+    public func setAppearance(forCategory category:Int) {
+        switch category {
+        case 0:
+            self.labelTitle.text = "vaccines-title1".localized.uppercased()
+            self.labelContent.text = "HB\n\n" + "HB".localized
+            
+            self.viewLabel1.labelLeft.text = "BCG"
+            self.viewLabel1.labelRight.text = "вакцина"
+            self.viewLabel2.labelLeft.text = "HB"
+            self.viewLabel2.labelRight.text = "прва доза + HBIG"
+            
+            self.viewLabel3.isHidden = true
+            self.viewLabel4.isHidden = true
+            
+            break
+        default:
+            break
+        }
+    }
     
     func setup() {
         self.view.backgroundColor = UIColor.clear

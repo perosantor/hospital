@@ -198,8 +198,9 @@ class MasterViewController: UIViewController {
     }
     
     public func addVaccineDetails(category:Int) {
-        vaccinesDetailsViewController.category = category
+        remove(asChildViewController: currentChildViewController!)
         self.add(asChildViewController: vaccinesDetailsViewController, type: nil)
+        vaccinesDetailsViewController.setAppearance(forCategory:category)
     }
     
     private func add(asChildViewController viewController: UIViewController, type:String?) {
