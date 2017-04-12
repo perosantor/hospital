@@ -68,7 +68,11 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func switchNotification(_ sender: UISwitch) {
-        
+        if sender.isOn {
+            Utilities.setPushEnabledFlag("true")
+        } else {
+            Utilities.setPushEnabledFlag("false")
+        }
     }
     
     @IBAction func handleTapOnRateButton(_ sender: UIButton) {

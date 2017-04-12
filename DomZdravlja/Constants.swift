@@ -64,8 +64,7 @@ struct Constants {
         static let Offline = "Потребно је да будете конектовани на интернет"
     }
     
-    struct VaccinesCategory {
-        static let First = 1
-        static let Second = 2
+    struct UserDefaultsKey {
+        static let PushEnabled = "PushEnabled"
     }
 }

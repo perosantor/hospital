@@ -112,6 +112,18 @@ class Utilities {
         label.numberOfLines = 0
     }
     
+    class func getPushEnabledFlag() -> String? {
+        return UserDefaults.standard.object(forKey: Constants.UserDefaultsKey.PushEnabled) as? String ?? nil
+    }
+    
+    class func setPushEnabledFlag(_ token:String) {
+        UserDefaults.standard.set(token, forKey: Constants.UserDefaultsKey.PushEnabled)
+    }
+    
+    class func deletePushEnabledFlag() {
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKey.PushEnabled)
+    }
+    
 }
 
 
