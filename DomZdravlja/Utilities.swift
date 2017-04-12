@@ -92,18 +92,24 @@ class Utilities {
         setButton(button, title: nil, height: 18, color: UIColor.clear)
     }
 
-
+    class func setInfoSubtitleButton(_ button:UIButton, title:String) {
+        setButton(button, title: title, height: 18, color: UIColor.clear)
+    }
     
     class func setSubtitleLabel(_ label:UILabel) {
-        label.textColor = UIColor.white
-        label.font = UIFont.systemFont(ofSize: 13)
-        label.backgroundColor = UIColor.clear
+        self.setLabel(label, size: 13)
     }
     
     class func setТitleLabel(_ label:UILabel) {
+        self.setLabel(label, size: 18)
+    }
+    
+    class func setLabel(_ label:UILabel, size:CGFloat) {
         label.textColor = UIColor.white
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont.systemFont(ofSize: size)
         label.backgroundColor = UIColor.clear
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
     }
     
 }

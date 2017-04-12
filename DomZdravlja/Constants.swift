@@ -41,6 +41,8 @@ struct Constants {
         static let Contact = "Контакт"
         static let Settings = "Подешавања"
         static let DoctorsAdvice = "Савети лекара"
+        
+        static let ScheduleAppointment = "ScheduleAppointment"
     }
     
     struct Font {

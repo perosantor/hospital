@@ -20,8 +20,8 @@ class MasterViewController: UIViewController {
         return self.instantiateViewController(storyboardId: "idNewsViewController") as! NewsViewController
     } ()
     
-    private lazy var appointmentFormViewController: AppointmentFormViewController = {
-        return self.instantiateViewController(storyboardId: "idAppointmentFormViewController") as! AppointmentFormViewController
+    private lazy var appointmentFormViewController: OnlineAppointmentViewController = {
+        return self.instantiateViewController(storyboardId: "idOnlineAppointmentViewController") as! OnlineAppointmentViewController
     } ()
     
     private lazy var insuranceCheckViewController: InsuranceCheckViewController = {
@@ -66,6 +66,10 @@ class MasterViewController: UIViewController {
     
     private lazy var vaccinesDetailsViewController: VaccinesDetailsViewController = {
         return self.instantiateViewController(storyboardId: "idVaccinesDetailsViewController") as! VaccinesDetailsViewController
+    } ()
+    
+    private lazy var scheduleAppointmentFormViewController: AppointmentFormViewController = {
+        return self.instantiateViewController(storyboardId: "idAppointmentFormViewController") as! AppointmentFormViewController
     } ()
 
     
@@ -116,6 +120,9 @@ class MasterViewController: UIViewController {
             break
         case Constants.View.Scheduling:
             add(asChildViewController: appointmentFormViewController)
+            break
+        case Constants.View.ScheduleAppointment:
+            add(asChildViewController: scheduleAppointmentFormViewController)
             break
         case Constants.View.CheckInsurance:
             add(asChildViewController: insuranceCheckViewController)
