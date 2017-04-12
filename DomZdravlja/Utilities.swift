@@ -61,12 +61,27 @@ class Utilities {
     }
     
     
+    //MARK - Set UIButton appearance
+    
+    
     class func setRedButton(_ button:UIButton, title: String) {
         setButton(button, title: title, height: 18, color:nil)
     }
     
     class func setRedButtonSmall(_ button:UIButton, title: String) {
         setButton(button, title: title, height: 10, color: nil)
+    }
+    
+    class func setInfoButton(_ button:UIButton) {
+        setButton(button, title: nil, height: 18, color: nil)
+    }
+    
+    class func setInfoSubtitleButton(_ button:UIButton) {
+        setButton(button, title: nil, height: 18, color: UIColor.clear)
+    }
+    
+    class func setInfoSubtitleButton(_ button:UIButton, title:String) {
+        setButton(button, title: title, height: 18, color: UIColor.clear)
     }
     
     class func setButton(_ button:UIButton, title: String?, height: CGFloat, color:UIColor?) {
@@ -84,17 +99,19 @@ class Utilities {
         button.titleLabel?.textAlignment = NSTextAlignment.center
     }
     
-    class func setInfoButton(_ button:UIButton) {
-        setButton(button, title: nil, height: 18, color: nil)
+    class func setMainOptionsButtonAppearance(_ button:UIButton) {
+        button.backgroundColor = Constants.Color.CustomRed
+        button.alpha = 0.8
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = Constants.Font.ButtonTitle
+        button.titleLabel?.numberOfLines = 0
+        button.titleLabel?.lineBreakMode = .byWordWrapping
+        button.titleLabel?.textAlignment = .center
     }
     
-    class func setInfoSubtitleButton(_ button:UIButton) {
-        setButton(button, title: nil, height: 18, color: UIColor.clear)
-    }
-
-    class func setInfoSubtitleButton(_ button:UIButton, title:String) {
-        setButton(button, title: title, height: 18, color: UIColor.clear)
-    }
+    
+    //MARK: - Set UILabel appearance
+    
     
     class func setSubtitleLabel(_ label:UILabel) {
         self.setLabel(label, size: 13)
@@ -111,6 +128,10 @@ class Utilities {
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
     }
+    
+    
+    //MARK: - User settings
+    
     
     class func getPushEnabledFlag() -> String? {
         return UserDefaults.standard.object(forKey: Constants.UserDefaultsKey.PushEnabled) as? String ?? nil

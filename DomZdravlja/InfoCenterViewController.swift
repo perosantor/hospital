@@ -51,7 +51,7 @@ class InfoCenterViewController: UIViewController {
         for button in buttons {
             switch button.tag {
             case 1, 4, 8:
-                Utilities.setInfoButton(button)
+                Utilities.setMainOptionsButtonAppearance(button)
                 break
             default:
                 Utilities.setInfoSubtitleButton(button)

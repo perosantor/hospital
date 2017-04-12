@@ -18,13 +18,7 @@ class MainOptionsViewController: UIViewController {
     
     func setOptionButtonsAppearance() {
         for button in self.buttonsOption {
-            button.backgroundColor = Constants.Color.CustomRed
-            button.alpha = 0.8
-            button.setTitleColor(UIColor.white, for: .normal)
-            button.titleLabel?.font = Constants.Font.ButtonTitle
-            button.titleLabel?.numberOfLines = 0
-            button.titleLabel?.lineBreakMode = .byWordWrapping
-            button.titleLabel?.textAlignment = .center
+            Utilities.setMainOptionsButtonAppearance(button)
         }
     }
     

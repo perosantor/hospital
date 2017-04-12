@@ -176,33 +176,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHs-HJ-1Ng">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="490"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-Yi-hOd">
-                                                <rect key="frame" x="0.0" y="520" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="430" width="375" height="60"/>
                                                 <state key="normal" title="ИНДЕКС ТЕЛЕСНЕ МАСЕ"/>
                                                 <connections>
                                                     <action selector="handleTapOnOptionsButton:" destination="9Fh-mR-jsL" eventType="touchUpInside" id="N4n-ww-WKM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-NW-XN5">
-                                                <rect key="frame" x="0.0" y="170" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="140" width="375" height="60"/>
                                                 <state key="normal" title="ЕЛЕКТРОНСКО ЗАКАЗИВАЊЕ"/>
                                                 <connections>
                                                     <action selector="handleTapOnOptionsButton:" destination="9Fh-mR-jsL" eventType="touchUpInside" id="GYx-vd-mM8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-y5-JEr">
-                                                <rect key="frame" x="0.0" y="435" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="360" width="375" height="60"/>
                                                 <state key="normal" title="САВЕТИ ЛЕКАРА"/>
                                                 <connections>
                                                     <action selector="handleTapOnOptionsButton:" destination="9Fh-mR-jsL" eventType="touchUpInside" id="MDk-uB-bri"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-r5-j0k">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="75" id="0Hr-n9-0UE"/>
+                                                    <constraint firstAttribute="height" constant="60" id="0Hr-n9-0UE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                 <state key="normal" title="ИНФО ЦЕНТАР"/>
@@ -211,21 +211,21 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQP-F0-rle">
-                                                <rect key="frame" x="0.0" y="85" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="70" width="375" height="60"/>
                                                 <state key="normal" title="ВЕСТИ"/>
                                                 <connections>
                                                     <action selector="handleTapOnOptionsButton:" destination="9Fh-mR-jsL" eventType="touchUpInside" id="SDw-LI-UPn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-wK-vaF">
-                                                <rect key="frame" x="0.0" y="350" width="375" height="75"/>
+                                                <rect key="frame" x="0.0" y="290" width="375" height="60"/>
                                                 <state key="normal" title="ДРУШТВЕНЕ МРЕЖЕ"/>
                                                 <connections>
                                                     <action selector="handleTapOnOptionsButton:" destination="9Fh-mR-jsL" eventType="touchUpInside" id="yVj-7u-n0Q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sg-B4-Wt4">
-                                                <rect key="frame" x="0.0" y="255" width="375" height="85"/>
+                                                <rect key="frame" x="0.0" y="210" width="375" height="70"/>
                                                 <state key="normal" title="ПРОВЕРА ЗДРАВСТВЕНОГ ОСИГУРАЊА"/>
                                                 <connections>
                                                     <action selector="handleTapOnOptionsButton:" destination="9Fh-mR-jsL" eventType="touchUpInside" id="gJx-VX-VtM"/>
@@ -313,23 +313,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ff-WU-du9" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="566"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="648"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="EvF-aW-3Nk">
-                                                <rect key="frame" x="0.0" y="8" width="375" height="550"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EvF-aW-3Nk">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="640"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERQ-pu-qmP">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="zKw-kb-haq"/>
                                                         </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                         <state key="normal" title="О НАМА"/>
                                                         <connections>
                                                             <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="ki5-ze-yt9"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqu-fe-qKE">
-                                                        <rect key="frame" x="0.0" y="61" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="70" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="Bhj-Cl-Ekm"/>
                                                         </constraints>
@@ -339,7 +340,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kae-pX-gkN">
-                                                        <rect key="frame" x="0.0" y="107" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="125" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="uOT-3o-IFW"/>
                                                         </constraints>
@@ -349,17 +350,18 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REh-NQ-3Mg">
-                                                        <rect key="frame" x="0.0" y="153" width="375" height="60"/>
+                                                        <rect key="frame" x="0.0" y="180" width="375" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="aCd-97-YAr"/>
                                                         </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                         <state key="normal" title="СКРИНИНГ"/>
                                                         <connections>
                                                             <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="Gei-ud-RVH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2p-FM-ycJ">
-                                                        <rect key="frame" x="0.0" y="214" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="250" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="pMu-cF-Eag"/>
                                                         </constraints>
@@ -369,7 +371,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzo-qe-Qf7">
-                                                        <rect key="frame" x="0.0" y="260" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="305" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="nfg-Co-nch"/>
                                                         </constraints>
@@ -379,7 +381,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-Ev-OUC">
-                                                        <rect key="frame" x="0.0" y="306" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="360" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="6pL-Qv-xhM"/>
                                                         </constraints>
@@ -389,17 +391,18 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aco-Jf-0fd">
-                                                        <rect key="frame" x="0.0" y="352" width="375" height="60"/>
+                                                        <rect key="frame" x="0.0" y="415" width="375" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="0hT-04-2dh"/>
                                                         </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                         <state key="normal" title="ПРАВА ПАЦИЈЕНАТА"/>
                                                         <connections>
                                                             <action selector="handleTapOnButton:" destination="wWE-AO-qzg" eventType="touchUpInside" id="LK9-Fs-Z54"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQa-l1-uXq">
-                                                        <rect key="frame" x="0.0" y="413" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="485" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="Lt1-RX-fKe"/>
                                                         </constraints>
@@ -409,7 +412,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhJ-Ll-E47">
-                                                        <rect key="frame" x="0.0" y="459" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="540" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="Hl5-0n-Ll5"/>
                                                         </constraints>
@@ -419,7 +422,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ9-fP-Pt4">
-                                                        <rect key="frame" x="0.0" y="505" width="375" height="45"/>
+                                                        <rect key="frame" x="0.0" y="595" width="375" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="750" constant="45" id="koS-0b-NcC"/>
                                                         </constraints>
@@ -433,7 +436,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="EvF-aW-3Nk" firstAttribute="top" secondItem="0ff-WU-du9" secondAttribute="top" constant="8" id="Bln-2M-bQt"/>
+                                            <constraint firstItem="EvF-aW-3Nk" firstAttribute="top" secondItem="0ff-WU-du9" secondAttribute="top" id="Bln-2M-bQt"/>
                                             <constraint firstAttribute="trailing" secondItem="EvF-aW-3Nk" secondAttribute="trailing" id="FiE-OC-0Rw"/>
                                             <constraint firstItem="EvF-aW-3Nk" firstAttribute="leading" secondItem="0ff-WU-du9" secondAttribute="leading" id="THW-Do-7ia"/>
                                             <constraint firstAttribute="bottom" secondItem="EvF-aW-3Nk" secondAttribute="bottom" constant="8" id="byu-QD-f72"/>
