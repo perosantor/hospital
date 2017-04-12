@@ -19,4 +19,9 @@ extension UIViewController {
     func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    func clearScreen() {
+        
+    }
+    
 }

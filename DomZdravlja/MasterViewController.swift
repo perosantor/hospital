@@ -11,10 +11,6 @@ import AVFoundation
 import KYDrawerController
 
 class MasterViewController: UIViewController {
-
-    private var currentChildViewController : UIViewController?
-    
-    @IBOutlet weak var imageViewLogo: UIImageView!
     
     private lazy var mainOptionsViewController: MainOptionsViewController = {
         return self.instantiateViewController(storyboardId: "idMainOptionsViewController") as! MainOptionsViewController
@@ -75,6 +71,22 @@ class MasterViewController: UIViewController {
     
     private var overlayExplaner:ExplanationOverlayView?
     
+    
+    //MARK: - Outlets
+    
+    
+    @IBOutlet weak var buttonDrawer: UIButton!
+    
+    @IBOutlet weak var buttonEmergencyCall: UIButton!
+    
+    @IBOutlet weak var imageViewBackground: UIImageView!
+    
+    @IBOutlet weak var imageViewLogo: UIImageView!
+    
+    
+    //MARK: - Utilities
+    
+    
     private func instantiateViewController(storyboardId: String) -> UIViewController {
         // Load Storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -88,22 +100,8 @@ class MasterViewController: UIViewController {
         return viewController
     }
     
-    
-    //MARK: - Outlets
-    
-    
-    @IBOutlet weak var buttonDrawer: UIButton!
-    
-    @IBOutlet weak var buttonEmergencyCall: UIButton!
-    
-    @IBOutlet weak var imageViewBackground: UIImageView!
-    
-    
-    //MARK: - Public methods
-    
-    
     public func load(viewWithType view:String) {
-        remove(asChildViewController: currentChildViewController!)
+        remove(asChildViewController: self.childViewControllers.last!)
         
         if self.imageViewLogo.isHidden {
             self.imageViewLogo.isHidden = false
@@ -130,7 +128,7 @@ class MasterViewController: UIViewController {
             break
         case Constants.View.Contact:
             add(asChildViewController: feedbackViewController)
-            let contactVC = currentChildViewController as! FeedbackViewController
+            let contactVC = self.childViewControllers.last as! FeedbackViewController
             contactVC.setupContactAppearance()
             break
         case Constants.View.Feedback:
@@ -190,15 +188,12 @@ class MasterViewController: UIViewController {
     }
     
     
-    //MARK: - Utilities
-    
-    
     private func add(asChildViewController viewController: UIViewController) {
         self.add(asChildViewController: viewController, type: nil)
     }
     
     public func addVaccineDetails(category:Int) {
-        remove(asChildViewController: currentChildViewController!)
+        remove(asChildViewController: self.childViewControllers.last!)
         self.add(asChildViewController: vaccinesDetailsViewController, type: nil)
         vaccinesDetailsViewController.setAppearance(forCategory:category)
     }
@@ -223,10 +218,10 @@ class MasterViewController: UIViewController {
         
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        // Notify Child View Controller
+        //Notify Child View Controller
         viewController.didMove(toParentViewController: self)
         
-        currentChildViewController = viewController
+        //currentChildViewController = viewController
     }
     
     private func remove(asChildViewController viewController: UIViewController) {
@@ -238,6 +233,8 @@ class MasterViewController: UIViewController {
         
         // Notify Child View Controller
         viewController.removeFromParentViewController()
+        
+        viewController.clearScreen()
     }
     
     public func showExplanationOverlay() {
@@ -255,15 +252,6 @@ class MasterViewController: UIViewController {
     }
     
     
-    //MARK: - Lifecycle
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
-        setupView()
-    }
-    
     private func setupView() {
         addBackgroundOverlay()
         add(asChildViewController: mainOptionsViewController, type:nil)
@@ -279,6 +267,16 @@ class MasterViewController: UIViewController {
         self.imageViewBackground.addSubview(overlay)
     }
 
+    
+    //MARK: - Lifecycle
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
+        setupView()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -313,7 +311,7 @@ class MasterViewController: UIViewController {
             }
         }
     }
-    
+
     
 
 }

@@ -12,7 +12,7 @@ import SVProgressHUD
 class BMICalculatorViewController: UIViewController {
 
     
-    //
+    // MARK: - Outlets
 
     
     @IBOutlet weak var inputViewHeight: InputTextFieldView!
@@ -26,7 +26,7 @@ class BMICalculatorViewController: UIViewController {
     @IBOutlet weak var buttonClear: UIButton!
     
     
-    //
+    // MARK: - Lifecycle
     
     
     override func viewDidLoad() {
@@ -52,7 +52,7 @@ class BMICalculatorViewController: UIViewController {
     }
     
     
-    //
+    // MARK: - Utilities
     
     
     func setup() {
@@ -71,9 +71,15 @@ class BMICalculatorViewController: UIViewController {
         self.labelResult.text = ""
         
     }
+    
+    public override func clearScreen() {
+        self.inputViewHeight.textField.text = ""
+        self.inputViewWeight.textField.text = ""
+        self.labelResult.text = ""
+    }
 
     
-    //
+    // MARK: - Actions
     
     
     @IBAction func handleTapOnCalculateButton(_ sender: UIButton) {
@@ -105,6 +111,7 @@ class BMICalculatorViewController: UIViewController {
         default:
             level = ""
             SVProgressHUD.showError(withStatus: "Проверите унете податке")
+            return
         }
         
         let min = round( 18.5 * weight * weight / 1000)
@@ -118,10 +125,9 @@ class BMICalculatorViewController: UIViewController {
     }
     
     @IBAction func handleTapOnClearButton(_ sender: UIButton) {
-        self.inputViewHeight.textField.text = ""
-        self.inputViewWeight.textField.text = ""
-        self.labelResult.text = ""
+        clearScreen()
     }
+    
 
    
 }

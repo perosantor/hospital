@@ -51,7 +51,7 @@ class InsuranceCheckViewController: UIViewController {
         super.viewWillDisappear(animated)
         deregisterFromKeyboardNotifications()
     }
-    
+
     
     //MARK: - Utilities
     
@@ -90,6 +90,12 @@ class InsuranceCheckViewController: UIViewController {
                                    y: self.scrollView.contentSize.height - self.scrollView.bounds.size.height)
         self.scrollView.setContentOffset(bottomOffset, animated: true)
     }
+    
+    public override func clearScreen() {
+        self.inputFieldZK.textField.text = ""
+        self.inputFieldLBO.textField.text = ""
+    }
+
     
     
     // MARK: - Actions

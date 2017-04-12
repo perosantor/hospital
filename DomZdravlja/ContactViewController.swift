@@ -49,6 +49,13 @@ class ContactViewController: UIViewController {
         deregisterFromKeyboardNotifications()
     }
 
+    public override func clearScreen() {
+        self.inputViewName?.textField.text = ""
+        self.inputViewEmail?.textField.text = ""
+        self.inputViewContactReason?.textField.text = ""
+        self.inputViewMessage?.textView.text = ""
+    }
+
     
 
     // MARK: - Utilities

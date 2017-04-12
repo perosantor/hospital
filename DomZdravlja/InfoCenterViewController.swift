@@ -74,6 +74,16 @@ class InfoCenterViewController: UIViewController {
         }
     }
     
+    override func clearScreen() {
+        for button in buttons {
+            if [2,3,5,6,7,9,10,11].contains(button.tag) {
+                if !button.isHidden {
+                    button.isHidden = true
+                }
+            }
+        }
+    }
+    
     
     // MARK: - Actions
     

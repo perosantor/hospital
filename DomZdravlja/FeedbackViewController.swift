@@ -78,6 +78,12 @@ class FeedbackViewController: UIViewController {
         url = Constants.Url.feedbackContactUrl
     }
     
+    public override func clearScreen() {
+        self.inputViewName?.textField.text = ""
+        self.inputViewEmail?.textField.text = ""
+        self.inputViewMessage?.textView.text = ""
+    }
+    
     
     // MARK: - Actions
     

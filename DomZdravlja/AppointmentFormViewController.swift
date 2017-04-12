@@ -94,6 +94,16 @@ class AppointmentFormViewController: UIViewController {
     }
     
     
+    public override func clearScreen() {
+        self.inputFieldName?.textField.text = ""
+        self.inputFieldEmail?.textField.text = ""
+        self.inputFieldPhone?.textField.text = ""
+        self.inputFieldID?.textField.text = ""
+        self.inputFieldDoctor?.textField.text = ""
+        self.inputFieldTime?.textField.text = ""
+    }
+    
+    
     //MARK: Actions
     
     
