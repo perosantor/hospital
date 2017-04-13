@@ -13,7 +13,6 @@ target 'DomZdravlja' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage'
-  #pod 'SwiftSoup'
 
 
   target 'DomZdravljaTests' do

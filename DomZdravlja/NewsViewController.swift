@@ -8,6 +8,7 @@
 
 import UIKit
 import SVProgressHUD
+import SDWebImage
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -62,6 +63,11 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.labelText.text = self.dataSourceArray[indexPath.row].content
         cell.labelTitle.text = self.dataSourceArray[indexPath.row].title
         cell.selectionStyle = .none
+        
+        let urls = self.dataSourceArray[indexPath.row].imageUrls
+        if (urls?.count)! > 0 {
+            cell.imageViewPostImage.sd_setImage(with: urls?[0] as! URL, placeholderImage: UIImage(named: "ic_launcher"))
+        }
         
         return cell
     }

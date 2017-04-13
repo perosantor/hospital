@@ -35,7 +35,14 @@ class NewsDetailsViewController: UIViewController {
     private func setup() {
         //self.webViewContent.loadHTMLString("<html><body text=\"#FFFFFF\" face=\"Bookman Old Style, Book Antiqua, Garamond\" size=\"25\"></body></html>" + self.selectedNews!.content!, baseURL:nil)
         
-        self.webViewContent.loadHTMLString(self.selectedNews!.content!, baseURL:nil)
+        
+        //parseHtml()
+        let urls = self.selectedNews!.content!.extractURLs()
+        let string = self.selectedNews!.content!.html2String
+        print(string)
+        
+        
+        
         self.webViewContent.isOpaque = false
         
         self.labelTitle.text = self.selectedNews?.title
@@ -60,6 +67,8 @@ class NewsDetailsViewController: UIViewController {
         overlay.backgroundColor = Constants.Color.OverlayGrey
         self.imageViewBackground.addSubview(overlay)
     }
+    
+       
     
 
 }

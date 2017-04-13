@@ -37,4 +37,39 @@ extension String {
         
         return attrString
     }
+    
+    //
+    
+    
+    var html2AttributedString: NSAttributedString? {
+        do {
+            return try NSAttributedString(data: Data(utf8), options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil)
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    var html2String: String {
+        return html2AttributedString?.string ?? ""
+    }
+    
+    func extractURLs() -> [NSURL] {
+        var urls : [NSURL] = []
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+            detector.enumerateMatches(in: self,
+                                      options: [],
+                                      range: NSMakeRange(0, self.characters.count),
+                                      using: { (result, _, _) in
+                                                if let match = result, let url = match.url {
+                                                    urls.append(url as NSURL)
+                                                }
+            })
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        return urls
+    }
+
+
 }

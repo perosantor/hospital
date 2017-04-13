@@ -14,15 +14,16 @@ class News: NSObject {
     var title: String?
     var content: String?
     var postDate: Date?
-    var imageUrl: String?
+    var imageUrls: Array<NSURL>?
     var type: String?
     
     init(id:String?, title: String?, content: String?, postDate: String?, type: String?) {
         self.id = id
         self.title = title
-        self.content = content
+        self.content = content?.html2String
         self.postDate = Utilities.getDate(fromString:postDate)
         self.type = type
+        self.imageUrls = content?.extractURLs()
     }
     
 }
