@@ -1,6 +1,0 @@
-framework module Pods_DomZdravljaUITests {
-  umbrella header "Pods-DomZdravljaUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

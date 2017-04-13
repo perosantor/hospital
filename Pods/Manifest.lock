@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.0.1)
   - KYDrawerController (2.0.1)
   - ReachabilitySwift (3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.0.3)
   - SwiftyJSON (3.1.1)
 
@@ -9,6 +12,7 @@ DEPENDENCIES:
   - Alamofire
   - KYDrawerController
   - ReachabilitySwift
+  - SDWebImage
   - SVProgressHUD
   - SwiftyJSON
 
@@ -16,9 +20,10 @@ SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   KYDrawerController: b716cfa5730dc2133a67efcfc28b3b5a2cff6101
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: a34c63cad92d0e3e8494908098af2ba7d907bc95
+PODFILE CHECKSUM: c270f541e49d329c927547a0e5d36dc18317d6dd
 
 COCOAPODS: 1.1.1

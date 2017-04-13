@@ -937,6 +937,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonBack" destination="DO7-lv-qQA" id="uhc-9u-fdd"/>
+                        <outlet property="imageViewBackground" destination="1dt-Y9-e3t" id="KHe-mb-VfU"/>
                         <outlet property="labelTitle" destination="jPt-Pi-WNK" id="HHI-MV-aB0"/>
                         <outlet property="webViewContent" destination="oZv-Fe-evV" id="edu-QI-tVB"/>
                     </connections>

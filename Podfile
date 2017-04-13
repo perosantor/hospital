@@ -12,6 +12,9 @@ target 'DomZdravlja' do
   pod 'KYDrawerController'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SDWebImage'
+  #pod 'SwiftSoup'
+
 
   target 'DomZdravljaTests' do
     inherit! :search_paths

@@ -16,10 +16,26 @@ class NewsDetailsViewController: UIViewController {
     @IBOutlet weak var webViewContent: UIWebView!
     @IBOutlet weak var buttonBack: UIButton!
     
+    @IBOutlet weak var imageViewBackground: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+            }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func handleTapOnBackButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    private func setup() {
+        //self.webViewContent.loadHTMLString("<html><body text=\"#FFFFFF\" face=\"Bookman Old Style, Book Antiqua, Garamond\" size=\"25\"></body></html>" + self.selectedNews!.content!, baseURL:nil)
         
-        self.webViewContent.loadHTMLString("<html><body text=\"#FFFFFF\" face=\"Bookman Old Style, Book Antiqua, Garamond\" size=\"25\"></body></html>" + self.selectedNews!.content!, baseURL:nil)
+        self.webViewContent.loadHTMLString(self.selectedNews!.content!, baseURL:nil)
         self.webViewContent.isOpaque = false
         
         self.labelTitle.text = self.selectedNews?.title
@@ -30,17 +46,20 @@ class NewsDetailsViewController: UIViewController {
         Utilities.setRedButton(self.buttonBack, title: "ВРАТИ СЕ НАЗАД")
         
         self.view.backgroundColor = Constants.Color.CustomRed
-    }
+        addBackgroundOverlay()
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func handleTapOnBackButton(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-    }
 
+    private func addBackgroundOverlay() {
+        let overlay: UIView = UIView(frame: CGRect(x: self.imageViewBackground.frame.origin.x,
+                                                   y: self.imageViewBackground.frame.origin.y - 20,
+                                                   width: self.imageViewBackground.frame.size.width + 40,
+                                                   height: self.imageViewBackground.frame.size.height))
+        
+        overlay.backgroundColor = Constants.Color.OverlayGrey
+        self.imageViewBackground.addSubview(overlay)
+    }
     
 
 }
