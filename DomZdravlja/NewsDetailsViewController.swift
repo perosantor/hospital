@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import SDWebImage
 
 class NewsDetailsViewController: UIViewController {
 
     public var selectedNews: News? = nil
     
     @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var webViewContent: UIWebView!
     @IBOutlet weak var buttonBack: UIButton!
     
     @IBOutlet weak var imageViewBackground: UIImageView!
+    
+    @IBOutlet weak var imageViewTop: UIImageView!
+    @IBOutlet weak var labelContent: UILabel!
+    @IBOutlet weak var labelDate: UILabel!
+    
+    @IBOutlet var viewRedTitleOffset: [UIView]!
+    
+    @IBOutlet weak var constraintImageViewTopHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +41,23 @@ class NewsDetailsViewController: UIViewController {
     }
     
     private func setup() {
-        //self.webViewContent.loadHTMLString("<html><body text=\"#FFFFFF\" face=\"Bookman Old Style, Book Antiqua, Garamond\" size=\"25\"></body></html>" + self.selectedNews!.content!, baseURL:nil)
         
+        self.labelContent.text = self.selectedNews?.content
+        Utilities.setSubtitleLabel(self.labelContent)
         
-        //parseHtml()
-        let urls = self.selectedNews!.content!.extractURLs()
-        let string = self.selectedNews!.content!.html2String
-        print(string)
+        if let urls = self.selectedNews?.imageUrls! {
+            if urls.count > 0 {
+                self.constraintImageViewTopHeight.constant = self.view.frame.size.width * 0.75
+                self.imageViewTop.sd_setImage(with: urls[0] as URL,
+                                              placeholderImage: UIImage.init(named: "ic_launcher"))
+            } else {
+                self.constraintImageViewTopHeight.constant = 0
+            }
+        }
         
-        
-        
-        self.webViewContent.isOpaque = false
+        self.labelDate.text = "\(self.selectedNews?.postDate)"
+        self.labelDate.textColor = UIColor.white
+        self.labelDate.font = UIFont.systemFont(ofSize: 16)
         
         self.labelTitle.text = self.selectedNews?.title
         self.labelTitle.textColor = UIColor.white
@@ -54,6 +68,10 @@ class NewsDetailsViewController: UIViewController {
         
         self.view.backgroundColor = Constants.Color.CustomRed
         addBackgroundOverlay()
+        
+        for view in self.viewRedTitleOffset {
+            view.backgroundColor = Constants.Color.CustomRed
+        }
 
     }
     
