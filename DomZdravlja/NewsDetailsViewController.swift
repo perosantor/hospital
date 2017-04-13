@@ -55,7 +55,12 @@ class NewsDetailsViewController: UIViewController {
             }
         }
         
-        self.labelDate.text = "\(self.selectedNews?.postDate)"
+        if let date:String = self.selectedNews?.postDate! {
+            self.labelDate.text = "Датум: \(date)"
+        } else {
+            self.labelDate.text = ""
+        }
+        
         self.labelDate.textColor = UIColor.white
         self.labelDate.font = UIFont.systemFont(ofSize: 16)
         

@@ -42,6 +42,10 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        SVProgressHUD.dismiss()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

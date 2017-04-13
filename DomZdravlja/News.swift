@@ -13,7 +13,7 @@ class News: NSObject {
     var id: String?
     var title: String?
     var content: String?
-    var postDate: Date?
+    var postDate: String?
     var imageUrls: Array<NSURL>?
     var type: String?
     
@@ -21,7 +21,7 @@ class News: NSObject {
         self.id = id
         self.title = title
         self.content = content?.html2String
-        self.postDate = Utilities.getDate(fromString:postDate)
+        self.postDate = postDate
         self.type = type
         self.imageUrls = content?.extractURLs()
     }
