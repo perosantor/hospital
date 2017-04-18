@@ -14,6 +14,7 @@ target 'DomZdravlja' do
   pod 'SwiftyJSON'
   pod 'SDWebImage'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 
   target 'DomZdravljaTests' do
