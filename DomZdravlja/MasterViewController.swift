@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import KYDrawerController
+import SVProgressHUD
 
 class MasterViewController: UIViewController {
     
@@ -105,6 +106,11 @@ class MasterViewController: UIViewController {
     }
     
     public func load(viewWithType view:String) {
+        if !Utilities.isValidLicence() {
+            SVProgressHUD.showInfo(withStatus: "Licenca nije plaćena")
+            return
+        }
+        
         remove(asChildViewController: self.childViewControllers.last!)
         
         if self.imageViewLogo.isHidden {

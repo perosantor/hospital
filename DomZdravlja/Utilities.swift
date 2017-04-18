@@ -145,6 +145,21 @@ class Utilities {
         UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKey.PushEnabled)
     }
     
+    class func isValidLicence() -> Bool {
+        var ret = true
+        let readValue = UserDefaults.standard.object(forKey: Constants.UserDefaultsKey.Licence) as? NSNumber ?? nil
+        if (readValue != nil) {
+            if readValue == 0 {
+                ret = false
+            }
+        }
+        return ret
+    }
+    
+    class func setLicence(_ token:NSNumber) {
+        UserDefaults.standard.set(token, forKey: Constants.UserDefaultsKey.Licence)
+    }
+    
 }
 
 

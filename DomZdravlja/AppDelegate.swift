@@ -9,16 +9,19 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseDatabase
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        FIRApp.configure()
+        setFirebase()
+        
+        
         
         // Override point for customization after application launch.
         return true
@@ -91,6 +94,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    //MARK - Setup
+    
+    func setFirebase() {
+        FIRApp.configure()
+        var ref: FIRDatabaseReference!
+        
+        ref = FIRDatabase.database().reference()
+        ref.child(Constants.UserDefaultsKey.Licence).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if let value = snapshot.value as? NSNumber {
+                Utilities.setLicence(value)
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        ref.child("Reklame").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if let value = snapshot.value as? NSDictionary {
+                let json = JSON(value)
+                
+                let id = json["ID"].intValue
+                let title = json["Naziv"].stringValue
+
+                print("\(id)")
+                print("\(title)")
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
     }
 
 }
