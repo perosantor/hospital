@@ -13,6 +13,7 @@ target 'DomZdravlja' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage'
+  pod 'Firebase/Core'
 
 
   target 'DomZdravljaTests' do

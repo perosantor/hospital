@@ -28,6 +28,7 @@
 		0869D1021E9BCD5C00C8475E /* DoctorsAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D1011E9BCD5C00C8475E /* DoctorsAdviceViewController.swift */; };
 		0869D1041E9C046B00C8475E /* VaccinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D1031E9C046B00C8475E /* VaccinesViewController.swift */; };
 		0869D1061E9CD4EE00C8475E /* VaccinesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869D1051E9CD4EE00C8475E /* VaccinesDetailsViewController.swift */; };
+		08731F4A1EA66FC2000E9104 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08731F491EA66FC2000E9104 /* GoogleService-Info.plist */; };
 		089614EC1E7FD11800F1AFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614EB1E7FD11800F1AFDA /* AppDelegate.swift */; };
 		089614EE1E7FD11800F1AFDA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089614ED1E7FD11800F1AFDA /* MasterViewController.swift */; };
 		089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089614EF1E7FD11800F1AFDA /* Main.storyboard */; };
@@ -97,6 +98,7 @@
 		0869D1011E9BCD5C00C8475E /* DoctorsAdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorsAdviceViewController.swift; sourceTree = "<group>"; };
 		0869D1031E9C046B00C8475E /* VaccinesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccinesViewController.swift; sourceTree = "<group>"; };
 		0869D1051E9CD4EE00C8475E /* VaccinesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaccinesDetailsViewController.swift; sourceTree = "<group>"; };
+		08731F491EA66FC2000E9104 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		089614E81E7FD11800F1AFDA /* DomZdravlja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DomZdravlja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089614EB1E7FD11800F1AFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089614ED1E7FD11800F1AFDA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				089614F71E7FD11800F1AFDA /* LaunchScreen.storyboard */,
 				089614FA1E7FD11800F1AFDA /* Info.plist */,
 				089614F21E7FD11800F1AFDA /* DomZdravlja.xcdatamodeld */,
+				08731F491EA66FC2000E9104 /* GoogleService-Info.plist */,
 				0869D0F11E97E69C00C8475E /* Localizable.strings */,
 			);
 			name = Application;
@@ -407,7 +410,7 @@
 				TargetAttributes = {
 					089614E71E7FD11800F1AFDA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4S4TN8CRJT;
+						DevelopmentTeam = UXWX3H22AD;
 						ProvisioningStyle = Manual;
 					};
 					089614FE1E7FD11800F1AFDA = {
@@ -456,6 +459,7 @@
 				08B944441E856196001B201B /* NewsTableViewCell.xib in Resources */,
 				0869D0E61E9672F500C8475E /* InputTextView.xib in Resources */,
 				0869D0F21E97E69C00C8475E /* Localizable.strings in Resources */,
+				08731F4A1EA66FC2000E9104 /* GoogleService-Info.plist in Resources */,
 				089614F11E7FD11800F1AFDA /* Main.storyboard in Resources */,
 				08C2E3E91E925FA100AA518A /* InputTextFieldView.xib in Resources */,
 			);
@@ -807,14 +811,15 @@
 			baseConfigurationReference = 8063099DDDF2EF0552BA0541 /* Pods-DomZdravlja.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4S4TN8CRJT;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UXWX3H22AD;
 				INFOPLIST_FILE = DomZdravlja/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravlja;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabac.dzsabacios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7de0ffc0-2899-4db4-bf27-51a3f2768bf2";
-				PROVISIONING_PROFILE_SPECIFIER = DomZdravlja;
+				PROVISIONING_PROFILE = "69ed51eb-beb1-4008-90ce-1fb6a8118f14";
+				PROVISIONING_PROFILE_SPECIFIER = BBDomZdravljaDistributionProfile;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -825,12 +830,15 @@
 			baseConfigurationReference = 908C5723E0C14495A86CDABA /* Pods-DomZdravlja.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UXWX3H22AD;
 				INFOPLIST_FILE = DomZdravlja/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.closedbrackets.DomZdravlja;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabac.dzsabacios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "69ed51eb-beb1-4008-90ce-1fb6a8118f14";
+				PROVISIONING_PROFILE_SPECIFIER = BBDomZdravljaDistributionProfile;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
