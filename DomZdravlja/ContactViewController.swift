@@ -104,28 +104,29 @@ class ContactViewController: UIViewController {
         
         let msg =  "Име: " + name + "\rЕ-пошта: " + email + "\rРазлог обраћања: " + reason + "\rПорука: " + message
         
-        
-        if sender.tag == 1 {
-            SVProgressHUD.show()
-            CommunicationService.sharedInstace.sendContactFormToPatientProtector(messageData: msg) { (success, errorMessage) in
-                if success {
-                    SVProgressHUD.showInfo(withStatus: NSLocalizedString("Form sent successfully", comment: ""))
-                } else {
-                    SVProgressHUD.showError(withStatus: errorMessage)
-                }
-            }
-        } else if sender.tag == 2 {
-            SVProgressHUD.show()
-            CommunicationService.sharedInstace.sendContactFormToLegalService(messageData: msg) { (success, errorMessage) in
-                if success {
-                    SVProgressHUD.showInfo(withStatus: NSLocalizedString("Form sent successfully", comment: ""))
-                } else {
-                    SVProgressHUD.showError(withStatus: errorMessage)
-                }
-
+        var url:URL? = nil
+        switch sender.tag {
+        case 1:
+            url = Constants.Url.patientProtectorUrl
+            break
+        case 2:
+            url = Constants.Url.patientLegalServiceUrl
+            break
+        default:
+            break
         }
         
-    }
+        if url != nil {
+            SVProgressHUD.show()
+            CommunicationService.sharedInstace.sendInquiry(forUrl: url!, withMessage: msg, completion: { (success, errorMessage) in
+                if success {
+                    SVProgressHUD.showInfo(withStatus: "Form sent successfully".localized)
+                } else {
+                    SVProgressHUD.showError(withStatus: errorMessage)
+                }
+            })
+        }
+        
     }
 
 }

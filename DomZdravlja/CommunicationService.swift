@@ -91,56 +91,6 @@ struct CommunicationService {
     }
 
     
-    func sendContactFormToPatientProtector(messageData:String,
-                        completion: @escaping (_ response:Bool, _ errorMessage:String?) -> ()) {
-        
-        if Reachability.init()?.currentReachabilityStatus == .notReachable {
-            completion(false, Constants.Messages.Offline)
-        } else {
-            Alamofire.request(Constants.Url.patientProtectorUrl, method: .post, parameters: ["body":messageData])
-                .responseString { responseData in
-                    
-                    switch responseData.result {
-                    case .success:
-                        completion(true, nil)
-                    case .failure(let error):
-                        print(error.localizedDescription)
-                        completion(false, Constants.Messages.DefaultError + " : \(error.localizedDescription)")
-                    }
-                }
-        }
-    }
-    
-    func sendContactFormToLegalService(messageData:String,
-                                           completion: @escaping (_ response:Bool, _ errorMessage:String?) -> ()) {
-        
-        if Reachability.init()?.currentReachabilityStatus == .notReachable {
-            completion(false, Constants.Messages.Offline)
-        } else {
-            Alamofire.request(Constants.Url.patientLegalServiceUrl, method: .post, parameters: ["body":messageData])
-                .responseString { responseData in
-                    
-                     /*
-                    if ((responseData.result.value) != nil) {
-                        let jsonArray = JSON(responseData.result.value!)
-                        print("\(jsonArray)")
-                        completion(true, nil)
-                    } else {
-                        completion(false, Constants.Messages.DefaultError)
-                    }
-                     */
-                   
-                    switch responseData.result {
-                    case .success:
-                        completion(true, nil)
-                    case .failure(let error):
-                        print(error.localizedDescription)
-                        completion(false, Constants.Messages.DefaultError + " : \(error.localizedDescription)")
-                    }
-            }
-        }
-    }
-    
     func sendInquiry(forUrl url: URL, withMessage msg:String, completion: @escaping (_ response:Bool, _ errorMessage:String?) -> ()) {
         
         if Reachability.init()?.currentReachabilityStatus == .notReachable {
