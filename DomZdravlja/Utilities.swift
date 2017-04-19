@@ -33,7 +33,7 @@ class Utilities {
     
     class func isValidIDFormat(string: String?) -> Bool {
         if string != nil {
-            let regex = try? NSRegularExpression(pattern: "^[0-9]{8}$", options: [])
+            let regex = try? NSRegularExpression(pattern: "^[0-9]{13}$", options: [])
             if let regex = regex {
                 let match = regex.numberOfMatches(in: string!, options: [], range: NSRange(location: 0, length: string!.characters.count))
                 return match == 1

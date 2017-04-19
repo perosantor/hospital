@@ -40,23 +40,21 @@ struct CommunicationService {
         }
     }
     
-    func registerAppointment(name:String,
-                             phone:String,
-                             id:String,
-                             doctor:String,
-                             time:String,
-                             email:String,
-                             therapyAppointment:Bool,
+    func registerAppointment(parameters:String,
                              completion: @escaping (_ response:Any?, _ errorMessage:String?) -> ()) {
         if Reachability.init()?.currentReachabilityStatus == .notReachable {
             completion(nil, Constants.Messages.Offline)
         } else {
-            Alamofire.request(Constants.Url.appointmentUrl).responseJSON { (responseData) -> Void in
+            Alamofire.request(Constants.Url.appointmentUrl, method: .post, parameters: ["body":parameters])
+                .responseString { (responseData) -> Void in
                 if((responseData.result.value) != nil) {
-                    //let jsonArray = JSON(responseData.result.value!)
-                    //print(swiftyJsonVar)
-                    
-                    completion(nil, nil)
+                    switch responseData.result {
+                    case .success:
+                        completion(true, nil)
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                        completion(false, Constants.Messages.DefaultError + " : \(error.localizedDescription)")
+                    }
                     
                 } else {
                     completion(nil, Constants.Messages.DefaultError)

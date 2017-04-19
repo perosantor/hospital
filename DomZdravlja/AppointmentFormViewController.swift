@@ -140,11 +140,26 @@ class AppointmentFormViewController: UIViewController {
         let time = self.inputFieldTime.textField.text!
         let email = self.inputFieldEmail.textField.text!
         
-        SVProgressHUD.show()
-        CommunicationService.sharedInstace.registerAppointment(name: name, phone: phone, id: id, doctor: doctor, time: time, email: email, therapyAppointment: therapySelected) { (response, errorMessage) in
-            print("\(response)")
+        var therapy = "Преглед"
+        if therapySelected {
+            therapy = "Исписивање терапије"
         }
         
+        let params = "<strong> Име и презиме пацијента: </strong>" + name + "<br>" +
+            "<strong> И-мејл адреса: </strong>" + email + "<br>" +
+            "<strong> Број телефона: </strong>" + phone + "<br>" +
+            "<strong> ЈМБГ: </strong>" + id + "<br>" +
+            "<strong> Име и презиме изабраног лекара: </strong>" + doctor + "<br>" +
+            "<strong> Оквирно време и датум прегледа: </strong>" + time + "<br>" +
+            "<strong> Тип контакта: </strong>" + therapy + "<br>"
         
+        SVProgressHUD.show()
+        CommunicationService.sharedInstace.registerAppointment(parameters: params) { (response, errorMessage) in
+            if errorMessage != nil {
+                SVProgressHUD.showError(withStatus: errorMessage)
+            } else {
+                SVProgressHUD.showInfo(withStatus: Constants.Messages.DefaultSuccess)
+            }
+        }
     }
 }
