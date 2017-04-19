@@ -67,5 +67,8 @@ struct Constants {
     struct UserDefaultsKey {
         static let PushEnabled = "PushEnabled"
         static let Licence = "Licenca"
+        static let Adds = "Reklame"
+        static let AddID = "ID"
+        static let AddTitle = "Naziv"
     }
 }

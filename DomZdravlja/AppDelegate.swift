@@ -112,16 +112,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(error.localizedDescription)
         }
         
-        ref.child("Reklame").observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(Constants.UserDefaultsKey.Adds).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             if let value = snapshot.value as? NSDictionary {
                 let json = JSON(value)
                 
-                let id = json["ID"].intValue
-                let title = json["Naziv"].stringValue
-
+                let id = json[Constants.UserDefaultsKey.AddID].intValue
+                let title = json[Constants.UserDefaultsKey.AddTitle].stringValue
+                
                 print("\(id)")
                 print("\(title)")
+                
+                Utilities.setAdd(withID: id, title: title)
             }
         }) { (error) in
             print(error.localizedDescription)

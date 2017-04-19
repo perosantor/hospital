@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SVProgressHUD
 
 class Utilities {
     
@@ -158,6 +159,30 @@ class Utilities {
     
     class func setLicence(_ token:NSNumber) {
         UserDefaults.standard.set(token, forKey: Constants.UserDefaultsKey.Licence)
+    }
+    
+    class func setAdd(withID addID:Int, title:String) {
+        if isAddNew(addID: addID, addTitle: title) {
+            UserDefaults.standard.set(addID, forKey: Constants.UserDefaultsKey.AddID)
+            UserDefaults.standard.set(title, forKey: Constants.UserDefaultsKey.AddTitle)
+            //UserDefaults.standard.set("true", forKey: Constants.UserDefaultsKey.AddSeen)
+            SVProgressHUD.showInfo(withStatus: title)
+        }
+    }
+    
+    class func isAddNew(addID: Int, addTitle: String) -> Bool {
+        var ret = false
+        if let id = UserDefaults.standard.object(forKey: Constants.UserDefaultsKey.AddID) as? Int, let title = UserDefaults.standard.object(forKey: Constants.UserDefaultsKey.AddTitle) as? String {
+            if addID != id && title != addTitle {
+                ret = true
+            }
+        } else {
+            //First time run
+            UserDefaults.standard.set(addID, forKey: Constants.UserDefaultsKey.AddID)
+            UserDefaults.standard.set(addTitle, forKey: Constants.UserDefaultsKey.AddTitle)
+            SVProgressHUD.showInfo(withStatus: addTitle)
+        }
+        return ret
     }
     
 }
