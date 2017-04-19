@@ -114,14 +114,14 @@ class BMICalculatorViewController: UIViewController {
             return
         }
         
-        let min = round( 18.5 * weight * weight / 1000)
-        let max = round( 25.0 * weight * weight / 1000 ) / 10
+        let min = round( 18.5 * height * height / 1000 ) / 10
+        let max = round( 25.0 * height * height / 1000 ) / 10
         let idealWeight = round( 10 * ( min + max ) / 2 ) / 10
         
-        let idealWeightDelta = abs(round(weight - idealWeight))
+        let idealWeightDelta = abs(round(100 * (weight - idealWeight) / idealWeight))
         let suggestedWeight = idealWeight
         
-        self.labelResult.text = "Ваш индекс телесне масе је \(bmi) \rпо коме сте ви особа \(level). \rВаша идеална тежина је \(idealWeight) килограма од које одступате \(idealWeightDelta). \rВаша препоручена тежина је \(suggestedWeight) килограма.\r"
+        self.labelResult.text = "Ваш индекс телесне масе је \(bmi) \rпо коме сте ви особа \(level). \rВаша идеална тежина је \(idealWeight) килограма од које одступате \(idealWeightDelta)%. \rВаша препоручена тежина је \(suggestedWeight) килограма.\r"
     }
     
     @IBAction func handleTapOnClearButton(_ sender: UIButton) {
