@@ -274,7 +274,7 @@ class MasterViewController: UIViewController {
         let overlay: UIView = UIView(frame: CGRect(x: self.imageViewBackground.frame.origin.x,
                                                    y: self.imageViewBackground.frame.origin.y - 20,
                                                    width: self.imageViewBackground.frame.size.width + 40,
-                                                   height: self.imageViewBackground.frame.size.height))
+                                                   height: self.imageViewBackground.frame.size.height + 100))
         
         overlay.backgroundColor = Constants.Color.OverlayGrey
         self.imageViewBackground.addSubview(overlay)
@@ -311,7 +311,7 @@ class MasterViewController: UIViewController {
     }
     
     @IBAction func handleTapOnCallButton(_ sender: UIButton) {
-        callNumber(phoneNumber: "381115194")
+        callNumber(phoneNumber: "015194") //+38115194
     }
     
     private func callNumber(phoneNumber:String) {
@@ -324,8 +324,6 @@ class MasterViewController: UIViewController {
             }
         }
     }
-
-    
 
 }
 
