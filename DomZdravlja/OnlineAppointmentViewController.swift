@@ -69,6 +69,4 @@ class OnlineAppointmentViewController: UIViewController {
     @IBAction func handleTapOnCheckAvailabilityButton(_ sender: Any) {
         UIApplication.shared.open((URL(string: "https://www.mojdoktor.gov.rs/map")!), options: [:], completionHandler: nil)
     }
-    
-    
 }

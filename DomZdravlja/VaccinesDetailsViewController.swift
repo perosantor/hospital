@@ -276,13 +276,11 @@ class VaccinesDetailsViewController: UIViewController {
     
     // MARK: - Actions
 
+    
     @IBAction func handleTapOnBackButton(_ sender: UIButton) {
         if ((self.parent as? MasterViewController) != nil ) {
             let master = self.parent as? MasterViewController
             master?.load(viewWithType: Constants.View.Vaccines)
         }
     }
-    
-    
-    
 }

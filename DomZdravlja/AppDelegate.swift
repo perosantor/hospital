@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setFirebase()
         
-        
-        
         // Override point for customization after application launch.
         return true
     }
@@ -96,7 +94,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    
     //MARK - Setup
+    
     
     func setFirebase() {
         FIRApp.configure()

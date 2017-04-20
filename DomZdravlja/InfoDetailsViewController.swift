@@ -143,9 +143,4 @@ class InfoDetailsViewController: UIViewController {
         
         self.textViewContent.attributedText = attrString
     }
-    
-    //
-    
-
-
 }

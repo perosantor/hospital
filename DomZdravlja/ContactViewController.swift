@@ -55,7 +55,6 @@ class ContactViewController: UIViewController {
         self.inputViewContactReason?.textField.text = ""
         self.inputViewMessage?.textView.text = ""
     }
-
     
 
     // MARK: - Utilities
@@ -98,7 +97,7 @@ class ContactViewController: UIViewController {
         }
         
         if name == "" || email == "" || reason == "" || message == "" {
-            SVProgressHUD.showError(withStatus: NSLocalizedString("All fields must be filled", comment: ""))
+            SVProgressHUD.showError(withStatus: "All fields must be filled".localized)
             return
         }
         
