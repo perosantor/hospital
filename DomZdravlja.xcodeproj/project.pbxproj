@@ -810,6 +810,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8063099DDDF2EF0552BA0541 /* Pods-DomZdravlja.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UXWX3H22AD;
@@ -829,6 +830,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 908C5723E0C14495A86CDABA /* Pods-DomZdravlja.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UXWX3H22AD;
